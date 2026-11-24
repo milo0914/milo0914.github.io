@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>九年級自然高效記憶版｜115-1 第二次段考</title>
+<style>
+:root{
+--bg:#f7f4ec; --surface:#fffdf7; --surface2:#efe9db; --ink:#22303a; --ink-soft:#4c5a64;
+--line:#d8cfba; --accent:#0f6f6a; --accent-ink:#0a4f4c; --amber:#b96a12; --amber-bg:#fdf0dd;
+--red:#b03a2e; --red-bg:#fbeae7; --green:#2e7d32; --green-bg:#e8f3e8;
+--tag:#e3ecf5; --tag-ink:#24507c; --shadow:0 1px 3px rgba(34,48,58,.12);
+color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+:root{
+--bg:#141a1e; --surface:#1d262c; --surface2:#26323a; --ink:#e8e2d4; --ink-soft:#b3bcc2;
+--line:#3d4a53; --accent:#4dbdb4; --accent-ink:#8fd8d2; --amber:#e09a4a; --amber-bg:#3a2d1a;
+--red:#e08074; --red-bg:#3d231f; --green:#7fc483; --green-bg:#1f3320;
+--tag:#24384c; --tag-ink:#a8c8e8; --shadow:0 1px 3px rgba(0,0,0,.4);
+}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",system-ui,sans-serif;line-height:1.75;font-size:16px}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px 64px}
+h1,h2,h3{font-family:"Songti TC","Noto Serif TC","PMingLiU",serif;line-height:1.35}
+h1{font-size:1.9rem;margin:.2em 0.3em}
+h2{font-size:1.45rem;margin:0 0.4em;padding-bottom:.3em;border-bottom:3px solid var(--accent)}
+h3{font-size:1.12rem;margin:1.1em 0.35em;color:var(--accent-ink)}
+p{margin:.45em 0}
+section{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px 20px 14px;margin:22px 0;box-shadow:var(--shadow)}
+.notice{border-left:6px solid var(--amber);background:var(--amber-bg);border-radius:6px;padding:12px 16px;margin:14px 0}
+.notice strong{color:var(--amber)}
+.examline{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chip{display:inline-block;background:var(--surface2);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.88rem}
+table{width:100%;border-collapse:collapse;margin:.6em 0;font-size:.94rem}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--surface2);font-weight:700}
+td b,th b{color:var(--accent-ink)}
+.theme{background:var(--surface2);border-radius:8px;padding:10px 14px;font-size:1.02rem;margin:.4em 0.8em}
+.theme b{color:var(--accent-ink)}
+.tags{margin:.3em 0.2em}
+.tag{display:inline-block;background:var(--tag);color:var(--tag-ink);border-radius:4px;font-size:.76rem;padding:1px 7px;margin:0 3px 3px 0;font-weight:600}
+.mnemonic{background:var(--amber-bg);border-radius:8px;padding:9px 14px;margin:.6em 0}
+.mnemonic::before{content:"口訣 ";font-weight:700;color:var(--amber)}
+.key5{background:var(--green-bg);border-radius:8px;padding:10px 14px;margin:.7em 0}
+.key5 b.t{color:var(--green)}
+.key5 ol{margin:.3em 0.3em 1.2em;padding:0}
+figure{margin:14px 0;text-align:center}
+figure svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+figcaption{font-size:.88rem;color:var(--ink-soft);margin-top:6px}
+svg text{font-family:"PingFang TC","Microsoft JhengHei",sans-serif}
+.chain{display:flex;flex-direction:column;gap:0;margin:14px 0}
+.station{display:flex;gap:12px;align-items:flex-start;background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.station .num{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:1rem}
+.station h3{margin:0 0 2px}
+.station p{margin:0;font-size:.93rem;color:var(--ink-soft)}
+.arrow-down{text-align:center;color:var(--accent);font-size:1.1rem;line-height:1.2;padding:2px 0}
+.chunkhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.chunkletter{flex:0 0 auto;width:46px;height:46px;border-radius:10px;background:var(--accent);color:#fff;font-family:"Songti TC",serif;font-size:1.5rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.chunkhead h2{border:none;padding:0;margin:0}
+.chunkhead .img-note{color:var(--ink-soft);font-size:.92rem}
+nav.toc{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}
+nav.toc a{color:var(--accent-ink);text-decoration:none;display:inline-block;padding:6px 8px;min-height:36px}
+nav.toc a:hover{text-decoration:underline}
+.stepbox{border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:.6em 0;background:var(--surface)}
+.stepbox .ans{font-weight:700;color:var(--accent-ink)}
+details{border:1px solid var(--line);border-radius:8px;margin:.6em 0;background:var(--surface)}
+details summary{cursor:pointer;padding:10px 14px;font-weight:700;min-height:44px}
+details.inner{padding:0 14px 12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:14px 0}
+.card{perspective:900px;min-height:170px;cursor:pointer;background:none;border:none;padding:0;font:inherit;text-align:left;width:100%}
+.card-inner{position:relative;width:100%;height:100%;min-height:170px}
+.card-face{position:absolute;inset:0;border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;justify-content:center;border:1px solid var(--line);transition:opacity .3s}
+.card-back{opacity:0}
+.card.flipped .card-back{opacity:1}
+.card.flipped .card-front{opacity:0}
+.card-front{background:var(--surface2);color:var(--ink)}
+.card-front .qno{font-size:.78rem;color:var(--accent-ink);font-weight:700}
+.card-front .q{font-size:1.02rem;font-weight:700;margin-top:4px}
+.card-front .hint{font-size:.8rem;color:var(--ink-soft);margin-top:8px}
+.card-back{background:var(--accent);color:#fff}
+.card-back .a{font-size:1.05rem;font-weight:700}
+.card-back .e{font-size:.9rem;margin-top:6px;opacity:.92}
+.quiz-q{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0;background:var(--surface)}
+.quiz-q .qhead{font-weight:700;margin-bottom:8px}
+.quiz-q .qtag{font-size:.78rem;background:var(--tag);color:var(--tag-ink);border-radius:4px;padding:1px 7px;margin-left:6px;font-weight:600}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:block;width:100%;text-align:left;background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font:inherit;cursor:pointer;min-height:44px;color:var(--ink)}
+.opt:hover{border-color:var(--accent)}
+.opt.correct{background:var(--green-bg);border-color:var(--green);font-weight:700}
+.opt.wrong{background:var(--red-bg);border-color:var(--red)}
+.opt:disabled{cursor:default;opacity:.92}
+.explain{display:none;margin-top:10px;background:var(--amber-bg);border-radius:8px;padding:10px 14px;font-size:.94rem}
+.explain.show{display:block}
+.scorebar{position:sticky;top:0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 16px;font-weight:700;z-index:5;box-shadow:var(--shadow)}
+.btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 20px;font:inherit;font-weight:700;cursor:pointer;min-height:44px}
+.btn.secondary{background:var(--surface2);color:var(--ink);border:1px solid var(--line)}
+.act{border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:10px 0;background:var(--surface)}
+.act .time{float:right;background:var(--amber-bg);color:var(--amber);border-radius:999px;padding:2px 12px;font-weight:700;font-size:.88rem}
+.why{border-left:5px solid var(--accent);background:var(--surface2);border-radius:0 8px 8px 0;padding:10px 16px;margin:12px 0}
+.why .lvl{margin:.35em 0}
+.small{font-size:.9rem;color:var(--ink-soft)}
+footer{color:var(--ink-soft);font-size:.88rem;text-align:center;margin-top:30px}
+@media (max-width:560px){
+section{padding:16px 14px 10px}
+h1{font-size:1.55rem}
+h2{font-size:1.26rem}
+table{font-size:.88rem}
+th,td{padding:6px 7px}
+}
+@media (prefers-reduced-motion: reduce){
+.card-face{transition:none}
+html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<h1>九年級自然高效記憶版</h1>
+<p>115 學年度第一學期第二次段考・康軒第五冊・理化＋地科</p>
+<div class="examline">
+<span class="chip">考試日期：2026-11-26（四）～11-27（五）</span>
+<span class="chip">理化 Ch2 2-2～2-4 ＋ Ch3 全</span>
+<span class="chip">地科 Ch5 全 ＋ Ch6 全</span>
+</div>
+<div class="notice">
+<strong>推論範圍聲明：</strong>南科官網未公開 115-1 第二次段考範圍表，本頁範圍是全台多校 115-1 二段範圍表交叉推論的結果（彰化縣某國中：理化 2-3～Ch3、地科 Ch6；光武國中：理化 L2-2～L3-3、地科第六章；湖內國中：自然 L3、5、6），加上屏東縣 115 學年課程計畫逐週進度。<strong>老師公告為準；若與本頁衝突，以老師公告為準。</strong>
+</div>
+<p>這份複習不是把課本條列換個順序，而是用一條<strong>六站因果鏈</strong>把全部內容串成一個故事，再切成 7 個組塊（A–G）＋ 1 個備份組塊（H）。每個記憶點都同時用上組塊、位置、口訣、故事、對比五種組織方法，標籤就標在每個重點旁邊。</p>
+</header>
+
+<nav class="toc">
+<strong>目錄：</strong>
+<a href="#chain">六站因果鏈</a><a href="#chunkA">A 推一把</a><a href="#chunkB">B 轉圈圈的月亮</a><a href="#chunkC">C 能量存錢筒</a><a href="#chunkD">D 省力的蹺蹺板</a><a href="#chunkE">E 水是大雕刻家</a><a href="#chunkF">F 岩石三兄弟</a><a href="#chunkG">G 地球寫日記</a><a href="#chunkH">H 備份工具包</a><a href="#examples">6 道例題</a><a href="#traps">30 條陷阱</a><a href="#experiments">實驗要點</a><a href="#encoding">編碼活動</a><a href="#cards">翻牌卡</a><a href="#quiz">30 題測驗</a><a href="#strategy">題型攻略</a><a href="#sprint">兩日衝刺計畫</a>
+</nav>
+
+<section id="chain">
+<h2>六站因果鏈：整個自然科是一個故事</h2>
+<p class="tags"><span class="tag">組塊</span><span class="tag">位置</span><span class="tag">故事</span></p>
+<p><strong>位置記憶法（記憶宮殿）：</strong>把六站當成一條路：站 1 力來了、站 2 動起來、站 3 存能量、站 4 機器幫忙、站 5 水刻地貌、站 6 板塊寫歷史，閉眼沿路走一遍就能默出全章。</p>
+<p>想像你站在故事的起點，沿著這條鏈往前走，每一站都是上一站的結果：</p>
+<div class="chain">
+<div class="station"><div class="num">1</div><div><h3>力來了</h3><p>先有力，才有改變。合力出現，加速度就出現（F＝ma）；力永遠成對出現（作用力與反作用力）。→ 組塊 A</p></div></div>
+<div class="arrow-down">↓ 因為力持續作用</div>
+<div class="station"><div class="num">2</div><div><h3>動起來</h3><p>物體被力推著動：直線加速、繞圈轉（向心力指向圓心）、月亮被地球的萬有引力拉著繞圈。→ 組塊 A、B</p></div></div>
+<div class="arrow-down">↓ 因為力推著物體移動了一段距離</div>
+<div class="station"><div class="num">3</div><div><h3>做功存能量</h3><p>力沿著位移方向做功（W＝Fs），功變成動能和位能，存進「能量存錢筒」；做功越快，功率越大。→ 組塊 C</p></div></div>
+<div class="arrow-down">↓ 因為人想用小力氣搬大東西</div>
+<div class="station"><div class="num">4</div><div><h3>機器幫忙</h3><p>槓桿、滑輪、斜面用「費距離」換「省力」，但永遠不省功。→ 組塊 D</p></div></div>
+<div class="arrow-down">↓ 把視角放大到整個地球：能量與力也在地表作用</div>
+<div class="station"><div class="num">5</div><div><h3>水刻地貌</h3><p>太陽能推動水循環，水帶著重力與流速，一刀一刀刻出 V 形谷、又堆出沖積扇；岩石在這裡被做成、被改造。→ 組塊 E、F</p></div></div>
+<div class="arrow-down">↓ 因為地球內部的熱也在推</div>
+<div class="station"><div class="num">6</div><div><h3>板塊寫歷史</h3><p>地函熱對流拖動板塊，板塊擠壓抬升山脈、引發地震，一層層岩層像日記一樣記下地球的過去。→ 組塊 G</p></div></div>
+</div>
+<h3>理化與地科的銜接點（鏈為什麼不斷）</h3>
+<p class="tags"><span class="tag">組塊</span><span class="tag">故事</span></p>
+<table>
+<tr><th style="width:26%">銜接</th><th>說明</th></tr>
+<tr><td><b>能量是共同貨幣</b></td><td>水循環靠<strong>太陽能</strong>驅動（蒸發吸熱）；板塊運動靠<strong>地函熱對流</strong>（地球內部的熱能）。理化 Ch3 學的「能量轉換」，在地科變成地貌與板塊的動力來源。</td></tr>
+<tr><td><b>力是共同語言</b></td><td>外營力（流水、風、海浪）侵蝕地表、內營力（板塊擠壓）抬升地表，兩者互相競爭達到<strong>平衡</strong>，地貌才會一邊被刻、一邊被造，永遠在變。</td></tr>
+<tr><td><b>工具先行</b></td><td>Ch3 的計算題要用 Ch1–Ch2 的工具：v-t 圖面積求位移再算功、F＝ma 求力再算功、自由落體的位能轉換。工具包放在組塊 H，卡住時回去拿。</td></tr>
+</table>
+</section>
+
+<section id="chunkA">
+<div class="chunkhead"><div class="chunkletter">A</div><div><h2>推一把，動起來</h2><div class="img-note">記憶圖像：你伸手推一台購物車——推多大力、車多重，決定它衝多快；你推牆，牆也同時推你。｜Ch2 2-2～2-3 牛頓第二、第三定律｜本站是第 1 站</div></div></div>
+
+<h3>2-2 牛頓第二運動定律</h3>
+<div class="theme">一句話主題：<b>物體受合力才會改變運動狀態；加速度與合力成正比、與質量成反比——F＝ma，F 是合力。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>定律</td><td>物體的加速度與所受合力成正比，與質量成反比；加速度方向與合力方向相同</td></tr>
+<tr><td>公式</td><td><b>F＝ma</b>（F：合力，單位牛頓 N；m：質量，單位公斤 kg；a：加速度，單位 m/s²）</td></tr>
+<tr><td>單位換算</td><td>1 N＝1 kg·m/s²；<b>1 kgw ≈ 10 N</b>（取 g＝10 m/s²；精確值 9.8 N）</td></tr>
+<tr><td>實驗關係</td><td>固定質量，力越大加速度越大（正比）；固定力，質量越大加速度越小（反比）</td></tr>
+<tr><td>關鍵</td><td>F 一定是<b>合力</b>，不是某一個分力；沒有合力（合力＝0）就沒有加速度，物體維持原運動狀態</td></tr>
+<tr><td>質量 vs 重量</td><td>質量是物體所含物質的量，<b>不隨地點改變</b>；重量是物體所受重力（W＝mg），隨 g 改變（月球上的重量約為地球的 1/6）</td></tr>
+<tr><td>與第一定律的關係</td><td>第一定律是第二定律的特例：合力＝0 時 a＝0，靜者恆靜、動者恆作等速直線運動</td></tr>
+</table>
+<table>
+<tr><th>對比</th><th>質量</th><th>重量</th></tr>
+<tr><td>是什麼</td><td>物體所含物質的量</td><td>物體所受的重力（W＝mg）</td></tr>
+<tr><td>換地點</td><td>不變（地球、月球都一樣）</td><td>隨 g 改變（月球上的重量約為地球的 1/6）</td></tr>
+<tr><td>單位</td><td>公斤（kg）</td><td>牛頓（N）或公斤重（kgw）</td></tr>
+</table>
+<div class="mnemonic">「合力除質量，加速度到手」——先把所有力加減成一個合力，再除以質量，順序不能反。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>F＝ma 中的 F 是合力；先求合力再算加速度。</li>
+<li>質量不變、重量會變（月球 1/6）。</li>
+<li>加速度與力成正比、與質量成反比（實驗圖判讀）。</li>
+<li>1 kgw ≈ 10 N 的換算。</li>
+<li>合力為零 → 等速度運動（接回第一定律）。</li>
+</ol>
+</div>
+
+<h3>2-3 牛頓第三運動定律</h3>
+<div class="theme">一句話主題：<b>力是成對出現的：甲推乙，乙同時以大小相等、方向相反的力推甲——作用力與反作用力作用在不同物體，不能抵消。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>定律</td><td>兩物體間的作用力與反作用力，大小相等、方向相反、作用在同一直線上</td></tr>
+<tr><td>四個特徵</td><td><b>同時產生、同時消失；大小相等；方向相反；作用在不同物體上</b></td></tr>
+<tr><td>最常考的陷阱</td><td>作用力與反作用力<b>不能互相抵消</b>，因為作用在不同物體；會互相抵消的是作用在<b>同一物體</b>上的一對平衡力</td></tr>
+<tr><td>生活例子</td><td>走路（腳向後蹬地，地向前推人）；划船（槳向後撥水，水向前推船）；火箭升空（向下噴氣，氣體向上推火箭）；手拍桌子（手痛，因為桌子同時推手）</td></tr>
+<tr><td>與第二定律的搭配</td><td>常考「甲對乙施力，求乙對甲的反作用力」；或用第三定律找出受力物體，再用 F＝ma 算加速度</td></tr>
+</table>
+<div class="mnemonic">「你推我、我推你，一樣大、反方向，不同人身上不抵消」——走路、划船、火箭，全是同一個故事。</div>
+<table>
+<tr><th>對比</th><th>作用力與反作用力</th><th>平衡力</th></tr>
+<tr><td>作用對象</td><td>兩個不同物體</td><td>同一個物體</td></tr>
+<tr><td>能不能抵消</td><td>不能</td><td>可以（合力＝0）</td></tr>
+<tr><td>例子</td><td>手推牆、手被牆推</td><td>書靜置桌上：重力與正向力</td></tr>
+</table>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>作用力與反作用力作用在<b>不同物體</b>，不能抵消。</li>
+<li>平衡力作用在<b>同一物體</b>，可以抵消——兩者不要混。</li>
+<li>大小相等、方向相反、同時產生消失。</li>
+<li>找出「誰對誰施力」，反作用力的受力物體就反過來。</li>
+<li>走路、划船、火箭都是第三定律的例子。</li>
+</ol>
+</div>
+</section>
+
+<section id="chunkB">
+<div class="chunkhead"><div class="chunkletter">B</div><div><h2>轉圈圈的月亮</h2><div class="img-note">記憶圖像：月亮像被一條看不見的繩子（萬有引力）綁住，繞著地球一圈一圈轉；繩子永遠指向圓心。｜Ch2 2-4 圓周運動與萬有引力｜本站是第 2 站</div></div></div>
+
+<h3>2-4 圓周運動與萬有引力</h3>
+<div class="theme">一句話主題：<b>作圓周運動的物體，速度方向不斷改變，一定有指向圓心的向心力；天體間的萬有引力就是這個向心力，且與距離平方成反比。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>圓周運動的特性</td><td>速率可以不變，但<b>速度方向不斷改變</b>，所以速度一直在變；物體處於加速度不為零的狀態</td></tr>
+<tr><td>向心力</td><td>使物體維持圓周運動、<b>指向圓心</b>的力；不是一種新的力，而是由繩張力、摩擦力、萬有引力等提供的合力方向</td></tr>
+<tr><td>向心加速度</td><td>方向指向圓心；速率不變時，轉得越快（半徑越小或週期越短）向心加速度越大</td></tr>
+<tr><td>週期與頻率</td><td>週期 T：繞一圈的時間（秒）；頻率 f：每秒繞的圈數，f＝1/T</td></tr>
+<tr><td>萬有引力定律</td><td>任何兩物體間都有引力；引力大小與<b>兩物體質量的乘積成正比、與兩者距離的平方成反比</b>（F ∝ m₁m₂／r²）</td></tr>
+<tr><td>萬有引力比例題</td><td>距離變 2 倍 → 引力變 1/4；距離變 1/2 → 引力變 4 倍；質量變 2 倍 → 引力變 2 倍</td></tr>
+<tr><td>生活與天體</td><td>月球繞地球、地球繞太陽：萬有引力提供向心力；地球自轉、衛星繞地球同理；重力就是地球對物體的萬有引力</td></tr>
+<tr><td>判斷題常考</td><td>「等速率圓周運動是等速度運動」是<b>錯的</b>（速度方向一直在變）；「向心力不作功」是<b>對的</b>（向心力與位移方向垂直）</td></tr>
+</table>
+<table>
+<tr><th>對比</th><th>前者</th><th>後者</th></tr>
+<tr><td>速率 vs 速度</td><td>速率：純量，只有大小；等速率圓周運動中速率不變</td><td>速度：向量（大小＋方向）；圓周運動中方向不斷改變，速度一直在變</td></tr>
+<tr><td>向心力 vs 離心力</td><td>向心力：真實存在，指向圓心，由張力、摩擦力或萬有引力提供</td><td>離心力：<b>並不存在</b>——物體脫離圓周運動時是沿切線方向飛出，不是被向外的力拉走</td></tr>
+</table>
+<div class="mnemonic">「距離平方在分母，拉遠變四分之一」——距離×2，引力÷4；距離×3，引力÷9。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>等速率圓周運動：速率不變、速度在變、需要向心力。</li>
+<li>向心力指向圓心；向心力不作功（與位移垂直）。</li>
+<li>萬有引力與距離<b>平方</b>成反比（距離×2 → 引力×1/4）。</li>
+<li>月球繞地球靠萬有引力提供向心力。</li>
+<li>週期 T 與頻率 f 互為倒數。</li>
+</ol>
+</div>
+</section>
+
+<section id="chunkC">
+<div class="chunkhead"><div class="chunkletter">C</div><div><h2>能量存錢筒</h2><div class="img-note">記憶圖像：一個透明存錢筒——做功是把錢存進去，動能是「正在花的錢」、位能是「存著的錢」，沒有摩擦時總額不變。｜Ch3 3-1～3-2 功、功率、動能位能、力學能守恆｜本站是第 3 站</div></div></div>
+
+<h3>3-1 功與功率</h3>
+<div class="theme">一句話主題：<b>有力又有沿力方向的位移才算作功（W＝Fs）；做功越快功率越大（P＝W/t）。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>功的定義</td><td>力作用在物體上，使物體<b>沿力的方向</b>移動一段距離，稱為力對物體作功</td></tr>
+<tr><td>公式</td><td><b>W＝Fs</b>（W：功，單位焦耳 J；F：力，單位牛頓 N；s：沿力方向的位移，單位公尺 m）</td></tr>
+<tr><td>單位</td><td>1 J＝1 N·m；功是純量，只有大小、沒有方向</td></tr>
+<tr><td>作功的條件</td><td>同時具備兩個條件：(1) 有力作用；(2) 物體沿力的方向有位移。缺一不可</td></tr>
+<tr><td>不作功的情況</td><td>力與位移方向<b>垂直</b>（水平提重物走路、圓周運動的向心力）；有力但沒有移動（推牆推不動）；有移動但沒有力（等速滑行、慣性運動）</td></tr>
+<tr><td>功率</td><td><b>P＝W/t</b>（P：功率，單位瓦特 W；t：時間，單位秒 s）；1 W＝1 J/s；功率是做功快慢的量度，與功的大小無關</td></tr>
+<tr><td>生活單位</td><td>家用電器常以瓦特（W）或千瓦（kW）標示功率；1 kW＝1000 W</td></tr>
+<tr><td>重力作功</td><td>物體上升，克服重力作功 W＝mgh；物體下降，重力作功 W＝mgh（正值）</td></tr>
+</table>
+<figure>
+<svg viewBox="0 0 640 260" role="img" aria-label="功與功率示意圖：水平推力推動箱子，沿力方向移動距離 s">
+<defs><marker id="ar1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f6f6a"/></marker></defs>
+<line x1="40" y1="190" x2="600" y2="190" stroke="var(--ink)" stroke-width="2"/>
+<rect x="120" y="130" width="70" height="60" fill="#b96a12" opacity="0.75"/>
+<line x1="330" y1="120" x2="330" y2="228" stroke="var(--ink-soft)" stroke-dasharray="4 4"/>
+<line x1="198" y1="152" x2="318" y2="152" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar1)"/>
+<text x="235" y="140" font-size="16" fill="var(--ink)">F（推力）</text>
+<line x1="120" y1="226" x2="330" y2="226" stroke="#0f6f6a" stroke-width="2.5" marker-end="url(#ar1)"/>
+<text x="140" y="250" font-size="15" fill="var(--ink)">s：沿力方向的位移</text>
+<text x="400" y="140" font-size="19" font-weight="bold" fill="var(--ink)">W ＝ F × s</text>
+<text x="400" y="176" font-size="19" font-weight="bold" fill="var(--ink)">P ＝ W ÷ t</text>
+<text x="400" y="205" font-size="13" fill="var(--ink-soft)">力與位移垂直 → 作功 ＝ 0</text>
+</svg>
+<figcaption>圖 1 功與功率：只有沿力方向的那段位移算進 W＝Fs；同樣的功做得越快，P＝W/t 越大。</figcaption>
+</figure>
+<table>
+<tr><th>對比</th><th>功</th><th>功率</th></tr>
+<tr><td>公式</td><td>W＝Fs</td><td>P＝W/t</td></tr>
+<tr><td>單位</td><td>焦耳（J）</td><td>瓦特（W）＝1 J/s</td></tr>
+<tr><td>比的是</td><td>總共作了多少功（總量）</td><td>作功的快慢（與功的總量無關）</td></tr>
+</table>
+<div class="mnemonic">「有力有位移、方向要對齊」——提水桶水平走，力向上、路向前，垂直不作功，0 焦耳。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>W＝Fs 只計<b>沿力方向</b>的位移；垂直方向不作功。</li>
+<li>提重物水平走路：手施力向上、位移水平，<b>不作功</b>。</li>
+<li>功率比的是快慢：同樣的功，時間越短功率越大。</li>
+<li>單位：功焦耳（J）、功率瓦特（W）、力牛頓（N）。</li>
+<li>推牆推不動：有力無位移，作功＝0。</li>
+</ol>
+</div>
+
+<h3>3-2 動能、位能與能量守恆</h3>
+<div class="theme">一句話主題：<b>運動的物體有動能（½mv²）、在高處的物體有重力位能（mgh）；沒有摩擦時兩者互相轉換、總和不變。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>動能</td><td><b>Ek＝½mv²</b>（m：質量 kg；v：速率 m/s；單位焦耳 J）；動能與質量成正比、與<b>速率的平方</b>成正比</td></tr>
+<tr><td>速率加倍效應</td><td>速率變 2 倍 → 動能變 <b>4 倍</b>；速率變 3 倍 → 動能變 9 倍（最常考的計算陷阱）</td></tr>
+<tr><td>重力位能</td><td><b>Ep＝mgh</b>（m：質量 kg；g：重力加速度，國中取 10 m/s²；h：高度 m；單位焦耳 J）</td></tr>
+<tr><td>位能零點</td><td>重力位能的零點<b>可以自訂</b>（地面、桌面、任意參考面）；位能是相對值，<b>位能差</b>才有物理意義</td></tr>
+<tr><td>力學能</td><td>力學能＝動能＋位能（Ek＋Ep）</td></tr>
+<tr><td>力學能守恆條件</td><td>只有<b>保守力</b>（重力、彈力）作功，且<b>忽略摩擦與空氣阻力</b>時，力學能守恆；有摩擦時，力學能減少、轉成熱能</td></tr>
+<tr><td>自由落體的轉換</td><td>最高點：位能最大、動能＝0；落下過程：位能減少、動能增加；落地前瞬間：動能最大、位能最小（若以地面為零點則為 0）</td></tr>
+<tr><td>其他能量形式</td><td>熱能、光能、電能、化學能、聲能等；能量不會憑空產生或消失，只會轉換形式或轉移（能量守恆定律）</td></tr>
+</table>
+<figure>
+<svg viewBox="0 0 640 300" role="img" aria-label="動能位能轉換示意圖：自由落體最高點位能最大動能為零，落地前動能最大">
+<defs><marker id="ar2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f6f6a"/></marker></defs>
+<line x1="50" y1="252" x2="300" y2="252" stroke="var(--ink)" stroke-width="2"/>
+<line x1="118" y1="66" x2="118" y2="216" stroke="#0f6f6a" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#ar2)"/>
+<circle cx="118" cy="50" r="15" fill="#b96a12"/>
+<circle cx="118" cy="232" r="15" fill="#0f6f6a"/>
+<text x="142" y="46" font-size="15" fill="var(--ink)">最高點：Ep 最大、Ek＝0</text>
+<text x="142" y="228" font-size="15" fill="var(--ink)">落地前：Ek 最大、Ep 最小</text>
+<line x1="350" y1="252" x2="620" y2="252" stroke="var(--ink)" stroke-width="2"/>
+<rect x="392" y="132" width="34" height="120" fill="#b96a12" opacity="0.8"/>
+<rect x="432" y="246" width="34" height="6" fill="#0f6f6a" opacity="0.8"/>
+<rect x="512" y="246" width="34" height="6" fill="#b96a12" opacity="0.8"/>
+<rect x="552" y="132" width="34" height="120" fill="#0f6f6a" opacity="0.8"/>
+<text x="376" y="122" font-size="13" fill="var(--ink)">Ep</text>
+<text x="440" y="240" font-size="13" fill="var(--ink)">Ek</text>
+<text x="496" y="240" font-size="13" fill="var(--ink)">Ep</text>
+<text x="556" y="122" font-size="13" fill="var(--ink)">Ek</text>
+<text x="382" y="272" font-size="14" fill="var(--ink)">最高點</text>
+<text x="502" y="272" font-size="14" fill="var(--ink)">落地前</text>
+<text x="382" y="292" font-size="12" fill="var(--ink-soft)">Ep＋Ek 總和不變（忽略摩擦）</text>
+</svg>
+<figcaption>圖 2 動能位能轉換：球往下掉，位能這桶錢倒進動能那桶，總額不變。</figcaption>
+</figure>
+<table>
+<tr><th>對比</th><th>動能</th><th>重力位能</th></tr>
+<tr><td>公式</td><td>Ek＝½mv²</td><td>Ep＝mgh</td></tr>
+<tr><td>取決於</td><td>質量與速率（與速率<b>平方</b>成正比）</td><td>質量與高度（位能零點可自訂）</td></tr>
+<tr><td>自由落體</td><td>落下時增加，落地前最大</td><td>落下時減少；忽略摩擦時，動能＋位能總和不變</td></tr>
+</table>
+<div class="mnemonic">「速度平方最會騙，兩倍速度四倍能」——速率×2 → 動能×4，速率×3 → 動能×9。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>動能與速率<b>平方</b>成正比（速率×2 → 動能×4）。</li>
+<li>位能零點可自訂；算位能差時零點會消掉。</li>
+<li>自由落體：最高點 Ep 最大、Ek＝0；落地前 Ek 最大。</li>
+<li>力學能守恆只在<b>忽略摩擦</b>時成立；有摩擦就轉成熱。</li>
+<li>mgh＝½mv²：用能量守恆求落地速率（見例題 3）。</li>
+</ol>
+</div>
+</section>
+
+<section id="chunkD">
+<div class="chunkhead"><div class="chunkletter">D</div><div><h2>省力的蹺蹺板</h2><div class="img-note">記憶圖像：一座蹺蹺板——你坐得離支點越遠，越能翹起另一頭的大石頭；滑輪和斜面是同一招的不同造型。｜Ch3 3-3～3-4 槓桿與簡單機械｜本站是第 4 站</div></div></div>
+
+<h3>3-3 槓桿原理與靜力平衡</h3>
+<div class="theme">一句話主題：<b>槓桿平衡是力矩平衡：順時針力矩＝逆時針力矩——施力 × 施力臂＝抗力 × 抗力臂。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>槓桿三要素</td><td>支點（轉動中心）、施力點（施力的作用點）、抗力點（受力的作用點）</td></tr>
+<tr><td>力臂</td><td><b>支點到施力線的垂直距離</b>（不是支點到施力點的直線距離）；施力方向與槓桿垂直時，力臂最長、轉動效果最好</td></tr>
+<tr><td>力矩</td><td><b>力矩＝力 × 力臂</b>；單位 gw·cm 或 kgw·m（國中常用）；力矩越大，轉動效果越大</td></tr>
+<tr><td>槓桿原理</td><td>槓桿平衡時，<b>施力 × 施力臂＝抗力 × 抗力臂</b>；等價說法：順時針力矩＝逆時針力矩，合力矩＝0</td></tr>
+<tr><td>第一種槓桿</td><td>支點在中間（蹺蹺板、天平、剪刀）；可省力、可費力、也可不省不費，看力臂長短</td></tr>
+<tr><td>第二種槓桿</td><td>抗力點在中間（開瓶器、獨輪手推車、核桃夾）；施力臂恆大於抗力臂，<b>恆省力、費時</b></td></tr>
+<tr><td>第三種槓桿</td><td>施力點在中間（筷子、鑷子、釣魚竿）；施力臂恆小於抗力臂，<b>恆費力、省時</b></td></tr>
+<tr><td>靜力平衡</td><td>物體靜止不動時，合力＝0 且合力矩＝0；槓桿平衡是靜力平衡的一種</td></tr>
+<tr><td>計算範圍</td><td>以單一槓桿、力與槓桿垂直或力臂已給為主；斜向施力取垂直分量屬高中延伸，國中不考計算</td></tr>
+</table>
+<figure>
+<svg viewBox="0 0 660 250" role="img" aria-label="三種槓桿示意圖：依支點、抗力點、施力點誰在中間分類">
+<defs><marker id="ar3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f6f6a"/></marker></defs>
+<line x1="18" y1="82" x2="202" y2="82" stroke="var(--ink)" stroke-width="4"/>
+<polygon points="96,126 124,126 110,82" fill="var(--surface2)" stroke="var(--ink)"/>
+<line x1="36" y1="40" x2="36" y2="76" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar3)"/>
+<rect x="168" y="52" width="26" height="30" fill="#b96a12" opacity="0.8"/>
+<text x="36" y="30" font-size="13" text-anchor="middle" fill="var(--ink)">施力</text>
+<text x="181" y="44" font-size="13" text-anchor="middle" fill="var(--ink)">抗力</text>
+<text x="110" y="146" font-size="13" text-anchor="middle" fill="var(--ink)">支點在中間</text>
+<text x="110" y="176" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--ink)">第一種槓桿</text>
+<text x="110" y="198" font-size="12" text-anchor="middle" fill="var(--ink-soft)">蹺蹺板、天平、剪刀</text>
+<text x="110" y="218" font-size="12" text-anchor="middle" fill="var(--ink-soft)">可省力可費力，看力臂</text>
+<line x1="238" y1="82" x2="422" y2="82" stroke="var(--ink)" stroke-width="4"/>
+<polygon points="240,126 268,126 254,82" fill="var(--surface2)" stroke="var(--ink)"/>
+<rect x="318" y="52" width="26" height="30" fill="#b96a12" opacity="0.8"/>
+<line x1="404" y1="118" x2="404" y2="88" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar3)"/>
+<text x="331" y="44" font-size="13" text-anchor="middle" fill="var(--ink)">抗力</text>
+<text x="404" y="140" font-size="13" text-anchor="middle" fill="var(--ink)">施力↑</text>
+<text x="330" y="176" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--ink)">第二種槓桿</text>
+<text x="330" y="198" font-size="12" text-anchor="middle" fill="var(--ink-soft)">抗力點在中間：開瓶器、獨輪車</text>
+<text x="330" y="218" font-size="12" text-anchor="middle" fill="var(--ink-soft)">恆省力、費時</text>
+<line x1="458" y1="82" x2="642" y2="82" stroke="var(--ink)" stroke-width="4"/>
+<polygon points="460,126 488,126 474,82" fill="var(--surface2)" stroke="var(--ink)"/>
+<line x1="550" y1="40" x2="550" y2="76" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar3)"/>
+<rect x="606" y="52" width="26" height="30" fill="#b96a12" opacity="0.8"/>
+<text x="550" y="30" font-size="13" text-anchor="middle" fill="var(--ink)">施力</text>
+<text x="619" y="44" font-size="13" text-anchor="middle" fill="var(--ink)">抗力</text>
+<text x="550" y="176" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--ink)">第三種槓桿</text>
+<text x="550" y="198" font-size="12" text-anchor="middle" fill="var(--ink-soft)">施力點在中間：筷子、鑷子</text>
+<text x="550" y="218" font-size="12" text-anchor="middle" fill="var(--ink-soft)">恆費力、省時</text>
+</svg>
+<figcaption>圖 3 三種槓桿：只看一件事——支點、抗力點、施力點，誰在中間？</figcaption>
+</figure>
+<table>
+<tr><th>對比</th><th>誰在中間</th><th>省力／費力</th><th>例子</th></tr>
+<tr><td>第一種槓桿</td><td>支點</td><td>看力臂，可省力可費力</td><td>蹺蹺板、天平、剪刀</td></tr>
+<tr><td>第二種槓桿</td><td>抗力點</td><td>恆省力、費時</td><td>開瓶器、獨輪手推車、核桃夾</td></tr>
+<tr><td>第三種槓桿</td><td>施力點</td><td>恆費力、省時</td><td>筷子、鑷子、釣魚竿</td></tr>
+</table>
+<div class="mnemonic">「誰在中間定種類：支中一、抗中二（恆省力）、施中三（恆費力）」。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>平衡條件：施力 × 施力臂＝抗力 × 抗力臂。</li>
+<li>力臂是支點到施力<b>線</b>的垂直距離。</li>
+<li>三種槓桿判讀：看支點、施力點、抗力點誰在中間。</li>
+<li>第二種恆省力、第三種恆費力。</li>
+<li>蹺蹺板、天平、桿秤都是槓桿原理的應用。</li>
+</ol>
+</div>
+
+<h3>3-4 簡單機械</h3>
+<div class="theme">一句話主題：<b>簡單機械不省功，只省力（或改變方向）：省力一定費距離，省下的力要用多走的距離來換。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th>機械</th><th>施力效果</th><th>關鍵公式／關係</th><th>例子</th></tr>
+<tr><td>定滑輪</td><td><b>不省力</b>，只改變施力方向</td><td>施力＝抗力（F＝W）</td><td>升國旗、工地吊料</td></tr>
+<tr><td>動滑輪</td><td><b>省一半力</b>，費兩倍距離</td><td>施力＝抗力／2（F＝W/2）；拉的距離＝物體上升距離 × 2</td><td>起重機吊鉤、升降機</td></tr>
+<tr><td>斜面</td><td>省力、費距離（費時）</td><td>斜面越長越緩越省力；施力 × 斜面長＝抗力 × 斜面高</td><td>盤山公路、無障礙坡道、樓梯</td></tr>
+<tr><td>輪軸</td><td>施力於輪可省力</td><td>施力 × 輪半徑＝抗力 × 軸半徑</td><td>方向盤、螺絲起子、水龍頭</td></tr>
+<tr><td>螺旋</td><td>斜面的應用，省力</td><td>螺距越小越省力</td><td>螺絲釘、瓶蓋、千斤頂</td></tr>
+<tr><td>滑輪組</td><td>省力，繩子段數越多越省</td><td>施力＝物重÷繩子段數；拉繩距離＝段數×物體上升高度</td><td>起重機、工地吊掛</td></tr>
+<tr><td>功的原理</td><td>任何機械都不省功：施力作的功＝抗力作的功（忽略摩擦時）；省力必費距離</td><td>W 施＝W 抗</td><td>所有簡單機械的共同原則</td></tr>
+</table>
+<figure>
+<svg viewBox="0 0 660 300" role="img" aria-label="簡單機械示意圖：定滑輪不省力、動滑輪省一半力、斜面省力費距離">
+<defs><marker id="ar4" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f6f6a"/></marker></defs>
+<rect x="40" y="22" width="170" height="8" fill="var(--ink)"/>
+<circle cx="125" cy="52" r="19" fill="var(--surface2)" stroke="var(--ink)" stroke-width="2"/>
+<line x1="106" y1="46" x2="106" y2="140" stroke="var(--ink)" stroke-width="2"/>
+<line x1="144" y1="46" x2="144" y2="120" stroke="var(--ink)" stroke-width="2"/>
+<rect x="90" y="140" width="32" height="28" fill="#b96a12" opacity="0.8"/>
+<line x1="144" y1="120" x2="144" y2="152" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar4)"/>
+<text x="160" y="140" font-size="13" fill="var(--ink)">F</text>
+<text x="125" y="200" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--ink)">定滑輪</text>
+<text x="125" y="222" font-size="12" text-anchor="middle" fill="var(--ink-soft)">F＝W，不省力</text>
+<text x="125" y="242" font-size="12" text-anchor="middle" fill="var(--ink-soft)">只改變施力方向</text>
+<rect x="250" y="22" width="180" height="8" fill="var(--ink)"/>
+<line x1="278" y1="30" x2="292" y2="112" stroke="var(--ink)" stroke-width="2"/>
+<line x1="330" y1="112" x2="392" y2="52" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="311" cy="128" r="17" fill="var(--surface2)" stroke="var(--ink)" stroke-width="2"/>
+<line x1="311" y1="145" x2="311" y2="158" stroke="var(--ink)" stroke-width="2"/>
+<rect x="295" y="158" width="32" height="28" fill="#b96a12" opacity="0.8"/>
+<line x1="392" y1="52" x2="404" y2="34" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar4)"/>
+<text x="398" y="66" font-size="13" fill="var(--ink)">F</text>
+<text x="340" y="200" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--ink)">動滑輪</text>
+<text x="340" y="222" font-size="12" text-anchor="middle" fill="var(--ink-soft)">F＝W/2，省一半力</text>
+<text x="340" y="242" font-size="12" text-anchor="middle" fill="var(--ink-soft)">拉繩距離是上升高度的 2 倍</text>
+<polygon points="478,190 632,190 632,96" fill="var(--surface2)" stroke="var(--ink)" stroke-width="2"/>
+<rect x="540" y="128" width="30" height="24" fill="#b96a12" opacity="0.8" transform="rotate(-31 555 140)"/>
+<text x="630" y="150" font-size="13" fill="var(--ink)">高 h</text>
+<text x="555" y="212" font-size="13" text-anchor="middle" fill="var(--ink)">斜面長 L</text>
+<text x="555" y="240" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--ink)">斜面</text>
+<text x="555" y="262" font-size="12" text-anchor="middle" fill="var(--ink-soft)">F × L ＝ W × h，越長越省力</text>
+</svg>
+<figcaption>圖 4 簡單機械：三種機械同一條規則——省力必費距離，誰也不省功。</figcaption>
+</figure>
+<table>
+<tr><th>對比</th><th>施力</th><th>代價（距離）</th></tr>
+<tr><td>定滑輪</td><td>F＝W，不省力，只改變方向</td><td>拉繩距離＝物體上升高度</td></tr>
+<tr><td>動滑輪</td><td>F＝W/2，省一半力</td><td>拉繩距離＝2 倍上升高度</td></tr>
+<tr><td>斜面</td><td>F＝W×h/L，斜面越長越省力</td><td>要沿斜面走完斜面長 L</td></tr>
+</table>
+<div class="mnemonic">「定滑輪換方向，動滑輪省一半，代價都是多拉繩」——功的原理：天下沒有白省的力。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>定滑輪不省力、動滑輪省一半力。</li>
+<li>省力一定費距離——機械不省功。</li>
+<li>斜面越緩越省力，但走的路越長。</li>
+<li>輪軸：施力在輪（大半徑）省力，在軸上費力。</li>
+<li>動滑輪拉繩長度是物體上升高度的 2 倍。</li>
+</ol>
+</div>
+</section>
+
+<section id="chunkE">
+<div class="chunkhead"><div class="chunkletter">E</div><div><h2>水是大雕刻家</h2><div class="img-note">記憶圖像：一位雕刻家拿著水做的刻刀——高處刻下去（侵蝕）、低處補起來（沉積），作品永遠不會完成。｜Ch5 5-1～5-2 水循環、地貌作用｜本站是第 5 站</div></div></div>
+
+<h3>5-1 地球上的水</h3>
+<div class="theme">一句話主題：<b>地球的水 97% 是海水、3% 是淡水；水在海洋、陸地、大氣間不斷循環，總量不變。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>水的分布</td><td>海水約占 <b>97%</b>、淡水約占 <b>3%</b>；淡水中大部分是冰川（約占淡水的 2/3）與地下水，河川、湖泊等地面水不到淡水的 1%</td></tr>
+<tr><td>海水鹽度</td><td>海水平均鹽度約 <b>3.5%</b>（35‰）；鹽分主要來自陸地岩石風化後由河川帶入海洋</td></tr>
+<tr><td>水循環</td><td><b>蒸發</b>（海洋、湖泊）→ <b>蒸散</b>（植物）→ <b>凝結</b>（成雲）→ <b>降水</b>（雨、雪）→ <b>逕流</b>（地表水流回海洋）／<b>滲透</b>（成為地下水）；水在海洋、陸地、大氣間循環，總量不變</td></tr>
+<tr><td>地下水</td><td>雨水滲入地下，儲存在岩石孔隙或裂隙中；地下水面以上的地層稱不飽和帶，以下稱飽和帶</td></tr>
+<tr><td>人類用水</td><td>淡水資源有限且分布不均；臺灣降雨豐沛但留不住（河短流急），需水庫調節；節約用水、防止汙染是永續關鍵</td></tr>
+<tr><td>注意</td><td>海水運動（波浪、海流、潮汐）是九下內容，<b>本次不考</b></td></tr>
+</table>
+<figure>
+<svg viewBox="0 0 640 330" role="img" aria-label="水循環示意圖：太陽能驅動蒸發、凝結、降水、逕流與滲透">
+<defs><marker id="ar6" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f6f6a"/></marker></defs>
+<circle cx="82" cy="52" r="24" fill="#b96a12" opacity="0.85"/>
+<text x="82" y="95" font-size="13" text-anchor="middle" fill="var(--ink)">太陽能（動力）</text>
+<ellipse cx="330" cy="66" rx="72" ry="22" fill="var(--surface2)" stroke="var(--ink)"/>
+<text x="330" y="40" font-size="13" text-anchor="middle" fill="var(--ink)">凝結成雲</text>
+<polygon points="60,268 210,150 330,268" fill="var(--surface2)" stroke="var(--ink)" stroke-width="2"/>
+<line x1="285" y1="98" x2="262" y2="168" stroke="#24507c" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#ar6)"/>
+<line x1="330" y1="98" x2="318" y2="168" stroke="#24507c" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#ar6)"/>
+<text x="238" y="140" font-size="13" fill="var(--ink)">降水</text>
+<path d="M210,150 L368,268" stroke="var(--ink)" stroke-width="2" fill="none"/>
+<line x1="255" y1="196" x2="330" y2="252" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar6)"/>
+<text x="252" y="182" font-size="13" fill="var(--ink)">逕流</text>
+<rect x="368" y="252" width="232" height="46" fill="#24507c" opacity="0.35"/>
+<text x="560" y="244" font-size="13" fill="var(--ink)">海洋</text>
+<line x1="500" y1="246" x2="500" y2="130" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar6)"/>
+<text x="512" y="185" font-size="13" fill="var(--ink)">蒸發</text>
+<line x1="60" y1="268" x2="600" y2="268" stroke="var(--ink)" stroke-width="2"/>
+<line x1="420" y1="272" x2="420" y2="312" stroke="#24507c" stroke-width="2.5" stroke-dasharray="4 4" marker-end="url(#ar6)"/>
+<text x="432" y="308" font-size="13" fill="var(--ink)">滲透 → 地下水</text>
+<text x="120" y="300" font-size="13" fill="var(--ink-soft)">陸地</text>
+</svg>
+<figcaption>圖 5 水循環：太陽能是引擎——蒸發往上、凝結成雲、降水落下、逕流回海、滲透入地。植物的蒸散與蒸發一起把水送上天。</figcaption>
+</figure>
+<table>
+<tr><th>對比</th><th>前者</th><th>後者</th></tr>
+<tr><td>海水 vs 淡水</td><td>海水：約占 97%，平均鹽度約 3.5%</td><td>淡水：約占 3%，大半是冰川與地下水</td></tr>
+<tr><td>蒸發 vs 蒸散</td><td>蒸發：水從海洋、湖泊表面變成水蒸氣上升</td><td>蒸散：水從植物體內經氣孔散出，一起把水送上天</td></tr>
+</table>
+<div class="mnemonic">「蒸凝降逕滲」五字走一圈：蒸發、凝結、降水、逕流、滲透，總量永遠不變。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>海水 97%、淡水 3%——不要倒過來。</li>
+<li>淡水大半是冰川與地下水，地面水極少。</li>
+<li>水循環順序：蒸發→凝結→降水→逕流／滲透。</li>
+<li>海水平均鹽度約 3.5%。</li>
+<li>地下水是雨水滲透儲存而成。</li>
+</ol>
+</div>
+
+<h3>5-2 地貌的改變與平衡</h3>
+<div class="theme">一句話主題：<b>地貌是風化、侵蝕、搬運、沉積四個作用接力造成的：高處侵蝕、低處沉積，最後趨向平衡。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>風化</td><td>岩石在原地崩解、分解的過程；物理風化（溫差、日曬雨淋、植物根劈、冰劈）、化學風化（水、氧氣、二氧化碳溶解礦物）、生物風化（植物根、動物挖掘）</td></tr>
+<tr><td>侵蝕</td><td>風化後的碎屑被流水、風、海浪、冰川等帶走；侵蝕作用強的地方，地形被切穿、降低</td></tr>
+<tr><td>搬運</td><td>碎屑隨水流、風等移動；流速快搬得多、搬得遠，流速慢搬得少</td></tr>
+<tr><td>沉積</td><td>流速減慢、碎屑堆積下來；沉積作用強的地方，地形被填高</td></tr>
+<tr><td>作用順序</td><td><b>風化 → 侵蝕 → 搬運 → 沉積</b>（四個作用常同時進行，但順序固定）</td></tr>
+<tr><td>侵蝕地形</td><td><b>V 形谷</b>（河水下切）、<b>壺穴</b>（河床漩渦磨蝕）、<b>海蝕崖、海蝕洞、海蝕平台</b>（海浪侵蝕）、曲流、峽谷</td></tr>
+<tr><td>沉積地形</td><td><b>沖積扇</b>（河出山口，臺灣最大：濁水溪沖積扇）、<b>三角洲</b>（河口）、<b>沙洲、潟湖</b>（沿岸流堆積，例：七股潟湖）、沙灘、沖積平原</td></tr>
+<tr><td>地貌平衡</td><td>侵蝕與沉積長期作用使地表高低差縮小、趨向平衡；但板塊運動（造山、抬升）會不斷製造新的高差，所以地貌永遠在變</td></tr>
+</table>
+<div class="mnemonic">「風侵搬沉」接力賽：先在原地碎（風化）、被帶走（侵蝕）、路上跑（搬運）、跑不動就躺下（沉積）。</div>
+<table>
+<tr><th>對比</th><th>侵蝕地形（刻下去）</th><th>沉積地形（堆起來）</th></tr>
+<tr><td>河流</td><td>V 形谷、壺穴、峽谷、曲流</td><td>沖積扇、三角洲、沖積平原</td></tr>
+<tr><td>海岸</td><td>海蝕崖、海蝕洞、海蝕平台</td><td>沙洲、潟湖、沙灘</td></tr>
+<tr><td>位置</td><td>高處、上游、流速快</td><td>低處、下游、流速慢</td></tr>
+</table>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>順序：風化→侵蝕→搬運→沉積。</li>
+<li>侵蝕地形：V 形谷、壺穴、海蝕崖；沉積地形：沖積扇、三角洲、沙洲、潟湖。</li>
+<li>濁水溪沖積扇是臺灣最大沖積扇。</li>
+<li>風化是「原地」崩解，侵蝕是「帶走」。</li>
+<li>高處侵蝕、低處沉積，地貌趨向平衡。</li>
+</ol>
+</div>
+</section>
+
+<section id="chunkF">
+<div class="chunkhead"><div class="chunkletter">F</div><div><h2>岩石三兄弟</h2><div class="img-note">記憶圖像：三兄弟輪流變身——老大火成岩從岩漿出生，老二沉積岩一層層堆出來，老三變質岩被高溫高壓「改造」過，誰都能變成誰。｜Ch5 5-3 三大岩類與岩石循環｜本站是第 5 站（與 E 同站）</div></div></div>
+
+<h3>5-3 地球上的岩石</h3>
+<div class="theme">一句話主題：<b>岩石分三類：岩漿冷卻成火成岩、碎屑堆積膠結成沉積岩、高溫高壓改造出變質岩，三者可以互相轉換（岩石循環）。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th>岩類</th><th>成因</th><th>判讀特徵</th><th>臺灣常見例子</th></tr>
+<tr><td><b>火成岩</b></td><td>岩漿或熔岩冷卻凝固</td><td>無層理、無化石；結晶顆粒：深成（地下慢冷）顆粒粗、淺成／火山（地表快冷）顆粒細</td><td>花岡岩（金門，深成、粗粒、淺色）、玄武岩（澎湖，火山、細粒、深色）、安山岩（大屯山、綠島）</td></tr>
+<tr><td><b>沉積岩</b></td><td>碎屑沉積後壓密、膠結而成</td><td><b>有層理</b>、常含<b>化石</b>、顆粒由碎屑組成</td><td>砂岩、頁岩（西部麓山帶）、石灰岩（墾丁珊瑚礁石灰岩）、礫岩</td></tr>
+<tr><td><b>變質岩</b></td><td>原有岩石受高溫、高壓作用，礦物重新排列</td><td>常有<b>片理</b>（片狀構造）、質地堅硬</td><td>大理岩（太魯閣，原為石灰岩）、片岩、板岩（中央山脈）</td></tr>
+<tr><td><b>岩石循環</b></td><td colspan="3">岩漿冷卻→火成岩；火成岩／變質岩／沉積岩經風化侵蝕→沉積物→沉積岩；各類岩石經變質作用→變質岩；各類岩石熔融→岩漿；循環無起點終點。判讀題常問「某岩石下一步變成什麼」或「某過程產生哪類岩石」</td></tr>
+</table>
+<p class="small">補充：108 課綱已刪除「各種礦物的特性及岩石的用途」（移高中），故本節不寫個別礦物性質與岩石用途；只考三大岩類的成因與判讀特徵。</p>
+<figure>
+<svg viewBox="0 0 640 340" role="img" aria-label="岩石循環示意圖：岩漿、火成岩、沉積物、沉積岩、變質岩循環轉換，沒有起點終點">
+<defs><marker id="ar7" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f6f6a"/></marker></defs>
+<rect x="265" y="28" width="110" height="42" rx="8" fill="#b96a12" opacity="0.8"/>
+<text x="320" y="55" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">岩漿</text>
+<rect x="462" y="112" width="110" height="42" rx="8" fill="var(--surface2)" stroke="var(--ink)"/>
+<text x="517" y="139" font-size="16" font-weight="bold" text-anchor="middle" fill="var(--ink)">火成岩</text>
+<rect x="418" y="238" width="110" height="42" rx="8" fill="var(--surface2)" stroke="var(--ink)"/>
+<text x="473" y="265" font-size="16" font-weight="bold" text-anchor="middle" fill="var(--ink)">沉積物</text>
+<rect x="212" y="272" width="110" height="42" rx="8" fill="var(--surface2)" stroke="var(--ink)"/>
+<text x="267" y="299" font-size="16" font-weight="bold" text-anchor="middle" fill="var(--ink)">沉積岩</text>
+<rect x="66" y="140" width="110" height="42" rx="8" fill="var(--surface2)" stroke="var(--ink)"/>
+<text x="121" y="167" font-size="16" font-weight="bold" text-anchor="middle" fill="var(--ink)">變質岩</text>
+<line x1="378" y1="58" x2="458" y2="106" stroke="#0f6f6a" stroke-width="2.5" marker-end="url(#ar7)"/>
+<text x="428" y="66" font-size="13" fill="var(--ink)">冷卻凝固</text>
+<line x1="522" y1="158" x2="498" y2="232" stroke="#0f6f6a" stroke-width="2.5" marker-end="url(#ar7)"/>
+<text x="528" y="200" font-size="13" fill="var(--ink)">風化、侵蝕、搬運</text>
+<line x1="414" y1="266" x2="328" y2="284" stroke="#0f6f6a" stroke-width="2.5" marker-end="url(#ar7)"/>
+<text x="330" y="252" font-size="13" fill="var(--ink)">沉積、壓密膠結</text>
+<line x1="222" y1="272" x2="140" y2="188" stroke="#0f6f6a" stroke-width="2.5" marker-end="url(#ar7)"/>
+<text x="128" y="248" font-size="13" fill="var(--ink)">高溫高壓</text>
+<line x1="152" y1="132" x2="258" y2="66" stroke="#0f6f6a" stroke-width="2.5" marker-end="url(#ar7)"/>
+<text x="168" y="86" font-size="13" fill="var(--ink)">熔融</text>
+<text x="320" y="180" font-size="14" text-anchor="middle" fill="var(--ink-soft)">循環沒有起點、沒有終點</text>
+<text x="320" y="202" font-size="12" text-anchor="middle" fill="var(--ink-soft)">任一類岩石熔融都回到岩漿</text>
+</svg>
+<figcaption>圖 6 岩石循環：從任何一格出發都走得回來——這張圖沒有第一格。</figcaption>
+</figure>
+<div class="mnemonic">「冷卻變火成、碎屑變沉積、高壓變變質、熔掉回岩漿」——三兄弟輪流變身，順序怎麼切入都對。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>三大岩類成因：火成岩＝岩漿冷卻、沉積岩＝沉積膠結、變質岩＝高溫高壓。</li>
+<li>沉積岩的兩個標誌：層理、化石。</li>
+<li>花岡岩粗粒（慢冷）、玄武岩細粒（快冷）。</li>
+<li>大理岩是石灰岩變質而來（太魯閣）。</li>
+<li>岩石循環：熔融→岩漿→冷卻→火成岩→風化→沉積岩→變質→變質岩→熔融。</li>
+</ol>
+</div>
+</section>
+
+<section id="chunkG">
+<div class="chunkhead"><div class="chunkletter">G</div><div><h2>地球寫日記</h2><div class="img-note">記憶圖像：地球把每天發生的事寫進岩層日記——越下面的頁越舊（下老上新），化石是頁籤，地震是板塊擠壓時日記本被用力合上的聲音。｜Ch6 板塊運動、岩層與地球歷史、臺灣地震｜本站是第 6 站</div></div></div>
+
+<h3>6-1 地球構造與板塊運動</h3>
+<div class="theme">一句話主題：<b>地球分三層（地殼、地函、地核），最外層堅硬的岩石圈裂成板塊，在軟流圈上隨熱對流緩慢移動——臺灣就在兩個板塊的聚合邊界上。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>地球構造</td><td><b>地殼</b>（最外層、最薄：大陸地殼主成分花岡岩、較厚；海洋地殼主成分玄武岩、較薄）→ <b>地函</b>（中間、體積最大，主成分橄欖岩）→ <b>地核</b>（最內層：外核液態、內核固態，主成分鐵、鎳）</td></tr>
+<tr><td>岩石圈 vs 軟流圈</td><td><b>岩石圈</b>＝地殼＋上部地函的一小部分，堅硬，厚約 <b>100 km</b>；<b>軟流圈</b>在岩石圈之下，地函上部物質呈半熔融、可緩慢流動的狀態</td></tr>
+<tr><td>板塊</td><td>岩石圈分裂成大小不等的板塊（七大板塊＋小板塊，太平洋板塊面積最大）；板塊每年以<b>數公分</b>的速度緩慢移動；板塊界線 ≠ 海岸線</td></tr>
+<tr><td>板塊運動的動力</td><td>地函的<b>熱對流</b>帶動板塊移動（熱處上升、冷處下降）</td></tr>
+<tr><td>學說發展（補充）</td><td>韋格納 1912 年提出<b>大陸漂移學說</b>（盤古大陸分裂；無法解釋動力來源）→ 1960 年代<b>海底擴張學說</b>（中洋脊湧出新海洋地殼）→ 1967–1968 年<b>板塊構造學說</b>（整合前兩者）</td></tr>
+<tr><td>臺灣的板塊位置</td><td>臺灣位於<b>歐亞板塊與菲律賓海板塊的聚合性邊界</b>上，兩板塊以<b>花東縱谷</b>為界；菲律賓海板塊向西北移動、撞擊歐亞板塊，造山運動隆升出中央山脈</td></tr>
+</table>
+<h3>板塊邊界三類型（簡表）</h3>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<div class="notice"><strong>範圍註記：</strong>板塊邊界三大類型在 108 課綱已移高中、課本保留基本介紹；段考以基本對應為主，細部對照不列主範圍。</div>
+<figure>
+<svg viewBox="0 0 660 268" role="img" aria-label="板塊邊界三型示意圖：張裂形成中洋脊、聚合形成海溝與火山弧、錯動平行滑動只有地震">
+<defs><marker id="ar8" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f6f6a"/></marker></defs>
+<rect x="18" y="112" width="76" height="38" fill="var(--surface2)" stroke="var(--ink)"/>
+<rect x="126" y="112" width="76" height="38" fill="var(--surface2)" stroke="var(--ink)"/>
+<polygon points="98,150 110,118 122,150" fill="#b96a12" opacity="0.8"/>
+<line x1="94" y1="92" x2="58" y2="92" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar8)"/>
+<line x1="126" y1="92" x2="162" y2="92" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar8)"/>
+<text x="110" y="182" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--ink)">張裂性邊界</text>
+<text x="110" y="204" font-size="12" text-anchor="middle" fill="var(--ink-soft)">互相分離 → 中洋脊、裂谷</text>
+<text x="110" y="224" font-size="12" text-anchor="middle" fill="var(--ink-soft)">例：大西洋中洋脊</text>
+<text x="110" y="242" font-size="12" text-anchor="middle" fill="var(--ink-soft)">東非大裂谷</text>
+<rect x="238" y="100" width="86" height="36" fill="var(--surface2)" stroke="var(--ink)"/>
+<polygon points="330,100 446,100 446,124 372,124 330,150" fill="var(--surface2)" stroke="var(--ink)"/>
+<polygon points="352,150 372,124 400,168 380,168" fill="#b96a12" opacity="0.55"/>
+<polygon points="392,100 408,72 424,100" fill="#b96a12" opacity="0.85"/>
+<line x1="238" y1="84" x2="282" y2="84" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar8)" transform="translate(14,0)"/>
+<line x1="446" y1="84" x2="402" y2="84" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar8)" transform="translate(-14,0)"/>
+<text x="342" y="196" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--ink)">聚合性邊界</text>
+<text x="342" y="218" font-size="12" text-anchor="middle" fill="var(--ink-soft)">互相擠壓 → 海溝、火山弧、褶皺山脈</text>
+<text x="342" y="238" font-size="12" text-anchor="middle" fill="var(--ink-soft)">例：臺灣、喜馬拉雅山、安地斯山脈</text>
+<text x="352" y="162" font-size="11" fill="var(--ink)">海溝</text>
+<text x="392" y="64" font-size="11" fill="var(--ink)">火山弧</text>
+<rect x="470" y="96" width="80" height="34" fill="var(--surface2)" stroke="var(--ink)"/>
+<rect x="556" y="136" width="80" height="34" fill="var(--surface2)" stroke="var(--ink)"/>
+<line x1="553" y1="92" x2="553" y2="174" stroke="var(--ink)" stroke-width="2" stroke-dasharray="5 4"/>
+<line x1="486" y1="80" x2="530" y2="80" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar8)"/>
+<line x1="620" y1="186" x2="576" y2="186" stroke="#0f6f6a" stroke-width="3" marker-end="url(#ar8)"/>
+<text x="553" y="212" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--ink)">錯動性邊界</text>
+<text x="553" y="234" font-size="12" text-anchor="middle" fill="var(--ink-soft)">平行滑動 → 只有地震、無火山</text>
+<text x="553" y="254" font-size="12" text-anchor="middle" fill="var(--ink-soft)">例：美國聖安地列斯斷層</text>
+</svg>
+<figcaption>圖 7 板塊邊界三型：分開是張裂（長出中洋脊）、撞上是聚合（海溝＋火山弧）、擦身而過是錯動（只有地震）。</figcaption>
+</figure>
+<table>
+<tr><th>邊界類型</th><th>相對運動</th><th>代表地形</th><th>實例</th></tr>
+<tr><td><b>張裂性</b></td><td>兩板塊互相分離（張力）</td><td>中洋脊、裂谷</td><td>大西洋中洋脊、東非大裂谷</td></tr>
+<tr><td><b>聚合性</b></td><td>兩板塊互相擠壓碰撞（壓力）</td><td>海溝、褶皺山脈</td><td>喜馬拉雅山、臺灣、安地斯山脈</td></tr>
+<tr><td><b>錯動性</b></td><td>兩板塊水平錯開（剪力）</td><td>轉形斷層</td><td>美國聖安地列斯斷層</td></tr>
+</table>
+<div class="mnemonic">「殼函核往裡走，岩石圈百公里」——地殼最薄、地函最大、地核鐵鎳；岩石圈＝地殼＋上部地函，約 100 km。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>地殼≠岩石圈：岩石圈＝地殼＋上部地函，厚約 100 km。</li>
+<li>板塊每年移動數公分，動力是地函熱對流。</li>
+<li>三邊界對應：張裂—中洋脊／裂谷、聚合—海溝／山脈、錯動—斷層。</li>
+<li>臺灣在歐亞板塊＋菲律賓海板塊的聚合邊界，花東縱谷為界。</li>
+<li>大陸地殼（花岡岩）厚、海洋地殼（玄武岩）薄。</li>
+</ol>
+</div>
+
+<h3>6-2 岩層記錄的地球歷史</h3>
+<div class="theme">一句話主題：<b>岩層是地球的歷史書：下老上新是基本規則，化石是對照年代的書籤，斷層與褶皺是後來發生的事件。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">位置</span><span class="tag">口訣</span><span class="tag">故事</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>疊置定律（層序律）</td><td>未受擾動的沉積岩層，<b>下面的岩層比上面的老</b>（下老上新）</td></tr>
+<tr><td>水平沉積原則</td><td>沉積岩形成時一定是<b>水平沉積</b>的；若岩層傾斜或彎曲，表示沉積後受力變形</td></tr>
+<tr><td>截切定律</td><td>斷層、褶皺、岩脈等會截切岩層；被截切的岩層年代較早，<b>截切事件發生在岩層形成之後</b>（斷層比它切過的岩層年輕）</td></tr>
+<tr><td>化石定年</td><td>化石是古代生物的遺骸或遺跡；用化石可以對比不同地區岩層的相對年代；同一種化石出現在不同地點的岩層，表示兩地岩層年代相近</td></tr>
+<tr><td>標準化石</td><td>存在時間短、分布廣的化石最適合定年：三葉蟲（古生代）、菊石與恐龍（中生代）；新生代以哺乳類為代表</td></tr>
+<tr><td>地質年代</td><td>顯生宙分三代：<b>古生代 → 中生代 → 新生代</b>（由老到新）；臺灣島約在五、六百萬年前由造山運動（蓬萊造山運動）形成，地層相對年輕</td></tr>
+<tr><td>地層剖面圖判讀</td><td>綜合運用疊置、水平、截切三原則，排出岩層與事件（沉積→褶皺→斷層→侵蝕）的先後順序；不整合面表示中間有侵蝕或沉積中斷</td></tr>
+</table>
+<table>
+<tr><th>剖面位置</th><th>年紀</th><th>判讀原則</th></tr>
+<tr><td>最上層</td><td>最年輕</td><td rowspan="3">疊置定律：未受擾動時<b>下老上新</b>；斷層、褶皺、岩脈比它切過／彎過的岩層年輕（截切定律）</td></tr>
+<tr><td>中間層</td><td>居中</td></tr>
+<tr><td>最下層</td><td>最老</td></tr>
+</table>
+<div class="mnemonic">「日記越下越舊，三葉蟲古生、菊石中生」——剖面圖先排下老上新，再把斷層褶皺排到最後。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>下老上新（疊置定律）是剖面圖判讀的第一原則。</li>
+<li>斷層、褶皺比它切過／彎過的岩層年輕（截切定律）。</li>
+<li>化石對比：同種化石＝年代相近。</li>
+<li>三葉蟲—古生代、菊石—中生代。</li>
+<li>臺灣島約五、六百萬年前形成，地層年輕。</li>
+</ol>
+</div>
+
+<h3>6-3 臺灣的板塊和地震</h3>
+<div class="theme">一句話主題：<b>臺灣在聚合邊界上，板塊擠壓使岩層斷裂錯動就是地震；規模量能量、震度量搖晃，防災要記住趴下、掩護、穩住。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">口訣</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">項目</th><th>內容</th></tr>
+<tr><td>臺灣為什麼多地震</td><td>臺灣位於歐亞板塊與菲律賓海板塊的聚合邊界，板塊持續擠壓，岩層受力超過限度就斷裂錯動、釋放能量</td></tr>
+<tr><td>斷層與褶皺</td><td>岩層受力彎曲不斷裂稱<b>褶皺</b>；受力破裂、兩側相對移動稱<b>斷層</b>；臺灣著名活動斷層：車籠埔斷層（1999 年 921 大地震，逆斷層）、花東縱谷斷層</td></tr>
+<tr><td>震源與震央</td><td><b>震源</b>：地下實際發生錯動的位置；<b>震央</b>：震源正上方的地表位置；震源深度越淺，地表搖晃通常越強烈</td></tr>
+<tr><td>地震波</td><td>P 波（縱波）速度快、先到，S 波（橫波）速度慢、後到；利用兩波到達的時間差可推算震央距離；P 波可在固、液、氣體中傳播；S 波只能在固體中傳播</td></tr>
+<tr><td>規模 vs 震度</td><td><b>規模</b>：地震釋放的能量大小，一個地震只有一個規模值；規模每差 1 級，能量差約 <b>32 倍</b>；<b>震度</b>：各地實際感受到的搖晃程度，隨距離、地質而異，一個地震各地震度不同</td></tr>
+<tr><td>臺灣地震帶</td><td>地震多集中在東部（花蓮、臺東）、西部麓山帶與東北部（與琉球海溝隱沒相關）；花東縱谷一帶最頻繁</td></tr>
+<tr><td>防災</td><td>地震時：<b>趴下、掩護、穩住</b>（躲在堅固桌下、保護頭頸）；平時：固定家具、準備緊急避難包、知道避難路線；地震後注意餘震與海嘯警報（海底地震可能引發海嘯）</td></tr>
+</table>
+<table>
+<tr><th>對比</th><th>規模</th><th>震度</th></tr>
+<tr><td>代表什麼</td><td>釋放的能量大小</td><td>各地實際搖晃程度</td></tr>
+<tr><td>一個地震有幾個</td><td>只有一個值</td><td>各地不同</td></tr>
+<tr><td>影響因素</td><td>斷層錯動釋放的總能量（差 1 級差約 32 倍）</td><td>與震央距離、地質條件</td></tr>
+</table>
+<div class="mnemonic">「規模一個量能量，震度各地量搖晃；地震來了趴掩穩」。</div>
+<div class="key5"><b class="t">最常考的 5 個點：</b>
+<ol>
+<li>規模（能量，一個值）vs 震度（搖晃，各地不同）。</li>
+<li>震源在地下、震央在地表正上方。</li>
+<li>P 波快、S 波慢；時間差可算震央距離。</li>
+<li>臺灣多地震是因為在聚合邊界上。</li>
+<li>921 大地震：車籠埔斷層，逆斷層。</li>
+</ol>
+</div>
+</section>
+
+<section id="chunkH">
+<div class="chunkhead"><div class="chunkletter">H</div><div><h2>備份組塊：L1–L2 工具包 ＋ Ch4 警戒掃描</h2><div class="img-note">記憶圖像：腰上的工具腰帶——平時不用背，解 Ch3 綜合題卡住時伸手就拿得到；Ch4 是「下一站預告」，先掃一眼就好。｜不做主範圍，但要會｜本站是備份站（不在六站路線上）</div></div></div>
+
+<h3>L1–L2 快速掃描（Ch1 直線運動 ＋ 2-1 慣性）</h3>
+<div class="theme">一句話主題：<b>圖形判讀是工具：x-t 圖斜率＝速度、v-t 圖斜率＝加速度、面積＝位移；慣性是「不想改變」的性子，質量越大慣性越大。</b></div>
+<p class="tags"><span class="tag">組塊</span><span class="tag">對比</span><span class="tag">故事</span></p>
+<p>目的：應付可能的回鍋題（約 10–20%），以及解 Ch3 跨章綜合題所需的工具概念。只掃概念與圖形判讀，不背公式推導（運動方程式推導已移高中，本頁不寫）。</p>
+<table>
+<tr><th style="width:22%">節</th><th>一句話</th></tr>
+<tr><td>1-1 時間的測量</td><td>秒是時間的基本單位；古代用日晷、水鐘、沙漏，現代用石英鐘、原子鐘計時</td></tr>
+<tr><td>1-2 位移與路徑長</td><td>位移＝起點到終點的直線距離＋方向（向量）；路徑長＝實際走過的長度（純量）；路徑長恆 ≥ 位移大小</td></tr>
+<tr><td>1-3 速率與速度</td><td>平均速率＝路徑長 ÷ 時間（純量）；平均速度＝位移 ÷ 時間（向量）；瞬時速度是某一瞬間的速度</td></tr>
+<tr><td>1-4 加速度</td><td>加速度 a＝速度變化 ÷ 時間（a＝Δv/Δt）；等加速度運動的 v-t 圖是斜直線；不涉及運動方程式推導（移高中）</td></tr>
+<tr><td>2-1 慣性</td><td>物體不受外力（或合力為零）時，靜者恆靜、動者恆作等速度直線運動；慣性是保持原運動狀態的特性，<b>質量越大，慣性越大</b>。例子：急煞車身體前傾、快速抽桌布杯子留原地、拍打衣服除灰塵</td></tr>
+</table>
+<figure>
+<svg viewBox="0 0 560 300" role="img" aria-label="v-t 圖示意：斜率是加速度，線下面積是位移，三角形面積為二分之一乘底乘高">
+<defs><marker id="ar5" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--ink)"/></marker></defs>
+<polygon points="80,240 420,240 420,60" fill="#0f6f6a" opacity="0.16"/>
+<line x1="80" y1="240" x2="505" y2="240" stroke="var(--ink)" stroke-width="2" marker-end="url(#ar5)"/>
+<line x1="80" y1="240" x2="80" y2="35" stroke="var(--ink)" stroke-width="2" marker-end="url(#ar5)"/>
+<line x1="80" y1="240" x2="420" y2="60" stroke="#0f6f6a" stroke-width="3"/>
+<line x1="420" y1="60" x2="420" y2="240" stroke="var(--ink-soft)" stroke-dasharray="4 4"/>
+<line x1="80" y1="60" x2="420" y2="60" stroke="var(--ink-soft)" stroke-dasharray="4 4"/>
+<text x="488" y="262" font-size="14" fill="var(--ink)">t（s）</text>
+<text x="30" y="48" font-size="14" fill="var(--ink)">v（m/s）</text>
+<text x="412" y="262" font-size="14" fill="var(--ink)">4</text>
+<text x="58" y="66" font-size="14" fill="var(--ink)">8</text>
+<text x="150" y="118" font-size="15" fill="var(--ink)">斜率 ＝ 加速度 a ＝ 2 m/s²</text>
+<text x="196" y="222" font-size="15" fill="var(--ink)">面積 ＝ 位移 ＝ ½ × 4 × 8 ＝ 16 m</text>
+<text x="56" y="288" font-size="11" fill="var(--ink-soft)">水平線＝等速度；斜直線＝等加速度</text>
+</svg>
+<figcaption>圖 8 v-t 圖：斜率看加速度、面積看位移——例題 6 就是這張圖。</figcaption>
+</figure>
+
+<h3>Ch4 延伸警戒掃描（第三次段考範圍，二段只掃基本概念）</h3>
+<div class="notice"><strong>定位：</strong>三所實際公布範圍的學校二段都不含 Ch4；但縣級範本進度在二段前已教完 Ch4，若老師進度較快或自行命題納入，有可能入題。只掃以下基本概念＋歐姆定律簡單計算（約 30–40 分鐘）；串、並聯公式計算已移高中，本次不寫。</div>
+<table>
+<tr><th style="width:22%">節</th><th>重點</th></tr>
+<tr><td>4-1 靜電現象</td><td>摩擦起電：失去電子帶正電、得到電子帶負電；<b>同性相斥、異性相吸</b>；導體（金屬、石墨、人體）電荷易流動，絕緣體（塑膠、橡膠、玻璃）不易流動；閃電是大規模放電</td></tr>
+<tr><td>4-2 電流</td><td>電荷流動形成電流；金屬導線中實際流動的是電子；電流方向規定為<b>正電荷流動方向</b>，與電子流向相反；單位安培（A）；電流表需<b>串聯</b></td></tr>
+<tr><td>4-3 電壓</td><td>電壓是兩點間的電位差、推動電荷流動的原因；單位伏特（V）；電池提供電壓；電壓表需<b>並聯</b></td></tr>
+<tr><td>4-4 電阻與歐姆定律</td><td>電阻是導體阻礙電流的程度，單位歐姆（Ω）；越長越大、越粗越小；<b>V＝IR</b>（例：V＝6 V、R＝3 Ω → I＝V/R＝2 A）</td></tr>
+</table>
+</section>
+
+<section id="examples">
+<h2>6 道帶步驟例題</h2>
+<p class="tags"><span class="tag">故事</span><span class="tag">對比</span></p>
+<p>做法：先自己算，再對步驟。每題的「提醒」就是它在考的陷阱。</p>
+
+<div class="stepbox"><h3>例 1 功與功率</h3>
+<p>小明以 50 N 的水平推力，推動 20 kg 的箱子前進 4 m，共花了 8 s。求：(1) 推力作功多少焦耳？(2) 推力的功率多少瓦特？</p>
+<p>已知：F＝50 N（水平）、s＝4 m（沿推力方向）、t＝8 s<br>
+(1) 功：W＝Fs＝50 × 4＝<span class="ans">200 J</span><br>
+(2) 功率：P＝W/t＝200 ÷ 8＝<span class="ans">25 W</span></p>
+<p class="small">提醒：推力與位移同方向才能直接用 W＝Fs；若改成「提著箱子水平走 4 m」，手的施力向上、位移水平，作功＝0。</p>
+</div>
+
+<div class="stepbox"><h3>例 2 動能與位能</h3>
+<p>一顆 2 kg 的球從 5 m 高處靜止落下（g＝10 m/s²，忽略空氣阻力）。求：(1) 球在最高點的重力位能（以地面為零點）；(2) 落地前瞬間的動能；(3) 落地瞬間的速率。</p>
+<p>已知：m＝2 kg、h＝5 m、g＝10 m/s²、初速＝0<br>
+(1) 位能：Ep＝mgh＝2 × 10 × 5＝<span class="ans">100 J</span><br>
+(2) 動能：力學能守恆（忽略空氣阻力）：落地前 Ek＝起始 Ep＝<span class="ans">100 J</span><br>
+(3) 速率：Ek＝½mv² → 100＝½ × 2 × v² → v²＝100 → v＝<span class="ans">10 m/s</span></p>
+<p class="small">提醒：最高點動能＝0、位能最大；落地前動能最大。位能零點若改訂在 5 m 高處，答案的位能值會變，但「位能差 100 J」不變。</p>
+</div>
+
+<div class="stepbox"><h3>例 3 自由落體的能量轉換</h3>
+<p>質量 0.5 kg 的石頭從 20 m 高處自由落下（g＝10 m/s²，忽略空氣阻力）。求：(1) 落地瞬間的速率；(2) 石頭落到 10 m 高處時的動能。</p>
+<p>已知：m＝0.5 kg、h＝20 m、g＝10 m/s²<br>
+(1) 落地速率：總力學能＝mgh＝0.5 × 10 × 20＝100 J；落地時全為動能：½ × 0.5 × v²＝100 → v²＝400 → v＝<span class="ans">20 m/s</span><br>
+(2) 10 m 高處動能：此時位能 Ep＝mgh＝0.5 × 10 × 10＝50 J；Ek＝總力學能－Ep＝100－50＝<span class="ans">50 J</span></p>
+<p class="small">提醒：高度減半時，動能是總能量的一半（50 J），但速率不是減半：此時速率 v＝√(2×10×10)≈14.1 m/s。動能與速率平方成正比，不要用「高度減半→速率減半」。</p>
+</div>
+
+<div class="stepbox"><h3>例 4 槓桿力矩平衡</h3>
+<p>一根長 3 m、重量不計的均勻木棒，支點在距左端 1 m 處；左端掛一個 6 kgw 的重物，右端需掛多重的物體才能平衡？</p>
+<p>已知：左端：抗力 6 kgw、抗力臂 1 m；右端：力臂＝3－1＝2 m<br>
+平衡條件：施力 × 施力臂＝抗力 × 抗力臂 → W × 2＝6 × 1 → W＝<span class="ans">3 kgw</span></p>
+<p class="small">提醒：力臂短的一邊要用較大的力；支點靠近重物那一側，另一側就省力。力臂是支點到作用點的距離（力與槓桿垂直時）；若施力方向傾斜，力臂是支點到施力「線」的垂直距離，會變短。</p>
+</div>
+
+<div class="stepbox"><h3>例 5 牛頓第二定律 F＝ma</h3>
+<p>一輛質量 1200 kg 的汽車靜止在水平路面，受 6000 N 的水平合力推動。求：(1) 汽車的加速度；(2) 若合力改為 3000 N，加速度變為多少？</p>
+<p>已知：m＝1200 kg、F＝6000 N（合力）<br>
+(1) 加速度：a＝F/m＝6000 ÷ 1200＝<span class="ans">5 m/s²</span><br>
+(2) 合力減半：a＝3000 ÷ 1200＝<span class="ans">2.5 m/s²</span>（質量固定，加速度與合力成正比）</p>
+<p class="small">提醒：F 一定是合力：若同時有摩擦力 1000 N 向後，合力＝6000－1000＝5000 N，a＝5000 ÷ 1200 ≈ 4.2 m/s²。先算合力再代 F＝ma。</p>
+</div>
+
+<div class="stepbox"><h3>例 6 v-t 圖面積求位移</h3>
+<p>某物體的 v-t 圖：0～4 s 內速度由 0 均勻增加到 8 m/s（圖形為斜直線）。求：(1) 物體的加速度；(2) 4 s 內的位移。</p>
+<p>(1) 加速度＝v-t 圖的<b>斜率</b>＝(8－0) ÷ (4－0)＝<span class="ans">2 m/s²</span><br>
+(2) 位移＝v-t 圖線下<b>面積</b>＝三角形面積＝½ × 底 × 高＝½ × 4 × 8＝<span class="ans">16 m</span></p>
+<p class="small">提醒：斜率是加速度、面積是位移，不要搞反；斜直線＝等加速度運動；水平線＝等速度運動（加速度＝0）。圖見組塊 H。</p>
+</div>
+</section>
+
+<section id="traps">
+<h2>30 條易錯陷阱表</h2>
+<p class="tags"><span class="tag">對比</span><span class="tag">口訣</span></p>
+<p>左邊是段考最愛設的坑，右邊是正確觀念。考前一天把這張表遮住右邊自問自答一遍。</p>
+<table>
+<tr><th style="width:4%">#</th><th style="width:38%">陷阱</th><th>正確觀念</th></tr>
+<tr><td>1</td><td>力與位移不同方向也算作功</td><td>只有<b>沿力方向</b>的位移才作功；力與位移垂直時作功＝0（提重物水平走、向心力都不作功）</td></tr>
+<tr><td>2</td><td>速率變 2 倍，動能變 2 倍</td><td>動能與速率<b>平方</b>成正比：速率×2 → 動能×4；速率×3 → 動能×9</td></tr>
+<tr><td>3</td><td>位能是絕對值</td><td>重力位能的零點<b>可自訂</b>；位能是相對值，只有<b>位能差</b>有物理意義</td></tr>
+<tr><td>4</td><td>作用力與反作用力可以抵消</td><td>作用在<b>不同物體</b>，不能抵消；會抵消的是作用在同一物體的一對平衡力</td></tr>
+<tr><td>5</td><td>功和功率的單位搞混</td><td>功：焦耳（J）；功率：瓦特（W）；力：牛頓（N）；1 W＝1 J/s</td></tr>
+<tr><td>6</td><td>質量和重量搞混</td><td>質量不隨地點改變；重量＝mg，隨 g 改變（月球重量約為地球的 1/6）</td></tr>
+<tr><td>7</td><td>速率＝速度</td><td>速率是純量（只有大小）；速度是向量（大小＋方向）</td></tr>
+<tr><td>8</td><td>位移＝路徑長</td><td>位移是起點到終點的直線距離＋方向（向量）；路徑長是實際走過的長度（純量），恆 ≥ 位移大小</td></tr>
+<tr><td>9</td><td>v-t 圖斜率是速度</td><td>v-t 圖<b>斜率是加速度、面積是位移</b>；x-t 圖斜率才是速度</td></tr>
+<tr><td>10</td><td>力臂＝支點到施力點的距離</td><td>力臂是支點到施力<b>線</b>的垂直距離；施力傾斜時力臂變短，轉動效果變差</td></tr>
+<tr><td>11</td><td>定滑輪省力</td><td>定滑輪<b>不省力</b>、只改變方向；動滑輪才省一半力（但費兩倍距離）</td></tr>
+<tr><td>12</td><td>機械可以省功</td><td>任何機械都不省功：省力必費距離，施力作的功＝抗力作的功（忽略摩擦時）</td></tr>
+<tr><td>13</td><td>有摩擦時力學能也守恆</td><td>力學能守恆只在<b>只有重力／彈力作功、忽略摩擦與空氣阻力</b>時成立；有摩擦就轉成熱能</td></tr>
+<tr><td>14</td><td>等速率圓周運動是等速度運動</td><td>速率不變但<b>方向不斷改變</b>，速度一直在變；需要指向圓心的向心力</td></tr>
+<tr><td>15</td><td>萬有引力與距離成反比</td><td>是與距離的<b>平方</b>成反比：距離×2 → 引力×1/4</td></tr>
+<tr><td>16</td><td>風化＝侵蝕</td><td>風化是岩石在<b>原地</b>崩解；侵蝕是碎屑被<b>帶走</b>；順序：風化→侵蝕→搬運→沉積</td></tr>
+<tr><td>17</td><td>V 形谷是沉積地形</td><td>V 形谷、壺穴、海蝕崖是<b>侵蝕</b>地形；沖積扇、三角洲、沙洲、潟湖是<b>沉積</b>地形</td></tr>
+<tr><td>18</td><td>有層理就是火成岩</td><td><b>沉積岩</b>才有層理、常含化石；火成岩無層理、無化石；變質岩常有片理</td></tr>
+<tr><td>19</td><td>花岡岩是細粒、玄武岩是粗粒</td><td>相反：花岡岩地下慢冷、<b>粗粒</b>；玄武岩地表快冷、<b>細粒</b></td></tr>
+<tr><td>20</td><td>岩石循環有固定起點</td><td>岩石循環<b>沒有起點終點</b>；任一類岩石都可經風化、變質、熔融轉成另一類</td></tr>
+<tr><td>21</td><td>地殼＝岩石圈</td><td>岩石圈＝地殼＋<b>上部地函的一小部分</b>，厚約 100 km；地殼只是最外層</td></tr>
+<tr><td>22</td><td>板塊界線＝海岸線</td><td>板塊界線<b>不等於</b>海岸線；一個板塊常同時包含大陸與海洋（只有太平洋板塊全為海洋）</td></tr>
+<tr><td>23</td><td>規模＝震度</td><td><b>規模</b>是能量大小，一個地震一個值；<b>震度</b>是各地搖晃程度，一個地震各地震度不同</td></tr>
+<tr><td>24</td><td>震源在地表</td><td><b>震源在地下</b>、<b>震央在地表</b>（震源正上方）</td></tr>
+<tr><td>25</td><td>岩層上面比下面老</td><td>未受擾動時<b>下老上新</b>；斷層、褶皺比它切過／彎過的岩層年輕（截切定律）</td></tr>
+<tr><td>26</td><td>海水 3%、淡水 97%</td><td>相反：海水約 <b>97%</b>、淡水約 <b>3%</b>；淡水大半是冰川與地下水</td></tr>
+<tr><td>27</td><td>海水運動（波浪、海流、潮汐）是二段範圍</td><td>是<b>九下</b>內容，本次不考</td></tr>
+<tr><td>28</td><td>電流方向＝電子流動方向</td><td>電流方向是<b>正電荷</b>流動方向，與電子流向<b>相反</b></td></tr>
+<tr><td>29</td><td>電阻串並聯要算公式</td><td>108 課綱已移高中；本次 Ch4 警戒只考 V＝IR 簡單計算</td></tr>
+<tr><td>30</td><td>大陸漂移／板塊邊界細節是二段主範圍</td><td>108 課綱已移高中；課本保留基本介紹，段考以三邊界基本對應為主，細部對照不列主範圍</td></tr>
+</table>
+</section>
+
+<section id="experiments">
+<h2>實驗要點</h2>
+<p class="tags"><span class="tag">組塊</span><span class="tag">對比</span></p>
+<table>
+<tr><th style="width:22%">實驗</th><th>目的與操作</th><th>關鍵結論</th></tr>
+<tr><td>牛頓第二定律實驗</td><td>滑車＋砝碼拉動，控制變因：固定質量改變拉力，或固定拉力改變質量；用打點計時器或 v-t 圖測加速度</td><td>加速度與合力成正比、與質量成反比；軌道要水平、摩擦力要先平衡掉</td></tr>
+<tr><td>槓桿平衡實驗</td><td>槓桿兩側掛砝碼、量力臂，改變砝碼位置使槓桿水平平衡</td><td>驗證施力 × 施力臂＝抗力 × 抗力臂；力臂是支點到施力線的垂直距離</td></tr>
+<tr><td>岩石分類觀察</td><td>觀察岩石樣本的顆粒粗細、有無層理、有無化石、有無片理</td><td>判讀三大岩類：火成岩（結晶顆粒、無層理）、沉積岩（層理、化石）、變質岩（片理）</td></tr>
+</table>
+
+<h3>跨章連結（綜合題怎麼出）</h3>
+<table>
+<tr><th style="width:26%">綜合題型</th><th>串起的章節</th><th>解題關鍵</th></tr>
+<tr><td>v-t 圖求位移，再算功</td><td>Ch1 圖形判讀 ＋ Ch3 功</td><td>先由 v-t 圖面積求位移 s，再用 W＝Fs；注意功只計沿力方向的位移</td></tr>
+<tr><td>F＝ma 求力，再算功或功率</td><td>Ch2 牛頓第二定律 ＋ Ch3 功與功率</td><td>先由 F＝ma 求合力，再代 W＝Fs、P＝W/t；F 一定是合力</td></tr>
+<tr><td>自由落體的位能–動能轉換</td><td>Ch2 重力 ＋ Ch3 能量守恆</td><td>最高點 Ep 最大、Ek＝0；落地前 Ek 最大；用 mgh＝½mv² 求落地速率</td></tr>
+<tr><td>斜面上的功與能量</td><td>Ch3 功 ＋ Ch3 簡單機械</td><td>斜面省力費距離；忽略摩擦時，施力作功＝物體增加的位能（mgh）</td></tr>
+<tr><td>板塊運動回扣岩石與地貌</td><td>Ch5 岩石、地貌 ＋ Ch6 板塊、岩層</td><td>聚合邊界多變質岩與褶皺山脈；張裂邊界多玄武岩與中洋脊；岩層層序用疊置定律判讀</td></tr>
+</table>
+</section>
+
+<section id="encoding">
+<h2>編碼活動：動手做，才記得牢（選做 3 個）</h2>
+<p>讀十遍不如做一遍。以下 6 個活動任選 3 個（約 24–35 分鐘），每個都計時，做完打勾感會很強烈。</p>
+
+<div class="act"><span class="time">10 分鐘</span><h3>活動 1 公式接龍默寫</h3>
+<p>蓋住組塊 A–D 的公式，依因果鏈順序默寫：F＝ma → W＝Fs → P＝W/t → Ek＝½mv² → Ep＝mgh → 力矩平衡（施力×施力臂＝抗力×抗力臂）→ V＝IR。寫完對答案，錯的那個多寫三遍。</p></div>
+<div class="act"><span class="time">10 分鐘</span><h3>活動 2 畫水循環圖</h3>
+<p>不看書，在白紙上畫出水循環：太陽、海洋、陸地、雲，並標出蒸發→凝結→降水→逕流／滲透五個箭頭與「太陽能是動力」。畫完對照組塊 E 的圖 5 補漏。</p></div>
+<div class="act"><span class="time">8 分鐘</span><h3>活動 3 槓桿分類快問快答</h3>
+<p>快速判斷 10 個工具屬於哪種槓桿（先找支點、施力點、抗力點誰在中間）：剪刀、開瓶器、筷子、鑷子、獨輪手推車、釣魚竿、核桃夾、天平、蹺蹺板、掃把。每個要在 5 秒內說出種類與省力／費力。</p></div>
+<div class="act"><span class="time">8 分鐘</span><h3>活動 4 岩石判讀三步</h3>
+<p>用「看層理、看顆粒、滴鹽酸」三步判讀 6 塊岩石：有層理或化石→沉積岩；結晶顆粒粗→深成火成岩、細→火山火成岩；有片理→變質岩；滴稀鹽酸冒泡→含碳酸鈣（石灰岩、大理岩）。對照組塊 F 自己出題自己判。</p></div>
+<div class="act"><span class="time">8 分鐘</span><h3>活動 5 板塊邊界配對賽</h3>
+<p>把三種邊界 × 代表地形 × 實例寫在九張小卡上打散，再配對重組：張裂—中洋脊／裂谷—大西洋中洋脊；聚合—海溝／褶皺山脈—臺灣；錯動—轉形斷層—聖安地列斯斷層。計時看幾秒配完。</p></div>
+<div class="act"><span class="time">15 分鐘</span><h3>活動 6 錯題重做法</h3>
+<p>做完下方 30 題測驗後，把答錯的題目遮住答案與詳解，隔 10 分鐘重做一遍；還錯的，回對應組塊重看那個記憶點，再做第三遍。</p></div>
+
+<h3>為什麼追問鏈（把「背起來」變「想通了」）</h3>
+<div class="why"><b>追問鏈 a：動能的平方</b>
+<p class="lvl">Q1：為什麼速率變 2 倍，動能變 4 倍？→ 因為 Ek＝½mv²，v 是被平方的：(2v)²＝4v²。</p>
+<p class="lvl">Q2：那質量變 2 倍呢？→ m 只出現一次，動能只變 2 倍。平方只對 v 生效。</p>
+<p class="lvl">Q3：落體的速度怎麼用能量求？→ mgh＝½mv²，m 消掉，v＝√(2gh)——這就是例題 3 的做法。</p>
+</div>
+<div class="why"><b>追問鏈 b：臺灣為什麼地震多</b>
+<p class="lvl">Q1：為什麼臺灣地震多？→ 臺灣在歐亞板塊與菲律賓海板塊的聚合邊界，擠壓使岩層累積應力，超過限度就斷層錯動、釋放能量成地震波。</p>
+<p class="lvl">Q2：為什麼同一次地震各地震度不同？→ 震度是當地搖晃程度，離震央越遠、地質越堅硬，搖晃越小。</p>
+<p class="lvl">Q3：規模差 1 級，能量差多少？→ 約 32 倍。所以規模 7 不是比規模 6「強一點」，是強約 32 倍。</p>
+</div>
+<div class="why"><b>追問鏈 c：滑輪與功的原理</b>
+<p class="lvl">Q1：為什麼定滑輪不省力、動滑輪省一半？→ 功的原理：機械不省功。定滑輪拉的距離和物體上升一樣多，所以力一樣大；動滑輪拉兩倍距離，力就只要一半。</p>
+<p class="lvl">Q2：斜面為什麼越長越省力？→ 同樣把物體抬高 h，作功 W＝mgh 不變；斜面越長（s 越大），F＝W/s 就越小。</p>
+<p class="lvl">Q3：有摩擦時，多做的功去哪了？→ 變成熱能。所以實際作功＝位能增加＋摩擦消耗（測驗 Q54 就是這題）。</p>
+</div>
+
+<h3>自問任務：每節一句話主題</h3>
+<p>蓋住每個組塊的精華表，只看節名，自問自答說出該節的「一句話主題」：2-2、2-3、2-4、3-1、3-2、3-3、3-4、5-1、5-2、5-3、6-1、6-2、6-3，共 13 句。說得出來才算真的記住；卡住的那節回去重看。</p>
+</section>
+
+<section id="cards">
+  <h2>翻牌卡 17 張</h2>
+  <p>點一下翻面。先在心裡說出答案再翻，答錯的卡多翻兩次。</p>
+  <div class="cards">
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 1・組塊 A</span><span class="q">F＝ma 中的 F 是什麼？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">合力</span><span class="e">不是某一個分力——先把所有力加減成合力，再代 F＝ma。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 2・組塊 B</span><span class="q">距離變 2 倍，萬有引力變？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">1/4</span><span class="e">萬有引力與距離平方成反比：距離×2 → 引力×(1/2)²＝1/4。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 3・組塊 C</span><span class="q">速率 ×2，動能 ×？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">4 倍</span><span class="e">動能與速率平方成正比：(2v)²＝4v²。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 4・組塊 C</span><span class="q">提水桶水平走，作功多少？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">0 J</span><span class="e">提力向上、位移水平，力與位移垂直，不作功。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 5・組塊 C</span><span class="q">力學能守恆的條件是？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">只有重力／彈力作功、忽略摩擦</span><span class="e">有摩擦時力學能會減少，轉成熱能。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 6・組塊 D</span><span class="q">定滑輪 vs 動滑輪？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">定：不省力只改方向；動：省一半力</span><span class="e">動滑輪省一半力的代價是費兩倍距離。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 7・組塊 D</span><span class="q">第二種槓桿的例子？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">開瓶器</span><span class="e">抗力點在中間，恆省力、費時。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 8・組塊 E</span><span class="q">海水／淡水的比例？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">97%／3%</span><span class="e">淡水大半是冰川與地下水，地面水不到 1%。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 9・組塊 E</span><span class="q">水循環的順序？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">蒸發→凝結→降水→逕流／滲透</span><span class="e">動力是太陽能，總量不變。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 10・組塊 F</span><span class="q">沉積岩的標誌是？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">層理＋化石</span><span class="e">看到層理或化石，先想沉積岩。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 11・組塊 F</span><span class="q">花岡岩 vs 玄武岩？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">粗粒慢冷 vs 細粒快冷</span><span class="e">花岡岩在地下慢慢冷、顆粒粗；玄武岩在地表快速冷、顆粒細。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 12・組塊 F</span><span class="q">大理岩的原岩是？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">石灰岩</span><span class="e">太魯閣的大理岩，就是石灰岩受高溫高壓變質而成。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 13・組塊 G</span><span class="q">岩石圈是什麼？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">地殼＋上部地函</span><span class="e">堅硬、厚約 100 km，裂成板塊在軟流圈上移動。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 14・組塊 G</span><span class="q">臺灣在哪兩個板塊的聚合邊界？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">歐亞板塊與菲律賓海板塊</span><span class="e">兩板塊以花東縱谷為界，持續擠壓。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 15・組塊 G</span><span class="q">規模 vs 震度？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">規模一個值代表能量；震度各地不同代表搖晃</span><span class="e">規模差 1 級，能量差約 32 倍。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 16・組塊 G</span><span class="q">「下老上新」是哪個定律？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">疊置定律</span><span class="e">未受擾動的沉積岩層，下面的比上面的老。</span></div></div></button>
+    <button class="card" type="button"><div class="card-inner"><div class="card-face card-front"><span class="qno">卡 17・組塊 G</span><span class="q">三葉蟲／菊石是哪個時代？</span><span class="hint">點我翻面</span></div><div class="card-face card-back"><span class="a">古生代／中生代</span><span class="e">兩者都是存在時間短、分布廣的標準化石。</span></div></div></button>
+  </div>
+</section>
+
+<section id="quiz">
+  <h2>30 題測驗（選自 105 題題庫）</h2>
+  <p>點選項立即判對錯並顯示詳解與知識點。全部答完會顯示總分。理化與地科分開標示，可分段練習。</p>
+  <div class="scorebar" id="scorebar">已答 0／30・得分 0</div>
+  <div id="quizbox"></div>
+  <p><button class="btn secondary" type="button" id="resetQuiz">重新作答</button></p>
+  <p class="small" id="finalscore"></p>
+</section>
+
+<section id="strategy">
+  <h2>題型攻略：105 題萃取出來的解題邏輯</h2>
+  <p>完整 105 題題庫在題庫檔（Q1–Q105，每題附詳解、知識點、題型標籤）。本章是從 105 題融會統整出的 5 種題型攻略：先看題幹出現什麼，對照「辨識特徵」決定題型，照「解題步驟」走，寫完用「檢查清單」核對。考前 30 分鐘照著用，只看每節的「常見錯誤」也有效。</p>
+
+  <h3>攻略 1：計算題（全卷主力，約占一半）</h3>
+  <p><b>辨識特徵：</b>題幹給數字（質量、力、距離、時間、速度、高度、電壓、電阻），問「多少」；選項是四個不同數值。理化 Ch2、Ch3 幾乎都是這型。</p>
+  <p><b>解題步驟：</b></p>
+  <ol>
+    <li>寫出已知量與未知量，單位先統一（kg、m、s、N、J、W；kW→W、公分→公尺）。</li>
+    <li>選公式：F＝ma、W＝Fs、P＝W/t、Ek＝(1/2)mv²、Ep＝mgh、v＝√(2gh)、力矩平衡 F₁L₁＝F₂L₂、V＝IR。</li>
+    <li>代入、算出、回頭檢查單位與數量級（功率幾百 W 合理、幾萬 W 要懷疑）。</li>
+  </ol>
+  <p><b>必備公式清單：</b>F＝ma；a＝v²/r（向心加速度）；W＝Fs（力與位移同方向才直接相乘）；P＝W/t；W＝Pt；Ek＝(1/2)mv²；Ep＝mgh；力學能守恆 mgh＝(1/2)mv²；力矩平衡：施力×施力臂＝抗力×抗力臂；動滑輪施力＝物重÷2；滑輪組施力＝物重÷繩子段數；斜面施力＝mgh÷斜面長；V＝IR。</p>
+  <p><b>常見錯誤：</b>忘記速度要平方（動能題）、忘記 g＝10（位能題）、kW 沒換成 W；力與位移垂直還硬乘（提水桶走路＝0 J）；動滑輪省一半力卻忘了距離加倍；滑輪組數錯繩子段數；自由落體用 v＝√(2gh) 時 h 是「落下高度」不是「離地高度」。</p>
+  <p><b>例題索引：</b>Q1（F＝ma 基本型）、Q25（爬樓梯功率，兩步計算）、Q31（自由落體速度，力學能守恆速解）。</p>
+
+  <h3>攻略 2：圖表判讀題（地科主力，理化 v-t 圖也算）</h3>
+  <p><b>辨識特徵：</b>題幹出現「下圖」「示意圖」「剖面圖」，或給 v-t 圖、地層剖面、板塊邊界圖、岩石循環圖。選項常是「下列敘述何者正確」。</p>
+  <p><b>解題步驟：</b></p>
+  <ol>
+    <li>先看圖的座標／方向／圖例，不要先看選項：v-t 圖看面積（位移）與斜率（加速度）；板塊圖看箭頭方向；地層圖看由上而下的順序。</li>
+    <li>把圖翻譯成一句話：例如「兩板塊靠近、一板塊隱沒、有火山弧」＝聚合邊界。</li>
+    <li>用那句話逐一檢驗四個選項，刪掉與圖矛盾的。</li>
+  </ol>
+  <p><b>必備檢查清單：</b>v-t 圖：面積＝位移；斜率＝加速度；水平線＝等速。板塊邊界：隱沒＋海溝＋火山弧＝聚合；中洋脊＋新地殼＝張裂；平行滑動＋只有地震＝錯動。地層圖：下老上新（疊置律）；有化石的地層可定年。岩石循環圖：任何岩石都可變成另外兩種，或熔融回岩漿；沒有單向箭頭。河流縱剖面：上游陡、侵蝕、V 形谷；下游緩、沉積、三角洲。</p>
+  <p><b>常見錯誤：</b>板塊圖只看地形不看箭頭方向，聚合、張裂搞反；地層圖由上往下讀成「由老而新」（正確是下老上新）；v-t 圖把斜率當面積、把面積當斜率；岩石循環誤以為沉積岩只能由火成岩來（任何岩石都可以）。</p>
+  <p><b>例題索引：</b>Q63（河流縱剖面）、Q79（聚合邊界剖面圖）、Q90（地層疊置律）。</p>
+
+  <h3>攻略 3：觀念陷阱題（最容易失分的題型）</h3>
+  <p><b>辨識特徵：</b>題幹沒有數字，或數字只是幌子；選項是四句敘述，問「何者正確／錯誤」；關鍵字常是「一定」「永遠」「只」「都」。地科題大多是這型，理化牛頓定律也是。</p>
+  <p><b>解題步驟：</b></p>
+  <ol>
+    <li>把每個選項拆成「主詞＋判斷」，逐句驗證，不要憑感覺整題猜。</li>
+    <li>先找絕對化字眼（「一定」「永遠」「都」）——敘述越絕對，越可能是錯的；再找偷換概念（質量↔重量、規模↔震度、速率↔速度）。</li>
+    <li>剩下的選項用「舉一個反例」檢驗：能舉出反例的選項就是錯的。</li>
+  </ol>
+  <p><b>必備檢查清單（高頻偷換對照）：</b>質量（不變）↔ 重量（隨 g 變）；速率（純量）↔ 速度（向量，有方向）；作用力與反作用力（不同物體，不抵消）↔ 平衡力（同一物體，可抵消）；力學能守恆（只有重力作功）↔ 能量守恆（永遠成立）；規模（一個值，代表能量）↔ 震度（各地不同，代表搖晃程度）；物理風化（外形變、成分不變）↔ 化學風化（成分變）；侵蝕（帶走）↔ 沉積（留下）；P 波（快、縱波、三態）↔ S 波（慢、橫波、只固體）。</p>
+  <p><b>常見錯誤：</b>看到「力」就選最大的那個選項；「失重」當成「沒有重力」；「慣性」當成「力」（慣性不是力，是性質）；拔河比的不是雙方拉力（拔河 Q9：拉力永遠相等，關鍵是摩擦力）；選項出現「正確」就急著選，沒看題目問的是「錯誤」。</p>
+  <p><b>例題索引：</b>Q4（質量 vs 重量）、Q9（拔河陷阱）、Q22（提水桶零功）。</p>
+
+  <h3>攻略 4：跨章綜合題（難題區，分出高下）</h3>
+  <p><b>辨識特徵：</b>題幹同時提到兩個章節的概念（例如「斜面＋摩擦＋位能」「化石＋板塊」「運動學＋功」）；題目較長，常是情境題；選項需要兩步以上推理。</p>
+  <p><b>解題步驟：</b></p>
+  <ol>
+    <li>拆題：把題目拆成兩個以上的知識點，各寫一個小結論（例如：先算位能增加，再算推力作功，兩者差＝摩擦消耗）。</li>
+    <li>找橋樑：跨章題一定有一個「共用量」——通常是力（F＝ma 連 Ch2 與 Ch3）、位移（v-t 圖連 Ch1 與 Ch3）、或時間。</li>
+    <li>分段算：每段只用一個公式，算完再合併；最後檢查能量或力的帳有沒有平（作功＝位能增加＋摩擦消耗）。</li>
+  </ol>
+  <p><b>必備檢查清單：</b>Ch1＋Ch3：先用 v-t 圖面積求位移，再代入 W＝Fs。Ch2＋Ch3：先用 F＝ma 求合力，再用 W＝Fs 求功。Ch3 內部綜合：斜面題先算理想施力（mgh÷L），再與實際施力比較，差額＝摩擦。Ch5＋Ch6：化石（古環境指標）＋板塊（抬升機制）→ 海洋化石在高山＝曾是淺海。Ch5 內部綜合：地貌題先判內營力（抬升）還是外營力（侵蝕／沉積），再判地形名稱。</p>
+  <p><b>常見錯誤：</b>只用一個章節的公式就想解完，漏掉第二步（例如斜面題忘了摩擦）；自由落體用力學能守恆卻忘了初速不為零；跨章題看到長題幹就跳過——其實每一步都是基本題，拆開就會做。</p>
+  <p><b>例題索引：</b>Q54（斜面＋摩擦＋位能）、Q75（內營力 vs 外營力）、Q95（化石＋板塊抬升）。</p>
+
+  <h3>攻略 5：實驗題（題數少，但幾乎必考 1–2 題）</h3>
+  <p><b>辨識特徵：</b>題幹出現「小華做實驗」「改變……測量……」「下列哪一項是必須控制不變的變因」；或給野外觀察步驟（看層理、滴鹽酸）。</p>
+  <p><b>解題步驟：</b></p>
+  <ol>
+    <li>抓三個變因：操縱變因（實驗者改變的）、應變變因（測量的結果）、控制變因（固定不變的）。</li>
+    <li>寫出背後的公式或原理（牛頓第二定律實驗背後是 F＝ma；槓桿實驗背後是力矩平衡）。</li>
+    <li>預測趨勢：操縱變因變大，應變變因變大還是變小（正比還是反比）。</li>
+  </ol>
+  <p><b>必備檢查清單：</b>牛頓第二定律實驗：固定質量、改變拉力→加速度與拉力成正比；固定拉力、改變質量→加速度與質量成反比；要補償摩擦力（傾斜軌道）。槓桿平衡實驗：固定抗力與抗力臂、改變施力臂→施力與施力臂成反比。岩石野外觀察：看層理（沉積岩）、看顆粒大小（火成岩粗細）、滴稀鹽酸（冒泡＝含碳酸鈣，如石灰岩、大理岩）。實驗誤差來源：摩擦力、測量誤差、沒有控制變因。</p>
+  <p><b>常見錯誤：</b>操縱變因與應變變因搞反（題目問「必須控制不變」，答案是控制變因，不是操縱變因）；忘記摩擦力是實驗的干擾（牛頓第二定律實驗要補償摩擦）；岩石判讀只看顏色不看層理與顆粒（顏色最不可靠）。</p>
+  <p><b>例題索引：</b>Q19（牛頓第二定律實驗，控制變因）、Q55（槓桿平衡實驗，反比關係）、Q73（岩石野外觀察三步驟）。</p>
+</section>
+
+<section id="sprint">
+  <h2>兩日衝刺計畫</h2>
+  <p>必做總計約 4 小時（今晚約 80 分鐘＋明天約 160 分鐘），11/26 考前只做 20 分鐘輕量收尾。選做有餘力再碰。</p>
+  <h3>今晚 11/24（必做約 80 分鐘）</h3>
+  <table>
+    <tr><th style="width:30%">項目</th><th style="width:16%">時間</th><th>內容</th></tr>
+    <tr><td>六站因果鏈</td><td>10 分鐘</td><td>遮住鏈，自己口述一遍六站與銜接點</td></tr>
+    <tr><td>組塊 A–C</td><td>45 分鐘</td><td>精華表遮住自問自答＋每節「最常考的 5 個點」</td></tr>
+    <tr><td>例題 1–3</td><td>25 分鐘</td><td>功與功率、動能位能、自由落體，自己算完再對步驟</td></tr>
+  </table>
+  <h3>明天 11/25（必做約 160 分鐘）</h3>
+  <table>
+    <tr><th style="width:30%">項目</th><th style="width:16%">時間</th><th>內容</th></tr>
+    <tr><td>組塊 D–G</td><td>60 分鐘</td><td>槓桿與機械、水與地貌、岩石、板塊與地震＋例題 4–6</td></tr>
+    <tr><td>30 題測驗</td><td>40 分鐘</td><td>本頁測驗全做完，錯題標記起來</td></tr>
+    <tr><td>30 條陷阱表</td><td>25 分鐘</td><td>遮右欄自問自答，答不出來的圈起來</td></tr>
+    <tr><td>題型攻略</td><td>35 分鐘</td><td>5 節攻略各看辨識特徵＋常見錯誤，照例題索引回題庫抽練</td></tr>
+  </table>
+  <h3>11/26 考前（20 分鐘）</h3>
+  <p>只看每節的「一句話主題」與各組塊的口訣壓縮句，不再做新題目。</p>
+  <h3>選做（有餘力再做）</h3>
+  <table>
+    <tr><th style="width:30%">項目</th><th>內容</th></tr>
+    <tr><td>組塊 H：L1–L2 快速掃描</td><td>Ch1 圖形判讀＋2-1 慣性，應付回鍋題與綜合題工具</td></tr>
+    <tr><td>組塊 H：Ch4 警戒掃描</td><td>靜電、電流、電壓、V＝IR 基本概念（<b>第三次段考範圍</b>，二段只防老師進度較快）</td></tr>
+    <tr><td>編碼活動選 3</td><td>公式接龍、畫水循環圖、槓桿快問快答、岩石判讀、板塊配對、錯題重做，任選 3 個</td></tr>
+    <tr><td>翻牌卡 17 張</td><td>睡前翻一輪，答錯的隔天早上再翻</td></tr>
+  </table>
+
+  <h3>本次不考清單（不要浪費時間）</h3>
+  <table>
+    <tr><th style="width:22%">類別</th><th>內容</th></tr>
+    <tr><td>三段範圍</td><td>Ch7 運動中的天體（我們的宇宙、轉動的地球、日地月相對運動）；Ch4 基本的靜電現象與電路（主範圍不考，僅列警戒掃描）</td></tr>
+    <tr><td>九下</td><td>電的應用、電流與磁現象、千變萬化的天氣、全球氣候變遷與因應；海水運動（波浪、海流、潮汐）</td></tr>
+    <tr><td>八下</td><td>反應速率與平衡、有機化合物、力與壓力</td></tr>
+    <tr><td>八上</td><td>溫度與熱、元素與化合物</td></tr>
+    <tr><td>課綱移高中</td><td>電阻串並聯公式計算、非歐姆式導體、等加速度運動方程式推導、各種礦物特性與岩石用途、大陸漂移／海底擴張／板塊邊界細部對照、臺灣各種地形詳細成因</td></tr>
+    <tr><td>誤導來源</td><td>竹光國中「八章表」的電流與生活、電流的熱效應、電與磁、反應速率、有機化合物——那是跨冊銜接比對表，不是第五冊目錄，勿誤排入二段複習</td></tr>
+  </table>
+</section>
+
+<footer>
+  <p>範圍依據：多校 115-1 第二次段考範圍表交叉推論（南科官網未公開，老師公告為準）｜內容來源：南科九年級自然複習精華與 105 題題庫・題型攻略（2026-11-24 整理）｜計算約定：g＝10 m/s²，除非題目特別說明，忽略空氣阻力與摩擦力。</p>
+</footer>
+
+</div>
+<script>
+document.querySelectorAll('.card').forEach(function(c){
+  c.addEventListener('click', function(){ c.classList.toggle('flipped'); });
+});
+
+var QUIZ = [
+{id:"Q1",ch:"Ch2",q:"質量 4 kg 的木塊放在光滑水平面上，受到 12 N 的水平合力推動，木塊的加速度為多少？",opts:["2 m/s²","3 m/s²","4 m/s²","6 m/s²"],ans:1,exp:"牛頓第二定律 F＝ma，a＝F/m＝12÷4＝3 m/s²。",kp:"牛頓第二運動定律 F＝ma",type:"計算"},
+{id:"Q3",ch:"Ch2",q:"同一物體在水平面上運動，若合力變為原來的 2 倍，質量不變，則加速度如何變化？",opts:["變為原來的 1/2 倍","不變","變為原來的 2 倍","變為原來的 4 倍"],ans:2,exp:"F＝ma，m 不變時 a 與 F 成正比，F 變 2 倍，a 也變 2 倍。注意不是平方關係。",kp:"牛頓第二運動定律中力與加速度的正比關係",type:"觀念陷阱"},
+{id:"Q6",ch:"Ch2",q:"關於作用力與反作用力的敘述，下列何者錯誤？",opts:["兩力大小相等、方向相反","兩力作用在不同物體上","兩力同時產生、同時消失","兩力作用在同一物體上，所以可以互相抵消"],ans:3,exp:"作用力與反作用力分別作用在「不同」物體上，因此不能互相抵消。同一物體上互相抵消的是一對平衡力，不是作用力與反作用力。",kp:"牛頓第三運動定律；作用力與反作用力 vs 平衡力",type:"觀念陷阱"},
+{id:"Q10",ch:"Ch2",q:"一輛汽車以 10 m/s 的速率沿半徑 25 m 的圓形彎道等速率行駛，其向心加速度為多少？",opts:["0.4 m/s²","2.5 m/s²","4 m/s²","10 m/s²"],ans:2,exp:"向心加速度 a＝v²/r＝10²÷25＝100÷25＝4 m/s²，方向指向圓心。",kp:"圓周運動的向心加速度 a＝v²/r",type:"計算"},
+{id:"Q13",ch:"Ch2",q:"甲、乙兩物體間的萬有引力為 F。若兩物體間的距離變為原來的 3 倍，其他條件不變，則萬有引力變為多少？",opts:["3F","F/3","F/9","9F"],ans:2,exp:"萬有引力與距離平方成反比，距離變 3 倍，引力變為 (1/3)²＝1/9。",kp:"萬有引力定律（與距離平方成反比）",type:"計算"},
+{id:"Q15",ch:"Ch2",q:"地球吸引月球的力與月球吸引地球的力，下列敘述何者正確？",opts:["地球吸引月球的力比較大，因為地球質量大","兩力大小相等、方向相反","月球吸引地球的力比較大，因為月球離地球近","只有地球吸引月球，月球不會吸引地球"],ans:1,exp:"萬有引力是一對作用力與反作用力，大小永遠相等，與質量大小無關。質量大影響的是「加速度」（月球被拉得動，地球幾乎不動），不是力的大小。",kp:"萬有引力＋牛頓第三運動定律",type:"觀念陷阱"},
+{id:"Q21",ch:"Ch3",q:"以 20 N 的水平力將木箱沿水平地面推動 5 m，推力對木箱作功多少？",opts:["4 J","25 J","100 J","500 J"],ans:2,exp:"功 W＝F×s＝20×5＝100 J（力與位移同方向）。",kp:"功的定義 W＝Fs",type:"計算"},
+{id:"Q22",ch:"Ch3",q:"小明提著 10 kg 的水桶（重約 100 N），沿水平路面走了 10 m。提水桶的力對水桶作功多少？",opts:["1000 J","100 J","10 J","0 J"],ans:3,exp:"提水桶的力是向上的，位移是水平的，力與位移互相垂直，作功為 0。段考最愛考的零功題型：只要力與位移方向垂直，功就是零。",kp:"功的定義；力與位移垂直時不作功",type:"觀念陷阱"},
+{id:"Q25",ch:"Ch3",q:"質量 50 kg 的學生在 15 秒內爬上 9 m 高的樓梯（相當於 3 層樓），他克服重力作功的平均功率約為多少？",opts:["30 W","45 W","300 W","4500 W"],ans:2,exp:"克服重力作功 W＝mgh＝50×10×9＝4500 J；功率 P＝W/t＝4500÷15＝300 W。",kp:"功 W＝mgh＋功率 P＝W/t（跨 3-1 與 3-2）",type:"計算"},
+{id:"Q28",ch:"Ch3",q:"質量 2 kg 的小球以 3 m/s 的速度運動，其動能為多少？",opts:["3 J","6 J","9 J","18 J"],ans:2,exp:"動能 Ek＝(1/2)mv²＝(1/2)×2×3²＝9 J。注意速度要平方。",kp:"動能 Ek＝(1/2)mv²",type:"計算"},
+{id:"Q29",ch:"Ch3",q:"質量 1 kg 的物體，速度由 2 m/s 增加為 4 m/s，動能變為原來的幾倍？",opts:["2 倍","3 倍","4 倍","8 倍"],ans:2,exp:"動能與速度平方成正比，速度變 2 倍，動能變 2²＝4 倍（由 2 J 變為 8 J）。",kp:"動能與速度平方成正比",type:"計算"},
+{id:"Q31",ch:"Ch3",q:"一顆小球由離地面 20 m 高處自由落下（初速為 0，忽略空氣阻力），落到地面瞬間的速度為多少？",opts:["10 m/s","14 m/s","20 m/s","40 m/s"],ans:2,exp:"力學能守恆：mgh＝(1/2)mv²，v＝√(2gh)＝√(2×10×20)＝√400＝20 m/s。也可以用 v²＝2gh 直接算。",kp:"力學能守恆＋自由落體（跨 Ch2、Ch3）",type:"計算"},
+{id:"Q35",ch:"Ch3",q:"質量 2 kg 的小球由 10 m 高處自由落下（初速為 0，忽略空氣阻力），當它落到離地面 5 m 高處時，動能為多少？",opts:["50 J","100 J","150 J","200 J"],ans:1,exp:"下落 5 m，位能減少 ΔEp＝mgΔh＝2×10×5＝100 J，減少的位能全部轉為動能，所以動能為 100 J。",kp:"位能與動能的轉換＋力學能守恆",type:"計算"},
+{id:"Q41",ch:"Ch3",q:"如圖為一槓桿，支點在中央偏左處，施力臂長 0.8 m，抗力臂長 0.2 m，抗力為 40 N，則施力需多少才能平衡？（槓桿重量忽略）",opts:["5 N","10 N","20 N","160 N"],ans:1,exp:"力矩平衡：施力×施力臂＝抗力×抗力臂，F×0.8＝40×0.2＝8，F＝10 N。",kp:"槓桿原理（力矩平衡）",type:"計算"},
+{id:"Q46",ch:"Ch3",q:"用定滑輪將 100 N 的重物吊起 2 m，需要施力多少？施力點需拉動多少距離？（忽略滑輪重量與摩擦力）",opts:["施力 50 N，拉 4 m","施力 100 N，拉 2 m","施力 200 N，拉 1 m","施力 100 N，拉 4 m"],ans:1,exp:"定滑輪不省力，施力＝物重＝100 N；也不省距離，拉 2 m、物體升 2 m。定滑輪只改變施力方向。",kp:"定滑輪的特性",type:"計算"},
+{id:"Q49",ch:"Ch3",q:"將重 100 N 的物體沿斜面推上高 2 m 的平台，斜面長 8 m（忽略摩擦力），需要沿斜面施力多少？",opts:["12.5 N","25 N","50 N","100 N"],ans:1,exp:"理想斜面作功不變：F×L＝mgh，F×8＝100×2＝200，F＝25 N。斜面越長越省力。",kp:"斜面省力原理（功不變）",type:"計算"},
+{id:"Q56",ch:"Ch5",q:"關於地球上的水分布，下列敘述何者正確？",opts:["海水約占 50%，淡水約占 50%","海水約占 97%，淡水約占 3%，其中大部分淡水以冰川形式存在","河水、湖水是淡水的主要部分","地下水比海水多"],ans:1,exp:"地球水約 97% 是海水，淡水僅約 3%；淡水中約 2/3 以上是冰川與冰帽，河湖水只占淡水的一小部分，人類可直接利用的淡水非常有限。",kp:"地球水分布（海水與淡水比例）",type:"觀念陷阱"},
+{id:"Q57",ch:"Ch5",q:"水循環的過程中，提供能量的主要來源與正確順序為何？",opts:["地熱提供能量：降水→蒸發→凝結","太陽能提供能量：蒸發→凝結→降水→逕流或滲透","風力提供能量：凝結→蒸發→降水","潮汐提供能量：滲透→蒸發→降水"],ans:1,exp:"水循環的動力是太陽能：地表水蒸發成水蒸氣，上升遇冷凝結成雲，再以降水的形式回到地面，一部分逕流回海洋，一部分滲入地下成為地下水。",kp:"水循環的過程與能量來源",type:"觀念陷阱"},
+{id:"Q62",ch:"Ch5",q:"關於侵蝕、搬運、沉積三種作用的敘述，下列何者正確？",opts:["水流速度越快，沉積作用越強","水流速度變慢時，搬運力減弱，顆粒開始沉積","侵蝕、搬運、沉積三者沒有先後關係","沉積作用只發生在海洋"],ans:1,exp:"水流速度快時侵蝕與搬運力強；流速減慢時搬運力減弱，大顆粒先沉積、小顆粒後沉積。沉積可發生在河床、湖泊、海洋、陸地各處。順序一般是侵蝕→搬運→沉積。",kp:"侵蝕、搬運、沉積的關係",type:"觀念陷阱"},
+{id:"Q64",ch:"Ch5",q:"關於沖積扇的敘述，下列何者正確？",opts:["沖積扇形成於河流出海口","河流流出山口時，坡度驟減、流速變慢，搬運的砂石沉積成扇形","沖積扇的顆粒由扇頂向扇緣越來越粗","沖積扇是侵蝕作用形成的地形"],ans:1,exp:"沖積扇形成於河流出山口處，顆粒由扇頂（粗）向扇緣（細）逐漸變細；出海口形成的是三角洲。沖積扇是沉積地形，不是侵蝕地形。臺灣西部山麓多沖積扇。",kp:"沖積扇的形成與特徵",type:"觀念陷阱"},
+{id:"Q68",ch:"Ch5",q:"關於火成岩的敘述，下列何者正確？",opts:["火成岩由岩漿冷卻凝固形成；噴出地表的岩漿冷卻快，顆粒細（如玄武岩）","花崗岩是噴出岩，顆粒細","火成岩都有層理","火成岩是由沉積物壓密形成的"],ans:0,exp:"火成岩分兩類：侵入岩（岩漿在地下緩慢冷卻，顆粒粗，如花崗岩）、噴出岩（岩漿噴出地表快速冷卻，顆粒細，如玄武岩）。有層理的是沉積岩。",kp:"火成岩的形成與分類",type:"觀念陷阱"},
+{id:"Q70",ch:"Ch5",q:"大理岩是由下列哪一種岩石經過高溫高壓變質而成的？",opts:["花崗岩","石灰岩","砂岩","玄武岩"],ans:1,exp:"大理岩是石灰岩變質而成；板岩是頁岩變質而成；片岩可由多種岩石變質而成。變質岩的原料與產物配對是段考常考題。",kp:"變質岩的形成（石灰岩→大理岩、頁岩→板岩）",type:"觀念陷阱"},
+{id:"Q77",ch:"Ch6",q:"板塊運動的主要動力來源是什麼？",opts:["地球自轉","月球引力","地函的熱對流","海洋潮汐"],ans:2,exp:"地球內部熱量使地函物質緩慢對流，拖動上方的岩石圈板塊移動。地球自轉與月球引力不是板塊運動的動力。",kp:"板塊運動的動力（地函對流）",type:"觀念陷阱"},
+{id:"Q79",ch:"Ch6",q:"下圖為某板塊邊界的剖面示意圖（圖略：一板塊向下隱沒入地函，形成深海溝，隱沒板塊上方有火山弧）。此邊界最可能是：",opts:["張裂邊界，如大西洋中洋脊","聚合邊界（隱沒帶），如日本海溝、臺灣東部外海","錯動邊界，如美國聖安地列斯斷層","板塊內部，無邊界"],ans:1,exp:"板塊向下隱沒＋深海溝＋火山弧是聚合邊界（隱沒帶）的特徵。張裂邊界是中洋脊與裂谷；錯動邊界沒有隱沒與火山弧。",kp:"聚合邊界的特徵（海溝、火山弧、隱沒）",type:"圖表判讀"},
+{id:"Q83",ch:"Ch6",q:"臺灣位於哪兩個板塊的聚合邊界？",opts:["太平洋板塊與北美洲板塊","歐亞板塊與菲律賓海板塊","印度板塊與澳洲板塊","南美洲板塊與非洲板塊"],ans:1,exp:"臺灣位於歐亞板塊與菲律賓海板塊的聚合邊界，菲律賓海板塊以每年約 8 公分的速度向西北移動，隱沒到歐亞板塊之下，造成臺灣地震頻繁、山脈隆起。",kp:"臺灣的板塊位置",type:"觀念陷阱"},
+{id:"Q86",ch:"Ch6",q:"關於地震波 P 波與 S 波的敘述，下列何者正確？",opts:["S 波比 P 波快","P 波是橫波，只能在固體中傳播","P 波是縱波、速度快，可在固、液、氣體中傳播，所以最先到達測站","S 波是縱波，可在液體中傳播"],ans:2,exp:"P 波（初達波）是縱波，速度最快，可穿透固、液、氣三態；S 波（剪切波）是橫波，速度較慢，只能在固體中傳播。利用兩波到達的時間差可推算震央距離。",kp:"P 波與 S 波的特性",type:"觀念陷阱"},
+{id:"Q88",ch:"Ch6",q:"關於芮氏規模與震度的區別，下列敘述何者正確？",opts:["規模與震度是同一個概念","一次地震只有一個規模值，但各地震度不同","震度代表地震釋放的總能量","規模越大，離震央越遠的地方震度越大"],ans:1,exp:"規模（如芮氏規模）代表地震釋放的能量大小，一次地震只有一個值；震度代表各地實際搖晃的程度，會隨震央距離、地質條件而不同。規模每增加 1，能量約增 32 倍。",kp:"地震規模 vs 震度",type:"觀念陷阱"},
+{id:"Q90",ch:"Ch6",q:"下圖為某地岩層剖面示意圖（圖略：由上而下為甲、乙、丙三層岩層，皆為水平層狀，未受擾動）。根據地層疊置律，下列敘述何者正確？",opts:["最上層的甲層最老","最下層的丙層最老","三層年齡相同","無法判斷"],ans:1,exp:"地層疊置律：在未受擾動的水平岩層中，下層比上層老。所以由上而下年齡漸增，最下層的丙層最老。",kp:"地層疊置律（相對定年）",type:"圖表判讀"},
+{id:"Q54",ch:"跨章",q:"將重 100 N 的物體沿長 8 m、高 2 m 的斜面等速推上平台，實際施力為 40 N（不是理想的 25 N），則推力作功多少？其中多少轉為物體的位能，多少被摩擦力消耗？",opts:["作功 320 J，位能增加 200 J，摩擦消耗 120 J","作功 200 J，位能增加 200 J，摩擦消耗 0 J","作功 320 J，位能增加 320 J","作功 200 J，位能增加 120 J"],ans:0,exp:"推力作功 W＝40×8＝320 J；位能增加＝100×2＝200 J；多出來的 320－200＝120 J 被摩擦力轉為熱能。真實機械作功永遠大於理想值，差額就是摩擦的損耗。",kp:"斜面＋摩擦力作功＋能量轉換（跨 3-1、3-2、3-4）",type:"跨章綜合"},
+{id:"Q95",ch:"跨章",q:"臺灣東部海岸山脈的石灰岩中發現珊瑚化石。珊瑚生活在溫暖淺海，這個發現說明了什麼？",opts:["海岸山脈一直都是高山","該地區曾經是溫暖的淺海，後來因板塊運動抬升成陸地","珊瑚可以在高山上生活","石灰岩是火成岩"],ans:1,exp:"化石是古環境的指標：淺海珊瑚化石出現在高山石灰岩中，證明該地曾是淺海，後經板塊聚合擠壓抬升成山。這題同時運用 Ch5 的岩石與化石知識與 Ch6 的板塊運動，是典型的跨章綜合題。",kp:"化石指示古環境＋板塊抬升（跨 Ch5、Ch6）",type:"跨章綜合"}
+];
+
+var answered = 0, score = 0;
+var box = document.getElementById('quizbox');
+var letters = ['A','B','C','D'];
+
+QUIZ.forEach(function(item, qi){
+  var div = document.createElement('div');
+  div.className = 'quiz-q';
+  var head = document.createElement('div');
+  head.className = 'qhead';
+  head.textContent = '第 ' + (qi+1) + ' 題（題庫 ' + item.id + '・' + item.ch + '）' + item.q;
+  var tag = document.createElement('span');
+  tag.className = 'qtag';
+  tag.textContent = item.type;
+  head.appendChild(tag);
+  div.appendChild(head);
+  var opts = document.createElement('div');
+  opts.className = 'opts';
+  var explain = document.createElement('div');
+  explain.className = 'explain';
+  item.opts.forEach(function(optText, oi){
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'opt';
+    b.textContent = '(' + letters[oi] + ') ' + optText;
+    b.addEventListener('click', function(){
+      var buttons = opts.querySelectorAll('.opt');
+      buttons.forEach(function(x){ x.disabled = true; });
+      buttons[item.ans].classList.add('correct');
+      if (oi === item.ans) { score++; }
+      else { b.classList.add('wrong'); }
+      answered++;
+      explain.innerHTML = '';
+      var p1 = document.createElement('p');
+      p1.innerHTML = '<b>' + (oi === item.ans ? '答對了！' : '答錯了，正確答案是 (' + letters[item.ans] + ')') + '</b>';
+      var p2 = document.createElement('p');
+      p2.textContent = '詳解：' + item.exp;
+      var p3 = document.createElement('p');
+      p3.textContent = '知識點：' + item.kp;
+      explain.appendChild(p1); explain.appendChild(p2); explain.appendChild(p3);
+      explain.classList.add('show');
+      document.getElementById('scorebar').textContent = '已答 ' + answered + '／30・得分 ' + score;
+      if (answered === QUIZ.length) {
+        document.getElementById('finalscore').textContent = '全部完成！總分 ' + score + '／30。答錯的題目請用編碼活動 6「錯題重做法」遮住答案重做一遍。';
+      }
+    });
+    opts.appendChild(b);
+  });
+  div.appendChild(opts);
+  div.appendChild(explain);
+  box.appendChild(div);
+});
+
+document.getElementById('resetQuiz').addEventListener('click', function(){
+  answered = 0; score = 0;
+  document.getElementById('scorebar').textContent = '已答 0／30・得分 0';
+  document.getElementById('finalscore').textContent = '';
+  box.querySelectorAll('.opt').forEach(function(b){
+    b.disabled = false; b.classList.remove('correct'); b.classList.remove('wrong');
+  });
+  box.querySelectorAll('.explain').forEach(function(e){
+    e.classList.remove('show'); e.innerHTML = '';
+  });
+  document.getElementById('quiz').scrollIntoView();
+});
+</script>
+</body>
+</html>
