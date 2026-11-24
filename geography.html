@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>九年級地理高效記憶版｜北美洲 × 中南美洲</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f3ea;--card:#fffdf8;--ink:#1a2e28;--muted:#5a6b65;--line:#ddd5c2;--green:#17604a;--green2:#e6f0e8;--amber:#b7791f;--amber-bg:#fdf0d0;--red:#9e2b25;--red-bg:#fdecea;--blue:#1d4e6b;--blue-bg:#e3eef5;--radius:16px}
+@media(prefers-color-scheme:dark){:root{--bg:#141a18;--card:#1e2623;--ink:#eef2ee;--muted:#a8b8b1;--line:#33413c;--green:#7fc8a8;--green2:#23382f;--amber:#f0c36b;--amber-bg:#3a2f14;--red:#ff9a93;--red-bg:#3d1e1c;--blue:#8ec4e6;--blue-bg:#1c2f3d}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,sans-serif;line-height:1.75;font-size:16px}
+a{color:var(--green)}button{min-height:44px}
+.wrap{max-width:980px;margin:0 auto;padding:16px 16px 60px}
+.hero{padding:28px 0 8px}.hero h1{font-family:"Noto Serif TC",serif;font-size:32px;line-height:1.25;margin:8px 0 10px}.hero p{color:var(--muted);margin:6px 0}
+.badge{display:inline-block;background:var(--green);color:#fff;padding:4px 12px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.03em}
+@media(prefers-color-scheme:dark){.badge{color:#0f1a15}}
+.notice{background:var(--amber-bg);border:1px solid var(--amber);border-radius:12px;padding:12px 14px;font-size:14px;margin:14px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:640px){.grid2{grid-template-columns:1fr}.hero h1{font-size:27px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin:16px 0}
+.card h2{font-family:"Noto Serif TC",serif;font-size:23px;margin:2px 0 10px;line-height:1.35}.card h3{font-size:18px;margin:18px 0 6px;color:var(--green)}
+.mnemonic{background:var(--green2);border-radius:12px;padding:14px 16px;text-align:center;margin:12px 0}.mnemonic strong{font-size:22px;letter-spacing:.12em;color:var(--green);display:block}.mnemonic span{font-size:14px;color:var(--muted)}
+.method{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}.method span{background:var(--card);border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:10px 0}th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}th{background:var(--green2);color:var(--ink)}
+.table-wrap{overflow-x:auto}svg{width:100%;height:auto;display:block;background:#f4efe2;border-radius:12px;border:1px solid var(--line)}@media(prefers-color-scheme:dark){svg{background:#222b27}}
+.caption{font-size:13px;color:var(--muted);text-align:center;margin:6px 0 0}
+.trap{background:var(--red-bg);border-radius:10px;padding:10px 12px;font-size:14px;margin:10px 0}.trap b{color:var(--red)}
+.key{background:var(--blue-bg);border-radius:10px;padding:10px 12px;font-size:14.5px;margin:10px 0}
+.note{background:var(--amber-bg);border-radius:10px;padding:10px 12px;font-size:14px;margin:10px 0}
+details{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:8px 0;background:var(--card)}summary{cursor:pointer;font-weight:700;min-height:36px;display:flex;align-items:center}
+/* organization-method tags */
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 4px}.tags i{font-style:normal;font-size:12px;font-weight:700;background:var(--green);color:#fff;border-radius:999px;padding:2px 9px}
+@media(prefers-color-scheme:dark){.tags i{color:#0f1a15}}
+.tags i.alt{background:var(--blue)}
+/* causal chain */
+.chain{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;margin:14px 0}
+.station{flex:1 1 120px;background:var(--green2);border:1px solid var(--green);border-radius:12px;padding:10px 8px;text-align:center;min-width:118px}
+.station b{display:block;font-size:17px;color:var(--green)}.station span{font-size:12.5px;color:var(--muted);display:block;line-height:1.5}
+.arrow{align-self:center;font-size:20px;padding:0 2px;color:var(--green);font-weight:900}
+@media(max-width:640px){.chain{flex-direction:column}.arrow{transform:rotate(90deg);margin:0 auto}}
+.squeeze{background:var(--green);color:#fff;border-radius:12px;padding:14px 16px;text-align:center;font-size:19px;font-weight:900;letter-spacing:.04em;margin:12px 0}
+@media(prefers-color-scheme:dark){.squeeze{color:#0f1a15}}
+.act{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0;background:var(--bg)}
+.act h4{margin:0 0 4px;font-size:16.5px}.act .mins{font-size:12.5px;font-weight:700;color:var(--amber)}
+/* flashcards */
+.flash-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.flash{border:2px solid var(--green);border-radius:14px;padding:14px;min-height:118px;cursor:pointer;background:var(--card);text-align:left;width:100%;font-family:inherit}
+.flash .q{font-weight:700;font-size:15px}.flash .a{display:none;font-size:14px;color:var(--green);font-weight:700;margin-top:6px}.flash.flipped .a{display:block}.flash .hint{font-size:12px;color:var(--muted)}
+/* quiz */
+.quiz-q{border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0;background:var(--card)}
+.quiz-q p{font-weight:700;margin:0 0 10px}.opts{display:grid;gap:8px}.opt{width:100%;text-align:left;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);cursor:pointer;font-family:inherit;font-size:15px;color:var(--ink)}
+.opt.correct{border-color:var(--green);background:var(--green2);font-weight:700}.opt.wrong{border-color:var(--red);background:var(--red-bg)}
+.explain{display:none;font-size:14px;background:var(--blue-bg);border-radius:8px;padding:10px 12px;margin-top:10px}.explain.show{display:block}
+.progress{position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5;font-weight:700;font-size:14px;border-bottom:1px solid var(--line)}
+.toc{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.toc a{border:1px solid var(--line);background:var(--card);padding:8px 12px;border-radius:999px;text-decoration:none;font-size:14px;min-height:36px;display:inline-flex;align-items:center}
+footer{color:var(--muted);font-size:13px;margin-top:30px}
+ul{padding-left:20px}li{margin:4px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<span class="badge">115 上 · 第二次段考 · 11/26（四）– 11/27（五）</span>
+<h1>九年級地理高效記憶版<br>北美洲 × 中南美洲</h1>
+<p>康軒版第五冊 L3–L4｜南科實中九年級專用。這一版不再照課本條列背：全份內容掛在一條<strong>六站因果鏈</strong>上，每個要背的點都同時用好幾種「組織類」方法釘住——組塊、位置記憶法、口訣、故事串連、對比表格，再動手用編碼類活動把它刻進去。</p>
+<div class="notice"><strong>⚠️ 範圍誠實標示：</strong>南科官網尚未公開 115 上二段正式範圍。本頁 L3–L4 是依歷年節奏與多校共同範圍推論，考前請再對一次學校／老師公告。本頁附 L1–L2 快速掃描，防累計考。所有地圖皆為<strong>示意圖，非精確地圖</strong>，重點看相對位置與順序。</div>
+<h3 style="margin:14px 0 4px">🧩 這頁怎麼用：每個記憶點旁邊的小標籤</h3>
+<div class="method"><span>🧩 <strong>組塊</strong>：把一堆事實壓成一組</span><span>🏠 <strong>位置法</strong>：綁在房間／身體的空間上</span><span>🎵 <strong>口訣</strong>：諧音、首字、短句</span><span>📖 <strong>故事</strong>：串成有順序的情節</span><span>⚖️ <strong>對比表</strong>：易混的並排看差異</span><span>🔍 <strong>線索</strong>：看到關鍵字就想到哪一組</span></div>
+<p style="font-size:14px">看到標籤就照著做：有 🏠 就在腦中走一遍那個空間，有 📖 就把故事從頭講一次，有 🎵 就先唸口訣再展開內容。只用眼睛看過去，標籤等於白掛。</p>
+<nav class="toc"><a href="#plan">兩天衝刺</a><a href="#chain">六站因果鏈</a><a href="#gA">A 地形水文</a><a href="#clim">氣候專區</a><a href="#gB">B 農業帶</a><a href="#gC">C 工業貿易</a><a href="#gD">D 中南美地景</a><a href="#gE">E 文化</a><a href="#gF">F 產品與問題</a><a href="#cue">提取線索表</a><a href="#encode">動手編碼</a><a href="#compare">對照總表</a><a href="#flash">翻牌卡</a><a href="#quiz">30 題自測</a><a href="#scan">L1–L2 掃描</a></nav>
+</header>
+
+<section class="card" id="plan">
+<h2>⏱️ 兩天衝刺計畫（11/24 晚 – 11/26 考前）</h2>
+<p>照因果鏈的順序推進：先把鏈走通，再逐組釘牢，最後用線索表和測驗提取。必做與選做分開排，做不完先砍選做。</p>
+<div class="table-wrap"><table>
+<tr><th>時段</th><th>必做</th><th>時間</th><th>選做</th></tr>
+<tr><td><strong>11/24（二）晚</strong></td><td>走通六站因果鏈（遮住站名自己接龍）＋組塊 A–C：三縱列房間巡禮、農業帶便當盒、工業擂台，各遮住標籤口頭重說一次</td><td>約 40 分</td><td>編碼活動任選 1 個（見下方分鐘數）</td></tr>
+<tr><td><strong>11/25（三）放學後＋晚</strong></td><td>組塊 D–F：人體圖由北向南點名、濃湯三件套、大賣場攤位配對；再用「提取線索表」遮住右欄自測一輪</td><td>約 50 分</td><td>編碼活動再補到共 3 個</td></tr>
+<tr><td><strong>11/25（三）晚</strong></td><td>做完下方 30 題自測，錯題回翻對應組塊，只重看錯題段落</td><td>60 分</td><td>錯題出聲講解給家人聽（15 分）</td></tr>
+<tr><td><strong>睡前複習</strong></td><td>翻牌卡錯題第二輪 ＋ 快問快答 1 分鐘</td><td>35 分</td><td>—</td></tr>
+<tr><td><strong>11/26（四）考前</strong></td><td><strong>只看全頁的「壓縮句」和「易混淆判別法」</strong>，不看新東西</td><td>25 分</td><td>掃 L1–L2 快速表（15 分，防累計考）</td></tr>
+</table></div>
+<p class="caption">編碼活動共 6 個，<strong>選 3 個做即可</strong>，每個都標了分鐘數（8–15 分不等），挑最不熟的組塊對應的活動先做。累了就停，睡眠比多背一頁更能保住分數。</p>
+</section>
+
+<section class="card" id="chain">
+<h2>🔗 全頁主架構：六站因果鏈</h2>
+<p>北美洲和中南美洲<strong>共用同一條鏈</strong>。每一站都是上一站的結果：地形決定氣候怎麼吹、氣候決定種什麼、種什麼和有什麼礦決定賺什麼、人來了之後混出什麼文化、最後誰在這套系統裡吃虧。考試給你任何一站的線索，沿著鏈往前往後推，就能把整組答案拉出來。</p>
+<div class="chain">
+<div class="station"><b>① 地形</b><span>骨架長怎樣<br>組塊 A・D</span></div><div class="arrow">➜</div>
+<div class="station"><b>② 氣候</b><span>骨架讓風雨<br>怎麼走<br>氣候專區</span></div><div class="arrow">➜</div>
+<div class="station"><b>③ 種什麼</b><span>農業帶與<br>熱帶栽培業<br>組塊 B・D</span></div><div class="arrow">➜</div>
+<div class="station"><b>④ 賺什麼</b><span>工業、貿易、<br>王牌產品<br>組塊 C・F</span></div><div class="arrow">➜</div>
+<div class="station"><b>⑤ 誰來了</b><span>移民與混血<br>文化<br>組塊 E</span></div><div class="arrow">➜</div>
+<div class="station"><b>⑥ 誰吃虧</b><span>單一產品、雨林、<br>貧富差距<br>組塊 F</span></div>
+</div>
+<div class="squeeze">壓縮句：地 形 決 定 氣 候 ・ 氣 候 決 定 餐 桌 ・ 餐 桌 加 礦 產 決 定 錢 包 ・ 錢 包 引 來 人 ・ 人 多 就 有 人 吃 虧</div>
+<div class="note"><strong>⚠️ 先講清楚，免得誤會：第 ⑤ 站「文化」放在第 ④ 站之後，是為了把兩課的文化並排對照、方便解題，不是時間順序。</strong>真實歷史裡，人（原住民、殖民者、移民）很早就來了，文化也不是經濟「造成」的結果。鏈的箭頭只用在自然與經濟段（①→②→③→④→⑥），文化站是掛上來對照用的，考試不要寫成「因為工業發達所以產生混血文化」這種因果。</div>
+<h3>六個組塊，掛在鏈上（不要再拆回兩課條列）</h3>
+<div class="table-wrap"><table>
+<tr><th>組塊</th><th>內容</th><th>掛在鏈上哪一站</th></tr>
+<tr><td><strong>A 地形＋水文</strong></td><td>北美三縱列、五大湖、密西西比—密蘇里水系（水文併進來，因為河湖都長在地形上）</td><td>①</td></tr>
+<tr><td><strong>B 農業帶</strong></td><td>北麥、中玉、南棉、湖乳＋加州地中海農業</td><td>③</td></tr>
+<tr><td><strong>C 工業＋貿易</strong></td><td>鐵鏽帶 vs 陽光帶、矽谷、USMCA（貿易併進來，因為貿易是工業分工的延伸）</td><td>④</td></tr>
+<tr><td><strong>D 中南美地景</strong></td><td>安地斯、亞馬孫、潘帕斯、巴西高原、阿塔卡馬、巴拿馬運河</td><td>①③</td></tr>
+<tr><td><strong>E 文化（橫跨兩課）</strong></td><td>北美熔爐／沙拉碗＋拉丁三件套＋古文明，一組學完兩課文化</td><td>⑤</td></tr>
+<tr><td><strong>F 產品＋問題</strong></td><td>國家—產品配對＋單一產品依賴、雨林砍伐、貧民窟（問題併進來，因為問題正是產品結構的另一面）</td><td>④⑥</td></tr>
+</table></div>
+</section>
+
+<section class="card" id="gA">
+<h2>組塊 A｜北美地形＋水文 — 房間的西牆、中間、東牆</h2>
+<div class="tags"><i>🧩 組塊</i><i>🏠 位置法</i><i>🎵 口訣</i><i>📖 故事</i><i>⚖️ 對比表</i></div>
+<p><strong>位置法先設定場景：把北美洲想成你的房間。</strong>你站在房間中央面朝北：左手邊（西）是一排高櫃子，腳下（中）是平坦地板，右手邊（東）是一排矮櫃子。之後每次想到北美地形，就在腦中由西向東走一遍房間，順序永遠不會亂。</p>
+<div class="mnemonic"><strong>西 高 ・ 中 平 ・ 東 低</strong><span>西：洛磯山（年輕、高聳）／ 中：大平原＋中央低地（平坦）／ 東：阿帕拉契山（古老、低緩）</span></div>
+<!-- SVG 1 -->
+<svg viewBox="0 0 640 300" role="img" aria-label="北美洲三縱列示意圖"><rect x="10" y="10" width="620" height="280" rx="14" fill="#eaf3ec"/><polygon points="60,240 130,70 200,240" fill="#8a6d3b"/><text x="130" y="50" text-anchor="middle" font-size="15" font-weight="bold" fill="#5a4312">洛磯山脈</text><text x="130" y="265" text-anchor="middle" font-size="12" fill="#333">西部高山・年輕褶曲</text><rect x="230" y="90" width="180" height="150" fill="#cfe3a8"/><text x="320" y="140" text-anchor="middle" font-size="15" font-weight="bold" fill="#2f4a1e">大平原＋中央低地</text><text x="320" y="165" text-anchor="middle" font-size="12" fill="#333">密西西比—密蘇里水系</text><text x="320" y="185" text-anchor="middle" font-size="12" fill="#333">農業心臟地帶</text><path d="M250 200 Q320 215 390 200" stroke="#3a7ca5" stroke-width="5" fill="none"/><polygon points="460,240 510,130 560,240" fill="#7a8a99"/><text x="510" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#24313d">阿帕拉契山</text><text x="510" y="265" text-anchor="middle" font-size="12" fill="#333">東部・古老低緩</text><text x="320" y="32" text-anchor="middle" font-size="13" fill="#555">← 西　　　　　　　　　東 →</text></svg>
+<p class="caption">圖 1｜北美洲三縱列示意圖（非精確地圖）— 房間版：左邊高櫃、地板、右邊矮櫃</p>
+<h3>📖 故事串連：三兄弟比身高</h3>
+<p>三兄弟住同一個房間。<strong>大哥洛磯</strong>是健身肌肉男，年輕力壯、站得最高（年輕褶曲山脈、高聳），站在房間西邊。<strong>二哥大平原</strong>整天躺平，肚子最大、最平（中央低地＋大平原），躺在房間正中間。<strong>三弟阿帕拉契</strong>其實是爺爺輩，年紀最大、被歲月磨得又矮又圓（古老山脈、低緩），坐在東邊打瞌睡。記住人物，年齡和高度就一起記住了：<strong>越西越年輕越高，越東越老越矮</strong>（中間那個不比身高，比肚子）。</p>
+<h3>水文併進地形組塊：湖和河都長在二哥的肚子上</h3>
+<div class="tags"><i>🧩 組塊</i><i>🏠 位置法</i><i>🎵 口訣</i><i class="alt">🔍 線索</i></div>
+<p><strong>組塊原則：湖與河都在平原上。</strong>位置法接著用二哥的身體：二哥躺平的<strong>肚子北邊放著五顆冰塊</strong>（五大湖，冰蝕湖、冷涼），一條<strong>藍緞帶從肚子由北向南垂到腳邊</strong>（密西西比河往南注入墨西哥灣）。想到平原，冰塊和緞帶會自己浮出來。</p>
+<div class="key"><strong>密西西比—密蘇里水系是北美最長的水系</strong>（課本常簡稱「密西西比河最長」），由北向南注入墨西哥灣，流經中央低地，是航運與農業灌溉動脈。</div>
+<div class="key"><strong>五大湖合起來是世界最大的淡水湖群，其中蘇必略湖是面積最大的淡水湖。</strong>五湖口訣（由西向東、由大排起）：<strong>蘇、密、休、伊、安</strong>（蘇必略、密西根、休倫、伊利、安大略）。位在美加邊界，湖區發展酪農業與早期工業。</div>
+<h3>⚖️ 對比表：北美的山 vs 南美的山（跨組塊先預習，組塊 D 會再用）</h3>
+<div class="table-wrap"><table>
+<tr><th></th><th>洛磯山（北美西）</th><th>阿帕拉契山（北美東）</th><th>安地斯山（南美西）</th></tr>
+<tr><td>年齡</td><td>年輕褶曲</td><td><strong>古老</strong></td><td>年輕褶曲</td></tr>
+<tr><td>高度</td><td>高聳</td><td><strong>低緩</strong></td><td>高峻、南美最長</td></tr>
+<tr><td>附帶考點</td><td>西部高山、雨影</td><td>阿帕拉契山的<strong>煤</strong>（鐵礦主要來自蘇必略湖區）餵養東北早期工業</td><td>印加文明、銅礦、阿塔卡馬在其西側</td></tr>
+</table></div>
+<h3>加拿大一句話（掛在地形北邊）</h3>
+<p>面積大、人口少而集中在南部（近美國邊界、五大湖—聖羅倫斯河一帶，天氣較暖）；寒冷、資源豐富（林木、礦產、小麥），英語與法語並行（魁北克法語區）。位置法：房間北邊靠牆最冷，人都擠到南邊門口。</p>
+</section>
+
+<section class="card" id="clim">
+<h2>第 ② 站專區｜氣候 — 骨架決定風雨怎麼走</h2>
+<div class="tags"><i>⚖️ 對比表</i><i>🧩 組塊</i><i class="alt">🔍 線索</i></div>
+<p>氣候不另外背，它是第 ① 站地形的結果：北邊緯度高所以冷、西邊高山擋住水氣所以內陸乾、東邊面向大西洋所以濕。先用這張<strong>氣候小對照卡</strong>把兩課的氣候並排釘住，細節再看下面的北美表。</p>
+<h3>🃏 氣候小對照卡（北美 vs 中南美，一眼分清）</h3>
+<div class="table-wrap"><table>
+<tr><th>判別點</th><th>北美洲</th><th>中南美洲</th></tr>
+<tr><td>主調</td><td>溫帶為主，南北溫差大</td><td>熱帶為主，赤道橫貫北部</td></tr>
+<tr><td>最愛考的特殊氣候</td><td><strong>地中海型在西部加州沿岸</strong>（夏乾冬雨）</td><td>安地斯<strong>高地氣候</strong>：同在熱帶，爬高就變涼（垂直變化）</td></tr>
+<tr><td>濕潤代表</td><td>東部：東南副熱帶濕潤、東北溫帶大陸性</td><td>亞馬孫：熱帶雨林氣候，全年高溫多雨</td></tr>
+<tr><td>乾燥代表</td><td>西部內陸高原：雨影、乾燥，要灌溉</td><td>阿塔卡馬沙漠：副熱帶高壓＋秘魯涼流＋雨影，極乾燥</td></tr>
+<tr><td>冷的代表</td><td>北部加拿大、阿拉斯加：寒帶、副極地</td><td>南部巴塔哥尼亞：溫帶、較涼</td></tr>
+</table></div>
+<h3>北美氣候細表（修正版，照這個背）</h3>
+<div class="table-wrap"><table>
+<tr><th>地區</th><th>氣候</th><th>記憶鉤子</th></tr>
+<tr><td>北部（加拿大、阿拉斯加）</td><td>寒帶、副極地</td><td>越北越冷</td></tr>
+<tr><td>東部</td><td>副熱帶濕潤（東南）與溫帶大陸性（東北、五大湖）</td><td>東部濕潤、冬冷夏熱</td></tr>
+<tr><td>西部加州沿岸</td><td><strong>地中海型</strong>（夏乾冬雨）</td><td>只有加州沿岸是地中海型！</td></tr>
+<tr><td>西部內陸、高原山地</td><td>乾燥、高地氣候</td><td>雨影、缺水、要灌溉</td></tr>
+<tr><td>南部（佛州、墨西哥灣沿岸）</td><td>熱帶、副熱帶濕潤</td><td>南部熱，不是地中海型</td></tr>
+</table></div>
+<div class="trap"><b>陷阱：</b>絕對不要寫「南部地中海型」。地中海型在<strong>西部加州沿岸</strong>；南部是熱帶／副熱帶濕潤。看到題目寫「夏乾冬雨」先想加州，不要被「南部很熱」騙走。</div>
+</section>
+
+<section class="card" id="gB">
+<h2>組塊 B｜農業帶 — 一個四層便當盒，由北往南打開</h2>
+<div class="tags"><i>🧩 組塊</i><i>🏠 位置法</i><i>🎵 口訣</i><i>📖 故事</i><i>⚖️ 對比表</i></div>
+<p><strong>位置法：美國農業是一盒四層便當。</strong>便當盒放在房間的地板上（組塊 A 二哥的肚子），由上層（北）往下層（南）打開：第一層金黃小麥、第二層綠色玉米、第三層白色棉花；旁邊還附一小格優格（五大湖酪農）和一小格水果（加州）。房間方位版也一樣：站回房間中央，北牆掛小麥、南牆掛棉花，順序靠空間，不靠死背。</p>
+<div class="mnemonic"><strong>北 麥 ・ 中 玉 ・ 南 棉 ・ 湖 乳</strong><span>北麥（小麥）／ 中玉（玉米）／ 南棉（棉花）／ 湖乳（五大湖酪農）</span></div>
+<!-- SVG 2 -->
+<svg viewBox="0 0 640 320" role="img" aria-label="北美農業帶示意圖"><rect x="10" y="10" width="620" height="300" rx="14" fill="#fff8e1"/><rect x="80" y="40" width="480" height="55" fill="#e8c547"/><text x="320" y="62" text-anchor="middle" font-weight="bold" font-size="15">🌾 小麥區 — 大平原</text><text x="320" y="82" text-anchor="middle" font-size="12">北部春小麥 ／ 南部冬小麥（堪薩斯為冬小麥核心）</text><rect x="80" y="100" width="480" height="55" fill="#8fbf5a"/><text x="320" y="122" text-anchor="middle" font-weight="bold" font-size="15">🌽 玉米帶 — 中央低地（愛荷華、伊利諾）</text><text x="320" y="142" text-anchor="middle" font-size="12">玉米＋大豆＋養豬、養牛：飼料作物鏈</text><rect x="80" y="160" width="480" height="50" fill="#e8a0a0"/><text x="320" y="182" text-anchor="middle" font-weight="bold" font-size="15">棉花帶 — 南部（生長季長、溫暖）</text><text x="320" y="200" text-anchor="middle" font-size="12">位置已隨灌溉與品種往西、往南移動，了解即可</text><rect x="80" y="215" width="230" height="55" fill="#a8c8e8"/><text x="195" y="238" text-anchor="middle" font-weight="bold" font-size="14">🥛 酪農帶</text><text x="195" y="258" text-anchor="middle" font-size="12">五大湖周邊：涼爽＋近市場</text><rect x="330" y="215" width="230" height="55" fill="#c3a8e8"/><text x="445" y="238" text-anchor="middle" font-weight="bold" font-size="14">🍇 加州地中海農業</text><text x="445" y="258" text-anchor="middle" font-size="12">葡萄、柑橘、蔬菜＋灌溉</text></svg>
+<p class="caption">圖 2｜美國農業帶便當盒示意圖（非精確地圖）— 由北往南唸：麥、玉、棉；湖邊喝牛奶、加州吃葡萄</p>
+<h3>📖 故事串連：小麥先生由北向南之旅</h3>
+<p>小麥先生從加拿大邊境出發往南旅行。<strong>第一站北部大平原</strong>：這裡冬天冷到會凍傷人，所以他學當地人——<strong>春小麥</strong>春天才播種、趕在嚴冬前收成，晚種早收、躲開冬天。<strong>第二站堪薩斯</strong>：這裡冬天<strong>比北部溫和，積雪覆蓋下小麥可以越冬</strong>，所以親戚<strong>冬小麥</strong>秋天就先住下來過冬，隔年收成，堪薩斯是冬小麥的核心地帶。再往南太熱，小麥先生把位子讓給愛熱的棉花，自己在玉米帶吃了一頓玉米大餐（餵豬餵牛的飼料鏈），最後到五大湖邊喝杯鮮奶結束旅程。</p>
+<div class="note"><strong>補充推理（不用背）：</strong>你可能會聽到「冬小麥秋播是為了先長根」這類說法——那是輔助理解的推理，<strong>課本只要求分得清春麥、冬麥與分布，不考根系</strong>，段考寫分布和原因（氣候）就好。</div>
+<h3>⚖️ 對比表：每個帶子「為什麼在那」</h3>
+<div class="table-wrap"><table>
+<tr><th>農業帶</th><th>在哪</th><th>為什麼在那</th></tr>
+<tr><td>小麥</td><td>大平原：北部春小麥、南部冬小麥（堪薩斯為核心）</td><td>平坦、機械化、春小麥避北地嚴冬晚種早收；冬小麥秋播，在比北部溫和、積雪覆蓋下越冬</td></tr>
+<tr><td>玉米</td><td>中央低地</td><td>夏熱多雨、土壤肥沃；多作飼料養畜</td></tr>
+<tr><td>棉花</td><td>南部</td><td>需長而溫暖的生長季</td></tr>
+<tr><td>酪農</td><td>五大湖周邊</td><td>氣候涼爽牧草好、靠近東北部大城市市場（鮮乳易壞）</td></tr>
+</table></div>
+<p>共同特色：<strong>商業性、機械化、專業化（農業帶）、規模大、商品率高</strong>，農產品大量出口；美國以<strong>名目 GDP 計是世界最大的經濟體</strong>，服務業占比最高。</p>
+</section>
+
+<section class="card" id="gC">
+<h2>組塊 C｜工業＋貿易 — 擂台對決：老東北 vs 新西部</h2>
+<div class="tags"><i>⚖️ 對比表</i><i>🎵 口訣</i><i>📖 故事</i><i>🧩 組塊</i></div>
+<div class="mnemonic"><strong>東 北 老 車 底 特 律 ・ 西 岸 新 晶 片 矽 谷</strong><span>老工業在東北五大湖、新科技在西岸與陽光帶；中間的關鍵轉折是成本與技術，不是資源用完</span></div>
+<!-- SVG 3 擂台對決 -->
+<svg viewBox="0 0 640 300" role="img" aria-label="工業擂台對決示意圖：底特律老將對矽谷新人"><rect x="10" y="10" width="620" height="280" rx="14" fill="#fdf3e3"/><rect x="180" y="120" width="280" height="120" fill="#d9c8a8"/><rect x="170" y="105" width="300" height="18" fill="#9e2b25"/><text x="320" y="70" text-anchor="middle" font-size="17" font-weight="bold" fill="#9e2b25">🥊 工業擂台：誰才是現在的主場？</text><rect x="60" y="60" width="170" height="90" rx="12" fill="#a8c8e8"/><text x="145" y="88" text-anchor="middle" font-size="14" font-weight="bold">🚗 底特律老將</text><text x="145" y="110" text-anchor="middle" font-size="12">東北・五大湖（鐵鏽帶）</text><text x="145" y="130" text-anchor="middle" font-size="12">汽車・鋼鐵・煤與湖運</text><rect x="410" y="60" width="170" height="90" rx="12" fill="#c3e8c8"/><text x="495" y="88" text-anchor="middle" font-size="14" font-weight="bold">💻 矽谷新人</text><text x="495" y="110" text-anchor="middle" font-size="12">西岸・加州灣區（地區）</text><text x="495" y="130" text-anchor="middle" font-size="12">晶片・軟體・人才與資金</text><text x="320" y="265" text-anchor="middle" font-size="13" fill="#5a4312">老將不是沒力氣，是比賽換了規則：成本高了就換腦力</text></svg>
+<p class="caption">圖 3｜工業擂台對決示意圖（非精確地圖）— 左邊老將靠原料與湖運，右邊新人靠人才、資金與技術</p>
+<h3>⚖️ 對比表：老東北 vs 新西部（含南部陽光帶）</h3>
+<div class="table-wrap"><table>
+<tr><th>地區</th><th>代表</th><th>關鍵字</th></tr>
+<tr><td>東北・五大湖（傳統工業／鐵鏽帶）</td><td>底特律、芝加哥、匹茲堡</td><td>底特律＝汽車；靠阿帕拉契山的<strong>煤</strong>（鐵礦主要來自蘇必略湖區）＋湖運起家；後來部分衰退轉型</td></tr>
+<tr><td>南部・西部（陽光帶）</td><td>休士頓、達拉斯、亞特蘭大</td><td>氣候暖、土地勞力成本較低、航太與能源；人口與產業南移西移</td></tr>
+<tr><td>西岸</td><td><strong>矽谷（地區）</strong>、西雅圖、洛杉磯</td><td>矽谷＝加州舊金山灣區南側的高科技聚落（不是單一城市）；西雅圖航太、洛杉磯影視</td></tr>
+<tr><td>東岸大城</td><td>紐約、華盛頓</td><td>紐約＝金融商業；華盛頓＝首都政治</td></tr>
+</table></div>
+<div class="key"><strong>轉型原因要寫對：</strong>傳統工業不是「煤鐵用完了、資源老了」才衰退，而是<strong>面臨成本上升、競爭與產業轉型</strong>；新的工業不再靠重原料，改靠<strong>人才、資金與技術</strong>。壓縮句：<strong>成本高了就換腦力</strong>。</div>
+<div class="trap"><b>陷阱：</b>題目問矽谷要問「哪一個<strong>地區</strong>」——矽谷是地區，不是城市。底特律是汽車城，不要和矽谷搞混。</div>
+<h3>📖 故事串連：一台車的跨國旅行（把 USMCA 串進來）</h3>
+<div class="tags"><i>📖 故事</i><i>🧩 組塊</i><i>🎵 口訣</i></div>
+<p>一台車在<strong>底特律</strong>出生，零件先從<strong>加拿大</strong>運來組裝、部分組裝工作在<strong>墨西哥</strong>完成，最後開到加州裝上<strong>矽谷</strong>的晶片才賣出去。這台車能這樣三國跑來跑去不被關稅擋住，靠的就是貿易組塊——<strong>USMCA（美墨加協定）</strong>：美國、墨西哥、加拿大三國的自由貿易協定，前身為 NAFTA，目的是降低關稅、促進北美區域貿易與產業分工。口訣：<strong>美、墨、加，三國零件一家</strong>。</p>
+</section>
+
+<section class="card" id="gD">
+<h2>組塊 D｜中南美地景 — 一具身體：脊椎、肺、肚子</h2>
+<div class="tags"><i>🧩 組塊</i><i>🏠 位置法</i><i>🎵 口訣</i><i>📖 故事</i></div>
+<p><strong>位置法：把南美洲想成一個站著的人。</strong>西邊一整條<strong>脊椎</strong>是安地斯山，北邊胸口的<strong>肺</strong>是亞馬孫雨林，南邊的<strong>腿（大腿肉最厚的地方）</strong>是潘帕斯草原，東邊的<strong>肩膀</strong>是巴西高原。脖子最細的地方，就是中美洲地峽與巴拿馬運河。提取時摸一遍自己的脊椎、胸口、大腿，順序就回來了。</p>
+<div class="mnemonic"><strong>西 山 ・ 北 林 ・ 南 草</strong><span>西：安地斯山（脊椎）／ 北：亞馬孫熱帶雨林（肺）／ 南：潘帕斯草原（腿）／ 再加東：巴西高原（肩膀）</span></div>
+<!-- SVG 4 南美洲人體圖 -->
+<svg viewBox="0 0 640 360" role="img" aria-label="南美洲人體圖示意：脊椎安地斯、肺亞馬孫、腿潘帕斯"><rect x="10" y="10" width="620" height="340" rx="14" fill="#eef6ee"/><circle cx="150" cy="52" r="24" fill="#f2d5a0"/><text x="150" y="92" text-anchor="middle" font-size="12" fill="#333">中美洲（頭）</text><rect x="138" y="76" width="24" height="26" fill="#e8a0a0"/><text x="205" y="95" font-size="12" font-weight="bold" fill="#9e2b25">脖子＝巴拿馬運河</text><polygon points="128,102 152,102 146,320 122,320" fill="#8a6d3b"/><text x="100" y="215" text-anchor="middle" font-size="13" font-weight="bold" fill="#5a4312" transform="rotate(-86 100 215)">脊椎：安地斯山脈</text><ellipse cx="290" cy="150" rx="105" ry="58" fill="#2e7d32"/><text x="290" y="140" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">🫁 肺：亞馬孫雨林</text><text x="290" y="162" text-anchor="middle" font-size="12" fill="#fff">亞馬孫河流量最大・地球之肺</text><rect x="440" y="120" width="130" height="70" rx="12" fill="#d9b88a"/><text x="505" y="148" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a3412">肩膀：巴西高原</text><text x="505" y="170" text-anchor="middle" font-size="12" fill="#333">咖啡、鐵礦</text><polygon points="215,235 330,235 300,325 235,325" fill="#cfe3a8"/><text x="272" y="272" text-anchor="middle" font-size="13" font-weight="bold" fill="#2f4a1e">🦵 腿：潘帕斯草原</text><text x="272" y="294" text-anchor="middle" font-size="12" fill="#333">阿根廷小麥、牛肉</text><text x="480" y="300" text-anchor="middle" font-size="12" fill="#9e2b25">西側海岸：阿塔卡馬沙漠（極乾燥）</text></svg>
+<p class="caption">圖 4｜南美洲人體圖（非精確地圖）— 脊椎在西、肺在北、腿在南、肩膀在東，脖子是運河</p>
+<ul>
+<li><strong>安地斯山（脊椎）：</strong>南美西側、世界最長的陸上山脈之一，年輕褶曲、高峻；高地氣候垂直變化，古印加文明在此。</li>
+<li><strong>亞馬孫河（肺的血管）：流量最大的河流</strong>（集水面積與流量驚人）；雨林位在<strong>南美洲（巴西、秘魯一帶）</strong>為主，是生物多樣性最高的地方。</li>
+<li><strong>潘帕斯草原（腿）：</strong>阿根廷中部溫帶草原，土壤肥沃，是小麥與養牛重鎮——大腿肉最厚，所以產牛肉，合理。</li>
+<li><strong>阿塔卡馬沙漠（脊椎西邊的乾皮膚）：</strong>智利北部、安地斯西側，極乾燥。成因三件套不要刪：<strong>副熱帶高壓＋秘魯涼流＋雨影</strong>。</li>
+</ul>
+<h3>巴拿馬運河：脖子上的領帶</h3>
+<div class="tags"><i>🏠 位置法</i><i>🎵 口訣</i><i class="alt">🔍 線索</i></div>
+<p>人體圖的<strong>脖子</strong>是中美洲最窄的地峽，<strong>巴拿馬運河就是脖子上打的領帶</strong>：把大西洋和太平洋兩邊扣在一起，船隻不必繞過南美洲南端。口訣：<strong>脖子是運河，兩洋一線牽</strong>。提取線索：題目出現「溝通大西洋與太平洋」「縮短航程」，先摸脖子——答案就是巴拿馬運河。</p>
+<h3>📖 故事串連：由北向南的一趟旅程</h3>
+<p>從脖子（巴拿馬）出發：先鑽進北邊的<strong>肺</strong>（亞馬孫雨林，熱到喘不過氣、雨下不停），再爬上西邊的<strong>脊椎</strong>（安地斯，越爬越冷、看到印加梯田），順著脊椎往南，東邊經過<strong>肩膀</strong>（巴西高原，喝杯咖啡），最後躺到南邊的<strong>腿</strong>上（潘帕斯草原，吃牛排配小麥麵包）。一趟旅程走完，三大地景＋高原的方位全數到位。</p>
+</section>
+
+<section class="card" id="gE">
+<h2>組塊 E｜文化（橫跨兩課）— 一鍋濃湯 vs 一盤沙拉</h2>
+<div class="tags"><i>🧩 組塊</i><i>⚖️ 對比表</i><i>📖 故事</i><i>🎵 口訣</i></div>
+<p>文化不再分兩課各背一次：北美和拉丁美洲都是「原住民＋外來者」混出來的社會，差別只在<strong>混法</strong>。北美的關鍵字是移民社會的兩種想像（熔爐、沙拉碗），拉丁美洲的關鍵字是一鍋早就煮在一起的濃湯。記得回頭看因果鏈的提醒：這一站是為了對照掛上來的，不是經濟的結果。</p>
+<h3>拉丁文化怎麼來的？先看流程，再喝濃湯</h3>
+<!-- SVG flow -->
+<svg viewBox="0 0 640 150" role="img" aria-label="拉丁文化形成流程圖"><rect x="10" y="35" width="130" height="80" rx="12" fill="#ffe0b2"/><text x="75" y="68" text-anchor="middle" font-weight="bold" font-size="14">原住民</text><text x="75" y="90" text-anchor="middle" font-size="12">阿茲特克、印加、馬雅</text><text x="152" y="80" font-size="20">➜</text><rect x="175" y="35" width="130" height="80" rx="12" fill="#ffcdd2"/><text x="240" y="68" text-anchor="middle" font-weight="bold" font-size="14">歐洲殖民</text><text x="240" y="90" text-anchor="middle" font-size="12">西班牙、葡萄牙</text><text x="317" y="80" font-size="20">➜</text><rect x="340" y="35" width="130" height="80" rx="12" fill="#d1c4e9"/><text x="405" y="68" text-anchor="middle" font-weight="bold" font-size="14">非洲勞工</text><text x="405" y="90" text-anchor="middle" font-size="12">奴隸貿易輸入 plantation</text><text x="482" y="80" font-size="20">➜</text><rect x="505" y="35" width="125" height="80" rx="12" fill="#c8e6c9"/><text x="567" y="68" text-anchor="middle" font-weight="bold" font-size="14">混血文化</text><text x="567" y="90" text-anchor="middle" font-size="12">語言・宗教・音樂・飲食</text></svg>
+<p class="caption">拉丁文化形成流程圖 — 原住民打底、歐洲殖民蓋上、非洲勞工加入，混成今天的拉丁美洲</p>
+<!-- SVG 5 一鍋拉丁濃湯 -->
+<svg viewBox="0 0 640 320" role="img" aria-label="一鍋拉丁濃湯示意圖"><rect x="10" y="10" width="620" height="300" rx="14" fill="#fdf6ec"/><text x="320" y="42" text-anchor="middle" font-size="17" font-weight="bold" fill="#5a4312">🍲 一鍋拉丁濃湯：煮在一起，但沒有完全融化</text><path d="M170 110 L470 110 L440 250 Q320 285 200 250 Z" fill="#b7791f"/><ellipse cx="320" cy="110" rx="150" ry="26" fill="#e0aa4e"/><circle cx="255" cy="105" r="17" fill="#f2d5a0"/><text x="255" y="150" text-anchor="middle" font-size="12">🥔 原住民（湯底）</text><circle cx="330" cy="98" r="15" fill="#c0392b"/><text x="330" y="150" text-anchor="middle" font-size="12">🥩 歐洲殖民</text><circle cx="395" cy="106" r="13" fill="#6c3483"/><text x="412" y="150" text-anchor="middle" font-size="12">🌶️ 非洲勞工</text><path d="M440 84 Q505 60 520 105 Q490 128 452 116 Z" fill="#2e7d32"/><text x="520" y="55" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e7d32">這一角還是綠的＝巴西</text><text x="520" y="150" text-anchor="middle" font-size="12" fill="#2e7d32">說葡萄牙語！</text><text x="320" y="292" text-anchor="middle" font-size="13" fill="#333">混血（麥士蒂索）比例各國不同，不要寫成全區一樣多</text></svg>
+<p class="caption">圖 5｜一鍋拉丁濃湯（非精確地圖）— 三種食材煮成一鍋，但巴西那一角保持原色；煮在一起不代表完全融合</p>
+<div class="mnemonic"><strong>說 西 語 ・ 信 天 主 ・ 混 血 多</strong><span>拉丁文化三件套（組塊）／ 例外王：巴西說葡萄牙語！／ 宗教以天主教為主</span></div>
+<ul>
+<li><strong>為什麼巴西不一樣？</strong>因為當年葡萄牙和西班牙劃分殖民地，巴西被劃給葡萄牙（史稱托德西利亞斯條約的劃分）。<span class="note" style="display:inline;padding:2px 8px"><strong>補充：課外知識，段考不考年份，只需知道巴西說葡語是殖民劃分造成的。</strong></span></li>
+<li><strong>麥士蒂索人（Mestizo）：</strong>歐洲白人與美洲原住民混血，是濃湯裡最常見的食材。<strong>在許多國家占相當比例（尤以墨西哥、中美洲為多），但各國比例差異很大</strong>，不要寫成全區一律「占多數」——就像濃湯每一碗舀到的料都不一樣多。</li>
+<li>其他混血：穆拉托人（歐洲＋非洲）等；南部阿根廷、烏拉圭歐洲移民比例較高（那幾碗湯歐洲食材下得多）。</li>
+</ul>
+<h3>📖 故事串連＋🏠 位置法：古文明沿著人體由北向南排隊</h3>
+<div class="tags"><i>📖 故事</i><i>🏠 位置法</i><i>🎵 口訣</i></div>
+<p>三個古文明在人體圖上由北向南排隊點名：<strong>頭附近的阿茲特克</strong>（墨西哥高原，首都與湖泊城市）、<strong>脖子邊的馬雅</strong>（中美洲，最會算曆法）、<strong>脊椎上的印加</strong>（安地斯高地，馬丘比丘）。口訣要分開記，不要混成一坨：<strong>印加梯田</strong>（在山坡上一階一階種田）、<strong>馬雅曆法</strong>（抬頭算天象定曆法）。一句串起來：<strong>阿茲特克住湖邊、馬雅算日子、印加爬梯田</strong>。</p>
+<h3>⚖️ 對比表：北美的兩種混法 — 熔爐 vs 沙拉碗</h3>
+<div class="table-wrap"><table>
+<tr><th></th><th>民族大熔爐（melting pot）</th><th>沙拉碗（salad bowl）</th></tr>
+<tr><td>畫面</td><td>全部丟進鍋裡熔成一體，分不出原本是什麼</td><td>每樣食材並排共存，各自還吃得出味道</td></tr>
+<tr><td>主張</td><td>移民融入、融合成共同的美國文化</td><td>各族群共存、各自保留自身特色</td></tr>
+<tr><td>出現順序</td><td>早期主流期待</td><td>後來更受強調的觀點</td></tr>
+</table></div>
+<p>口訣：<strong>熔爐熔成一個味，沙拉各留各的味</strong>。考法常給情境判斷是哪一種觀點：看到「保留母語與節慶」選沙拉碗，看到「融入主流、成為一體」選熔爐。美國、加拿大皆為移民社會、多元文化，官方與日常以英語為主（加拿大另有法語）。注意對照：拉丁濃湯是「已經煮在一起的歷史結果」，沙拉碗是「北美現在主張的相處方式」，兩鍋不要搞混。</p>
+</section>
+
+<section class="card" id="gF">
+<h2>組塊 F｜國家產品大賣場 ＋ 誰吃虧（第 ④⑥ 站）</h2>
+<div class="tags"><i>🧩 組塊</i><i>🏠 位置法</i><i>🎵 口訣</i><i>⚖️ 對比表</i></div>
+<p><strong>位置法：把南美洲想成一間大賣場，攤位照地圖方位擺。</strong>進門左手邊（西側）是一排瘦長的礦產攤，北邊入口是石油攤，賣場正中央最大攤是巴西，走到最南邊（賣場底）是牛肉攤。逛一圈賣場，配對就背完了——而且每個攤位賣什麼，都能用組塊 D 的人體地景解釋：銅在脊椎（安地斯礦產）、咖啡在肩膀（巴西高原）、牛肉在腿（潘帕斯）。</p>
+<div class="mnemonic"><strong>智 銅 ・ 委 油 ・ 巴 咖 ・ 阿 牛</strong><span>智利銅／委內瑞拉石油／巴西咖啡／阿根廷牛肉</span></div>
+<!-- SVG 6 國家產品大賣場 -->
+<svg viewBox="0 0 640 300" role="img" aria-label="國家產品大賣場示意圖"><rect x="10" y="10" width="620" height="280" rx="14" fill="#fff3e0"/><text x="320" y="38" text-anchor="middle" font-weight="bold" font-size="16">🛒 國家產品大賣場（攤位照地圖方位擺）</text><rect x="40" y="60" width="150" height="60" rx="10" fill="#f6c453"/><text x="115" y="85" text-anchor="middle" font-weight="bold" font-size="14">🛢️ 北攤：委內瑞拉</text><text x="115" y="107" text-anchor="middle" font-size="12">石油（北部沿海）</text><rect x="40" y="140" width="110" height="110" rx="10" fill="#d98880"/><text x="95" y="185" text-anchor="middle" font-weight="bold" font-size="14">🥉 西攤：智利</text><text x="95" y="207" text-anchor="middle" font-size="12">銅（瘦長攤位）</text><text x="95" y="227" text-anchor="middle" font-size="12">安地斯礦產</text><rect x="230" y="80" width="220" height="110" rx="10" fill="#a9dfbf"/><text x="340" y="118" text-anchor="middle" font-weight="bold" font-size="15">☕ 中央大攤：巴西</text><text x="340" y="142" text-anchor="middle" font-size="12">咖啡、鐵礦、大豆、蔗糖</text><text x="340" y="164" text-anchor="middle" font-size="12">面積人口南美最大・說葡語</text><rect x="230" y="215" width="220" height="55" rx="10" fill="#f5cba7"/><text x="340" y="240" text-anchor="middle" font-weight="bold" font-size="14">🥩 南攤：阿根廷 — 牛肉、小麥</text><text x="340" y="260" text-anchor="middle" font-size="12">潘帕斯草原出產</text><text x="520" y="230" text-anchor="middle" font-size="12" fill="#555">逛賣場順序＝<tspan x="520" y="250">地圖由北向南</tspan></text></svg>
+<p class="caption">圖 6｜國家—產品大賣場示意圖（非精確地圖）— 再加：墨西哥石油／銀、哥倫比亞咖啡、古巴蔗糖、厄瓜多香蕉</p>
+<div class="table-wrap"><table>
+<tr><th>國家</th><th>產品／特色</th><th>連到哪個地景（因果鏈回推）</th></tr>
+<tr><td>智利</td><td>銅</td><td>安地斯礦產、北部乾燥</td></tr>
+<tr><td>委內瑞拉</td><td>石油</td><td>北部沿海、馬拉開波湖一帶</td></tr>
+<tr><td>巴西</td><td>咖啡、鐵礦、大豆；面積人口南美最大、說葡語</td><td>巴西高原、亞馬孫</td></tr>
+<tr><td>阿根廷</td><td>牛肉、小麥</td><td>潘帕斯草原</td></tr>
+<tr><td>墨西哥</td><td>石油、銀；阿茲特克古文明；USMCA 成員</td><td>中美、北美南端橋梁</td></tr>
+</table></div>
+<!-- 巴西地雷陷阱圖 -->
+<svg viewBox="0 0 640 210" role="img" aria-label="巴西地雷陷阱警示圖"><rect x="10" y="10" width="620" height="190" rx="14" fill="#fdecea"/><text x="320" y="42" text-anchor="middle" font-size="17" font-weight="bold" fill="#9e2b25">💣 考場地雷區：這一顆最常炸到人</text><circle cx="150" cy="120" r="42" fill="#333"/><text x="150" y="112" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">地雷</text><text x="150" y="132" text-anchor="middle" font-size="11" fill="#fff">葡萄牙語</text><text x="215" y="100" font-size="14">題目：「拉丁美洲各國大多說西班牙語，巴西也不例外。」</text><text x="215" y="128" font-size="14" font-weight="bold" fill="#9e2b25">✖ 錯！巴西是全區例外王，說葡萄牙語。</text><text x="215" y="156" font-size="14">拆彈法：看到「巴西＋西班牙語」直接判錯，先想濃湯裡那一角綠色。</text></svg>
+<p class="caption">陷阱圖｜巴西地雷 — 全拉丁美洲只有巴西說葡萄牙語，這是送分題也是送命題</p>
+<h3>第 ⑥ 站：誰吃虧（問題面，申論、選擇都愛考）</h3>
+<div class="tags"><i>🧩 組塊</i><i>📖 故事</i></div>
+<p>大賣場的攤位看起來很賺錢，但每個攤位都只有一兩樣王牌——這就是問題的根。用一句故事收尾：<strong>攤位只賣一樣東西，那樣東西跌價，全家就沒飯吃；為了多擺攤位，有人把肺（雨林）砍掉一塊；賺錢的人住賣場樓上，沒賺到的人睡在賣場後巷（貧民窟）。</strong></p>
+<ul>
+<li><strong>雨林砍伐主因：開闢牧場養牛與種植大豆等農地</strong>（還有伐木、道路開發）；後果：生物多樣性下降、碳排放、原住民家園受影響。不要把採礦寫成主因選項。</li>
+<li><strong>單一產品依賴：</strong>經濟易受國際價格波動衝擊（如只靠石油、銅）。</li>
+<li><strong>都市問題：</strong>人口往大都市集中、貧民窟（如巴西 favela）、貧富差距大。</li>
+<li><strong>土地分配不均：</strong>大莊園（plantation／latifundio）歷史遺留。</li>
+</ul>
+</section>
+
+<section class="card" id="tables">
+<h2>⚖️ 因果鏈對照表 — 兩課沿同一條鏈並排走</h2>
+<div class="tags"><i>⚖️ 對比表</i><i>🧩 組塊</i><i>📖 故事</i></div>
+<p>這張表就是整份複習的骨架截圖：橫著讀是一條因果鏈，豎著讀是兩課對照。考前如果只剩 10 分鐘，看這一張。</p>
+<div class="table-wrap"><table>
+<tr><th>站</th><th>L3 北美洲（盎格魯美洲）</th><th>L4 中南美洲（拉丁美洲）</th></tr>
+<tr><td><strong>① 地形</strong></td><td>西高、中平、東低；密西西比—密蘇里水系、五大湖最大淡水湖群</td><td>西山、北林、南草；亞馬孫河流量最大、巴拿馬運河通兩洋</td></tr>
+<tr><td><strong>② 氣候</strong></td><td>溫帶為主；地中海型只在西部加州沿岸；東部濕潤、西部內陸乾燥</td><td>熱帶為主；亞馬孫全年多雨、安地斯高地垂直變化、阿塔卡馬極乾</td></tr>
+<tr><td><strong>③ 種什麼</strong></td><td>農業帶：北麥、中玉、南棉、湖乳；商業性、機械化</td><td>熱帶栽培業（咖啡、蔗糖、香蕉）＋潘帕斯小麥、養牛</td></tr>
+<tr><td><strong>④ 賺什麼</strong></td><td>五大湖傳統工業（靠阿帕拉契山的<strong>煤</strong>，鐵礦主要來自蘇必略湖區）→ 陽光帶、矽谷轉型；USMCA 三國分工</td><td>礦農產品出口：智銅、委油、巴咖、阿牛；巴西工業較多元</td></tr>
+<tr><td><strong>⑤ 誰來了</strong></td><td>移民社會：熔爐 → 沙拉碗；英語為主（加拿大兼法語）</td><td>原住民＋歐洲＋非洲混血：說西語、信天主、混血多；巴西說葡語</td></tr>
+<tr><td><strong>⑥ 誰吃虧</strong></td><td>鐵鏽帶轉型陣痛、族群與貧富議題（相對輕）</td><td>單一產品依賴、雨林砍伐、貧民窟、土地分配不均</td></tr>
+</table></div>
+<h3>易混淆判別法（考前只看這一張的另一半）</h3>
+<div class="table-wrap"><table>
+<tr><th>易混配對</th><th>判別法（一句話分清）</th></tr>
+<tr><td>矽谷 vs 底特律</td><td>矽谷是<strong>地區</strong>、賣晶片與軟體；底特律是<strong>城市</strong>、賣汽車</td></tr>
+<tr><td>熔爐 vs 沙拉碗</td><td>熔爐熔成一個味；沙拉各留各的味</td></tr>
+<tr><td>春小麥 vs 冬小麥</td><td>春麥怕冷躲冬天（北部）；冬麥在堪薩斯過冬（南部、較溫和）</td></tr>
+<tr><td>亞馬孫河 vs 密西西比河</td><td>亞馬孫比<strong>流量</strong>（最大）；密西西比—密蘇里比<strong>水系長度</strong>（北美最長）</td></tr>
+<tr><td>洛磯山 vs 阿帕拉契山</td><td>同在北美：西邊年輕又高、東邊古老又低</td></tr>
+<tr><td>巴西 vs 其他拉丁國家</td><td>只有巴西說<strong>葡萄牙語</strong>、信天主教這點相同，語言是例外</td></tr>
+<tr><td>印加 vs 馬雅</td><td>印加在安地斯<strong>梯田</strong>；馬雅在中美洲算<strong>曆法</strong></td></tr>
+<tr><td>地中海型 vs 副熱帶濕潤</td><td>夏乾冬雨在<strong>加州沿岸</strong>；南部佛州是副熱帶濕潤，不要對調</td></tr>
+</table></div>
+</section>
+
+<section class="card" id="cue">
+<h2>🔍 提取線索表 — 看到什麼，就想到哪個組塊</h2>
+<div class="tags"><i class="alt">🔍 線索</i><i>🧩 組塊</i></div>
+<p>考試時你不會被問「請背出組塊 C」，你會看到一串題目關鍵字。這張表就是把關鍵字連回組塊的對照表：遮住右邊兩欄，看左欄能不能自己說出答案，說不出來的那幾列就是今晚要補的洞。</p>
+<div class="table-wrap"><table>
+<tr><th>題目出現這個線索…</th><th>立刻想到</th><th>回哪個組塊</th></tr>
+<tr><td>「夏乾冬雨」「葡萄、柑橘需灌溉」</td><td><strong>加州沿岸地中海型氣候</strong>（不是南部！）</td><td>氣候專區・B</td></tr>
+<tr><td>「冬季寒冷、夏季濕熱」「佛羅里達、墨西哥灣沿岸」</td><td><strong>東部／南部副熱帶濕潤氣候</strong></td><td>氣候專區</td></tr>
+<tr><td>「世界最大淡水湖群」「面積最大淡水湖」</td><td>五大湖、蘇必略湖；肚子上的五顆冰塊</td><td>A</td></tr>
+<tr><td>「北美最長水系」「注入墨西哥灣」</td><td>密西西比—密蘇里水系；藍緞帶</td><td>A</td></tr>
+<tr><td>「春小麥」「冬小麥」「堪薩斯」</td><td>北部春麥、南部冬麥（堪薩斯核心）</td><td>B</td></tr>
+<tr><td>「鮮乳易腐」「靠近大城市市場」</td><td>五大湖酪農帶</td><td>B</td></tr>
+<tr><td>「汽車城」「鐵鏽帶」</td><td>底特律、東北傳統工業；擂台左邊老將</td><td>C</td></tr>
+<tr><td>「高科技聚落」「舊金山灣區」</td><td>矽谷（是<strong>地區</strong>不是城市）；擂台右邊新人</td><td>C</td></tr>
+<tr><td>「降低關稅」「NAFTA 的後繼者」</td><td>USMCA：美、墨、加三國分工</td><td>C</td></tr>
+<tr><td>「流量最大」「地球之肺」</td><td>亞馬孫河與雨林；人體圖的肺</td><td>D</td></tr>
+<tr><td>「副熱帶高壓、涼流、雨影」三個一起出現</td><td>阿塔卡馬沙漠極乾燥</td><td>D</td></tr>
+<tr><td>「溝通大西洋與太平洋」「縮短航程」</td><td>巴拿馬運河；脖子上的領帶</td><td>D</td></tr>
+<tr><td>「保留各族群特色」「母語與節慶」</td><td>沙拉碗（不是熔爐）</td><td>E</td></tr>
+<tr><td>「歐洲白人與原住民混血」</td><td>麥士蒂索人；濃湯裡最常見的料</td><td>E</td></tr>
+<tr><td>「葡萄牙語」</td><td>巴西，全區唯一例外；先想地雷圖</td><td>E・F</td></tr>
+<tr><td>「銅礦出口大國」「石油依賴」「咖啡大國」「牛肉出口」</td><td>智利、委內瑞拉、巴西、阿根廷；逛大賣場</td><td>F</td></tr>
+<tr><td>「砍伐雨林開闢牧場、大豆田」</td><td>雨林砍伐主因與後果</td><td>F</td></tr>
+<tr><td>「favela」「大莊園」</td><td>貧民窟、土地分配不均</td><td>F</td></tr>
+</table></div>
+</section>
+
+<section class="card" id="encode">
+<h2>✍️ 動手編碼區 — 看懂不算數，做過才算（編碼類方法）</h2>
+<p>下面 6 個活動是編碼類方法：精緻化提問、自我解釋、生成效應。<strong>6 選 3 做即可</strong>，每個標了分鐘數；挑你最不熟的組塊對應的先做。全部都要「產出東西」——講出來、畫出來或寫出來，不准只在腦中想。</p>
+<div class="act"><h4>活動 1｜60 秒小老師 <span class="mins">約 10 分鐘・對應組塊 A</span></h4><p>計時 60 秒，向家人（或對著手機錄音）講完北美三縱列＋五大湖＋密西西比河，要用上「房間」和「二哥肚子上的冰塊與藍緞帶」。講到卡住的地方，就是你沒記牢的地方，回組塊 A 補完再講一次，講順為止。</p></div>
+<div class="act"><h4>活動 2｜農作物搬家大作戰 <span class="mins">約 12 分鐘・對應組塊 B＋氣候</span></h4><p>故意把作物搬錯家，再逐一說明為什麼住不下去：把棉花搬到加拿大（生長季太短、太冷）、把春小麥搬到佛州（太熱太濕）、把酪農搬到沙漠內陸（沒牧草、離市場遠又易壞）。能講出「為什麼不行」，比背「在哪裡」更難忘，這就是精緻化。</p></div>
+<div class="act"><h4>活動 3｜時光機導遊 <span class="mins">約 12 分鐘・對應組塊 D＋E</span></h4><p>當導遊帶一團人由北向南玩南美洲：巴拿馬運河（摸脖子）→ 亞馬孫（進肺裡探險）→ 安地斯印加梯田（爬脊椎）→ 巴西高原喝咖啡（肩膀）→ 潘帕斯吃牛排（大腿）。每站要講一句「為什麼這裡長這樣」，講不出原因的那一站就是缺口。</p></div>
+<div class="act"><h4>活動 4｜寄不出去的明信片 <span class="mins">約 8 分鐘・對應氣候專區＋組塊 D</span></h4><p>從阿塔卡馬沙漠寫一張明信片給住在亞馬孫雨林的朋友：抱怨這裡為什麼一滴雨都沒有（副熱帶高壓＋秘魯涼流＋雨影，三個原因都要寫上），再猜對方那邊為什麼每天下午都下雨。寫完對照氣候小對照卡檢查。</p></div>
+<div class="act"><h4>活動 5｜反事實推理：如果地形對調 <span class="mins">約 10 分鐘・對應全鏈</span></h4><p>假裝阿帕拉契山長在北美西邊、洛磯山長在東邊，沿著因果鏈往下推：風雨會怎麼變？農業帶要怎麼搬家？工業會先在哪裡出現？推出三個改變就算過關。這個活動逼你用因果鏈思考，而不是背位置。</p></div>
+<div class="act"><h4>活動 6｜出口商名片 <span class="mins">約 15 分鐘・對應組塊 F</span></h4><p>替大賣場任一個國家做一張名片：正面寫國家＋王牌產品，背面寫一句「為什麼我國盛產這個」（必須連回地景或氣候，例如智利：安地斯礦產＋乾燥利於露天開採）。做完和組塊 F 的對照表核對，順便想想：如果這個產品明天價格腰斬，這個國家會怎樣（連到第 ⑥ 站單一產品依賴）。</p></div>
+<div class="key"><strong>🌧️ 加碼提取點（必做，約 5 分鐘）：雨林與氣候動手提取。</strong>遮住頁面，口頭回答兩題再對答案：① 亞馬孫雨林被砍伐的<strong>主因</strong>是什麼？（開闢牧場養牛與種植大豆等農地，不是採礦）② 美國哪裡是地中海型氣候、哪裡是副熱帶濕潤？（地中海型：西部加州沿岸；副熱帶濕潤：東南部）。兩題都答對，氣候和雨林這兩個高頻考點才算真的提取成功。</div>
+<h3>🔗 三條「為什麼」追問鏈（精緻化：把事實釘在原因上）</h3>
+<div class="act"><h4>追問鏈 1｜小麥為什麼要分春冬？</h4><p>為什麼大平原種小麥？→ 平坦、適合機械化。為什麼北部春播、南部秋播？→ 北部冬天太冷，春小麥晚種早收躲嚴冬；南部（堪薩斯）冬天比北部溫和、積雪覆蓋可越冬。為什麼堪薩斯是核心？→ 氣候與位置剛好是冬小麥帶的中心。<strong>結論：農業帶是氣候畫出來的。</strong></p></div>
+<div class="act"><h4>追問鏈 2｜巴西為什麼說葡萄牙語？</h4><p>為什麼拉丁美洲多說西班牙語？→ 西班牙殖民最廣。為什麼巴西例外？→ 殖民時期葡萄牙與西班牙劃分勢力範圍，巴西劃給葡萄牙。為什麼這件事今天還重要？→ 語言是殖民歷史留下的地圖，考試用它判別巴西。<strong>結論：今天的文化地圖，是五百年前的殖民地圖。</strong></p></div>
+<div class="act"><h4>追問鏈 3｜雨林為什麼一直被砍？</h4><p>為什麼要砍雨林？→ 要土地養牛、種大豆（牧場與農地是主因）。為什麼偏偏是牛和大豆？→ 國際市場要牛肉與飼料大豆，能賣錢。砍了會怎樣？→ 生物多樣性下降、碳排放增加、原住民失去家園。<strong>結論：第 ③ 站種什麼、第 ④ 站賺什麼，會回頭吃掉第 ① 站的地景。</strong></p></div>
+<h3>🎯 自己出題任務（生成效應：出題的人記得最牢）</h3>
+<p>自己出 2 題四選一：一題考「易混淆判別」（如矽谷 vs 底特律），一題考「因果鏈推論」（如給氣候線索推農業帶）。每題要附正確答案和三個「看起來很像」的錯誤選項，並寫一句話說明每個錯誤選項錯在哪。出完和家人互考——你設計的陷阱，就是考場上最不會掉進去的陷阱。</p>
+</section>
+
+<section class="card" id="compare">
+<h2>⭐ 兩課對照總表 — 考前一晚只看這張</h2>
+<div class="table-wrap"><table>
+<tr><th>比較</th><th>L3 北美洲（盎格魯美洲）</th><th>L4 中南美洲（拉丁美洲）</th></tr>
+<tr><td>主要國家</td><td>美國、加拿大</td><td>墨西哥以南：巴西、阿根廷、智利等</td></tr>
+<tr><td>語言</td><td>英語為主（加拿大兼法語）</td><td>西班牙語為主，<strong>巴西葡萄牙語</strong></td></tr>
+<tr><td>宗教</td><td>基督宗教多元（新教、天主教並存）</td><td><strong>天主教為主</strong></td></tr>
+<tr><td>地形口訣</td><td>西高、中平、東低</td><td>西山、北林、南草</td></tr>
+<tr><td>代表河湖</td><td>密西西比—密蘇里水系（北美最長水系）；五大湖最大淡水湖群</td><td>亞馬孫河（流量最大）</td></tr>
+<tr><td>農業關鍵字</td><td>農業帶、機械化、商業性；北麥中玉南棉湖乳</td><td>熱帶栽培業、潘帕斯小麥牛肉；智銅委油巴咖阿牛（礦農產品）</td></tr>
+<tr><td>發展印象</td><td>高度發展、科技與服務業強；USMCA</td><td>發展中、資源農礦出口、單一產品依賴風險</td></tr>
+<tr><td>文化關鍵字</td><td>移民社會：熔爐 → 沙拉碗</td><td>混血：麥士蒂索；原住民＋歐洲＋非洲</td></tr>
+</table></div>
+</section>
+
+<section class="card" id="flash">
+<h2>🃏 快問快答翻牌卡（點一下翻答案）</h2>
+<p>用法：先出聲回答，再點開對答案。答錯的卡，10 分鐘後再點一次。卡片順序故意把兩課交錯，逼你每次先判斷「這是哪一組」。</p>
+<div class="flash-grid" id="flashGrid"></div>
+<h3>⚡ 1 分鐘快問快答（口頭搶答）</h3>
+<ul>
+<li>巴西說什麼語？→ <strong>葡萄牙語</strong></li>
+<li>汽車城？→ <strong>底特律</strong>；高科技聚落？→ <strong>矽谷（地區）</strong></li>
+<li>地中海型氣候在美國哪裡？→ <strong>西部加州沿岸</strong></li>
+<li>堪薩斯種春小麥還是冬小麥？→ <strong>冬小麥</strong></li>
+<li>亞馬孫河最厲害的是什麼最大？→ <strong>流量最大</strong>（不是最長）</li>
+<li>脖子上的領帶是哪條運河？→ <strong>巴拿馬運河</strong></li>
+<li>傳統工業衰退是因為煤鐵用完了嗎？→ <strong>不是，是成本上升、競爭與轉型；新工業靠人才、資金、技術</strong></li>
+</ul>
+</section>
+
+<section class="card" id="quiz">
+<h2>✍️ 30 題主動回想測驗（點選立即回饋）</h2>
+<p>題目刻意交錯兩課與六個組塊（交錯練習），並含熔爐／沙拉碗、USMCA、因果判別題。先做完再看分數，錯題回翻上面對應組塊。</p>
+<div class="progress">進度：<span id="score">0 / 30 已答對</span> ・ 已作答 <span id="done">0</span> 題 <button onclick="resetQuiz()" style="margin-left:10px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);cursor:pointer">重做</button></div>
+<div id="quizBox"></div>
+</section>
+
+<section class="card" id="scan">
+<h2>🛡️ L1–L2 快速掃描（防累計考，15 分鐘版）</h2>
+<div class="table-wrap"><table>
+<tr><th></th><th>L1 歐洲</th><th>L2 俄羅斯</th></tr>
+<tr><td>地形</td><td>北平原、南山地（阿爾卑斯）、多半島</td><td>面積世界最大、橫跨歐亞；西伯利亞平原廣大</td></tr>
+<tr><td>氣候</td><td>溫帶海洋性（西歐冬暖夏涼）、南歐地中海型</td><td>溫帶大陸性、北部寒帶；冬長而嚴寒</td></tr>
+<tr><td>關鍵字</td><td>萊因河航運、鹿特丹港；<strong>歐盟是世界主要的區域經濟整合組織之一</strong>（不要寫世界最大）</td><td>石油、天然氣、森林資源豐富；西伯利亞鐵路橫貫；莫斯科為首都</td></tr>
+<tr><td>易混</td><td>地中海型在南歐，不要和西歐溫帶海洋性混淆</td><td>俄羅斯歐洲部分人口較集中，亞洲部分地廣人稀</td></tr>
+</table></div>
+</section>
+
+<footer>資料依據康軒版第五冊架構整理；正式考試範圍以學校公告為準。示意圖皆為幫助記憶的簡化圖，非精確地圖。祝 11/26–27 段考順利——先走因果鏈、再走房間和人體圖、最後做題提取，就是最高效的順序。</footer>
+</div>
+<script>
+var FLASH=[
+["北美三縱列口訣？","西高、中平、東低"],
+["五大湖誰最大？","蘇必略湖（面積最大淡水湖）"],
+["北美最長水系？","密西西比—密蘇里水系"],
+["農業帶口訣？","北麥、中玉、南棉、湖乳"],
+["堪薩斯是什麼小麥？","冬小麥（南部冬小麥核心）"],
+["矽谷是什麼？","地區（加州灣區高科技聚落）"],
+["中南美三大地景？","西山、北林、南草"],
+["巴西說什麼語？","葡萄牙語"],
+["麥士蒂索是？","歐洲＋原住民混血"],
+["智利王牌？","銅"],
+["亞馬孫河之最？","流量最大"],
+["潘帕斯在哪國？","阿根廷（牛肉、小麥）"],
+["脖子上的領帶是？","巴拿馬運河（溝通兩洋）"],
+["阿塔卡馬為什麼乾？","副熱帶高壓＋秘魯涼流＋雨影"],
+["熔爐和沙拉碗差在哪？","熔爐熔成一體；沙拉碗各留特色"],
+["印加 vs 馬雅？","印加梯田（安地斯）；馬雅曆法（中美洲）"]
+];
+var fg=document.getElementById('flashGrid');
+FLASH.forEach(function(f){var b=document.createElement('button');b.className='flash';b.innerHTML='<div class="q">'+f[0]+'</div><div class="hint">點我翻牌</div><div class="a">'+f[1]+'</div>';b.onclick=function(){b.classList.toggle('flipped')};fg.appendChild(b)});
+
+var QUIZ=[
+["北美洲地形由西向東的排列，何者正確？",["東：洛磯山、中：平原、西：阿帕拉契山","西：洛磯山、中：大平原與中央低地、東：阿帕拉契山","西：平原、中：高山、東：沙漠","三區皆為高山"],1,"口訣：西高、中平、東低。房間版：左高櫃、地板、右矮櫃。"],
+["關於五大湖，下列敘述何者正確？",["五大湖是世界最大的鹹水湖群","蘇必略湖是面積最大的淡水湖，五大湖合起來是世界最大的淡水湖群","安大略湖面積最大","五大湖全在加拿大境內"],1,"五大湖合起來是世界最大的淡水湖群，其中蘇必略湖面積最大。"],
+["北美最長的水系是？",["科羅拉多河","聖羅倫斯河","密西西比—密蘇里水系","哥倫比亞河"],2,"密西西比—密蘇里水系是北美最長的水系，課本簡稱密西西比河最長。"],
+["美國地中海型氣候主要分布在？",["南部佛羅里達","東部紐約一帶","西部加州沿岸","北部五大湖"],2,"地中海型在西部加州沿岸，夏乾冬雨；南部是熱帶／副熱帶濕潤。"],
+["大平原小麥種植的正確配對是？",["北部冬小麥、南部春小麥","北部春小麥、南部冬小麥，堪薩斯為冬小麥核心","全部種春小麥","全部種冬小麥"],1,"北部春小麥避嚴冬，南部冬小麥以堪薩斯為核心，冬天比北部溫和、積雪覆蓋下越冬。"],
+["美國玉米帶主要位在？",["西部高山","中央低地","南部沙漠","阿拉斯加"],1,"中央低地夏熱多雨、土壤肥沃，玉米多作飼料。"],
+["棉花帶早期主要分布在美國南部，主因是？",["氣候寒冷","生長季長而溫暖","多高山","近五大湖"],1,"棉花需要長而溫暖的生長季。"],
+["五大湖周邊發展酪農業的有利條件是？",["炎熱乾燥","氣候涼爽且靠近東北部大城市市場","土地貧瘠只能放牧","全年結冰"],1,"鮮乳易腐，近市場是關鍵；涼爽利牧草。"],
+["美國汽車工業重鎮是？",["矽谷","底特律","休士頓","拉斯維加斯"],1,"底特律＝汽車城，位在五大湖區，擂台左邊的老將。"],
+["以高科技產業聞名的矽谷，題目應問它位在哪一個地區？",["加州舊金山灣區南側一帶","德州南部","佛羅里達半島","五大湖東岸"],0,"矽谷是地區，不是單一城市，位在加州灣區。"],
+["美國人口與產業往陽光帶移動的原因之一是？",["氣候嚴寒吸引工廠","氣候溫暖、土地與勞力成本相對較低","陽光帶沒有城市","只能種棉花"],1,"陽光帶指南部與西部溫暖地帶。"],
+["「民族大熔爐」最接近的意思是？",["各族群完全不來往","移民融入並融合成共同文化","只保留原住民文化","禁止移民"],1,"熔爐＝熔成一個味；後來的沙拉碗更強調保留各自特色。"],
+["「沙拉碗」與熔爐最大的不同是？",["沙拉碗強調各族群共存並保留自身特色","沙拉碗要求全部同化","兩者完全相同","沙拉碗指農業帶"],0,"沙拉裡每樣食材仍吃得出自己——保留特色、共同生活。"],
+["USMCA 的成員國是？",["美國、巴西、阿根廷","美國、墨西哥、加拿大","美國、英國、法國","加拿大、智利、秘魯"],1,"USMCA＝美墨加協定，前身 NAFTA。口訣：美、墨、加，三國零件一家。"],
+["關於加拿大，何者正確？",["人口多集中在北部寒帶","人口多集中在南部近美國邊界一帶","官方只有西班牙語","沒有法語區"],1,"南部較暖、近五大湖與聖羅倫斯河，人口集中；魁北克為法語區。"],
+["安地斯山脈位在南美洲哪一側？",["東側","西側","正中央平原","南端島嶼"],1,"西山：安地斯是人體圖的脊椎，沿西側綿延。"],
+["亞馬孫河最著名的世界之最是？",["長度最長","流量最大","水溫最高","流經國家最少"],1,"亞馬孫河流量最大；長度之最一般指尼羅河，不要混淆。"],
+["亞馬孫熱帶雨林主要分布在？",["北美洲（美國、加拿大）","南美洲（巴西、秘魯一帶）","歐洲南部","非洲北部"],1,"雨林以巴西為主，延伸至秘魯等國，是人體圖的肺。"],
+["亞馬孫雨林被大量砍伐的主要原因是？",["開闢牧場養牛與種植大豆等農地","為了滑雪場","為了蓋水庫發電為唯一原因","海平面上升淹沒"],0,"主因是牧場與大豆等農地擴張。"],
+["潘帕斯草原的農業特色是？",["熱帶雨林咖啡","小麥種植與養牛、牛肉出口","高山梯田馬鈴薯","沙漠綠洲棉花"],1,"潘帕斯在阿根廷，溫帶草原、土壤肥沃，是人體圖的腿。"],
+["下列哪一國的官方語言是葡萄牙語？",["阿根廷","墨西哥","巴西","智利"],2,"拉丁美洲例外王：巴西說葡萄牙語，其餘多數說西班牙語。想想濃湯裡的綠色角落。"],
+["麥士蒂索人指的是？",["歐洲與非洲混血","歐洲白人與美洲原住民混血","原住民純血統","亞洲移民後代"],1,"Mestizo＝歐洲＋原住民；在許多國家占相當比例，各國差異大。"],
+["拉丁美洲最主要的宗教信仰是？",["伊斯蘭教","佛教","天主教","東正教"],2,"殖民時期由西班牙、葡萄牙傳入天主教。"],
+["智利最重要的礦產出口是？",["石油","銅","鐵礦砂","煤"],1,"口訣智銅：智利銅產量居世界前列，大賣場西攤。"],
+["委內瑞拉經濟高度依賴哪種資源？",["咖啡","石油","銅","小麥"],1,"委油：委內瑞拉石油蘊藏豐富、經濟依賴石油，大賣場北攤。"],
+["巴西最具代表性的農產品（口訣巴咖）是？",["茶葉","咖啡","可可亞僅此一項","橄欖"],1,"巴西咖啡產量世界重要；另有鐵礦、大豆，大賣場中央大攤。"],
+["阿根廷牛肉聞名，與哪個地景最相關？",["亞馬孫雨林","安地斯高山","潘帕斯草原","阿塔卡馬沙漠"],2,"阿牛：潘帕斯草原養牛，大腿肉最厚的地方。"],
+["印加文明主要分布在？",["巴西沿海平原","安地斯高地（秘魯一帶）","阿根廷潘帕斯","加勒比海島嶼"],1,"印加在安地斯高地，馬丘比丘是代表遺跡；口訣：印加梯田。"],
+["關於歐盟的正確描述是？",["世界最大的單一國家","世界主要的區域經濟整合組織之一","亞洲的軍事同盟","南美洲的貿易組織"],1,"歐盟是主要區域經濟整合組織之一，不要寫世界最大。"],
+["以名目 GDP 計，世界最大的經濟體是？",["中國","日本","美國","德國"],2,"課本口徑：以名目 GDP 計美國是世界最大的經濟體。"]
+];
+var answered={},correctCount=0;
+function renderQuiz(){
+ var box=document.getElementById('quizBox');box.innerHTML='';
+ QUIZ.forEach(function(q,qi){
+  var d=document.createElement('div');d.className='quiz-q';
+  var html='<p>'+(qi+1)+'. '+q[0]+'</p><div class="opts">';
+  q[1].forEach(function(opt,oi){html+='<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+String.fromCharCode(65+oi)+'. '+opt+'</button>'});
+  html+='</div><div class="explain" id="ex'+qi+'">💡 '+q[3]+'</div>';
+  d.innerHTML=html;box.appendChild(d);
+ });
+ box.querySelectorAll('.opt').forEach(function(btn){btn.addEventListener('click',function(){
+  var qi=+btn.dataset.q,oi=+btn.dataset.o;
+  if(answered[qi]!==undefined)return;
+  answered[qi]=oi;
+  var q=QUIZ[qi];
+  var opts=btn.parentElement.querySelectorAll('.opt');
+  opts[q[2]].classList.add('correct');
+  if(oi!==q[2]){btn.classList.add('wrong')}else{correctCount++}
+  document.getElementById('ex'+qi).classList.add('show');
+  document.getElementById('score').textContent=correctCount+' / 30 已答對';
+  document.getElementById('done').textContent=Object.keys(answered).length;
+ })});
+}
+function resetQuiz(){answered={};correctCount=0;document.getElementById('score').textContent='0 / 30 已答對';document.getElementById('done').textContent='0';renderQuiz();window.scrollTo({top:document.getElementById('quiz').offsetTop,behavior:'smooth'})}
+renderQuiz();
+</script>
+</body>
+</html>
