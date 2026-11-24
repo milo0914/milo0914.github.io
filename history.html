@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>九年級歷史高效記憶版｜115-1 第二次段考</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#f7f3ea; --panel:#fffdf7; --panel2:#fdf6e3; --ink:#23201a; --ink2:#5c5546;
+  --line:#ddd2ba; --accent:#b4552d; --accent2:#1f5f5b; --gold:#c99327; --red:#b3372e;
+  --blue:#2c5d8a; --chip:#efe6cf; --good:#2e7d4f; --bad:#b3372e;
+  --shadow:0 2px 10px rgba(60,45,20,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#171512; --panel:#221f1a; --panel2:#2a251c; --ink:#f0e9da; --ink2:#c9bfa8;
+  --line:#453d2f; --accent:#e08a5a; --accent2:#6fc2ba; --gold:#e0b34e; --red:#e07a70;
+  --blue:#7fb0dd; --chip:#332c20; --good:#7cc79b; --bad:#e07a70; --shadow:0 2px 10px rgba(0,0,0,.4); }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,sans-serif;line-height:1.65;font-size:16px}
+button,[role="button"],summary{min-height:2.25rem}
+.wrap{max-width:1060px;margin:0 auto;padding:16px 14px 60px}
+h1,h2,h3{font-family:"Noto Serif TC",serif;line-height:1.3}
+h1{font-size:clamp(26px,6vw,40px);margin:.2em 0 .3em;font-weight:900}
+h2{font-size:clamp(21px,4.6vw,28px);margin:0 0 10px;font-weight:900}
+h3{font-size:18px;margin:14px 0 6px}
+p{margin:.45em 0}
+.small{font-size:13.5px;color:var(--ink2)}
+.lede{font-size:17px}
+.hero{border-bottom:3px double var(--line);padding:10px 2px 16px}
+.scope-note{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:14.5px;margin-top:12px}
+.scope-note b{color:var(--accent)}
+section{margin-top:34px}
+.sec-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.sec-no{font-family:"Noto Serif TC",serif;font-weight:900;color:var(--accent);font-size:15px;letter-spacing:.08em}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow);margin-top:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.tag{font-size:12.5px;font-weight:700;background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--ink)}
+.tag.hot{background:var(--accent);color:#fff;border-color:var(--accent)}
+.squash{font-family:"Noto Serif TC",serif;font-weight:900;font-size:19px;background:var(--panel2);border-left:5px solid var(--gold);padding:8px 12px;border-radius:0 8px 8px 0;margin:10px 0}
+.mnemonic{font-weight:900;color:var(--accent2);font-size:17px}
+.warn{color:var(--red);font-weight:700}
+.ok{color:var(--good);font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:10px 0}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--panel2);font-weight:900}
+.tbl-wrap{overflow-x:auto}
+figure{margin:12px 0}
+figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:10px}
+figcaption{font-size:13px;color:var(--ink2);margin-top:6px}
+.chain{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:14px 0 4px}
+.station{background:var(--panel);border:2px solid var(--line);border-radius:12px;padding:10px 8px;text-align:center;position:relative}
+.station .n{font-size:12px;font-weight:900;color:var(--accent)}
+.station .t{font-family:"Noto Serif TC",serif;font-weight:900;font-size:17px;display:block;margin:2px 0}
+.station .d{font-size:12.5px;color:var(--ink2);display:block;line-height:1.45}
+.station::after{content:"→";position:absolute;right:-13px;top:38%;font-weight:900;color:var(--accent);z-index:2}
+.station:last-child::after{content:""}
+@media(max-width:760px){.chain{grid-template-columns:repeat(2,1fr)}.station::after{display:none}}
+.arrowbox{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+@media(max-width:640px){.arrowbox{grid-template-columns:1fr}}
+.arrowbox .ab{border-radius:10px;padding:10px 14px;font-size:14.5px}
+.ab.jump{background:#fbe9e4;border:1.5px dashed var(--red)}
+.ab.think{background:#e4f0ee;border:1.5px dashed var(--accent2)}
+@media (prefers-color-scheme: dark){.ab.jump{background:#3a2320}.ab.think{background:#1d2f2c}}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+ul{margin:.4em 0 .4em 1.2em;padding:0}
+li{margin:.25em 0}
+.story{background:var(--panel2);border-radius:10px;padding:10px 14px;font-size:15px}
+details{border:1px solid var(--line);border-radius:10px;padding:8px 14px;margin-top:10px;background:var(--panel)}
+summary{cursor:pointer;font-weight:900;padding:4px 0}
+.flipgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:12px}
+.flip{perspective:700px;height:128px;cursor:pointer;background:none;border:none;padding:0;font:inherit;color:inherit;text-align:left}
+.flip-inner{display:block;position:relative;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d}
+.flip.flipped .flip-inner{transform:rotateY(180deg)}
+.flip-face{display:flex;position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:12px;padding:12px;flex-direction:column;justify-content:center;border:1.5px solid var(--line);overflow:hidden}
+.flip-front{background:var(--panel);font-weight:900;font-size:15.5px}
+.flip-front .hint{font-size:11.5px;color:var(--ink2);font-weight:500;margin-top:6px}
+.flip-back{background:var(--accent2);color:#fff;transform:rotateY(180deg);font-size:14.5px;font-weight:700}
+.quiz-q{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:12px;box-shadow:var(--shadow)}
+.quiz-q .qn{font-weight:900}
+.opts{display:grid;gap:8px;margin-top:8px}
+.opt{min-height:44px;text-align:left;border:1.5px solid var(--line);background:var(--panel2);border-radius:9px;padding:9px 12px;font:inherit;font-size:15px;cursor:pointer;color:var(--ink)}
+.opt.right{border-color:var(--good);background:rgba(46,125,79,.14);font-weight:700}
+.opt.wrong{border-color:var(--bad);background:rgba(179,55,46,.12)}
+.expl{display:none;margin-top:8px;font-size:14.5px;background:var(--panel2);border-radius:8px;padding:8px 12px}
+.expl.show{display:block}
+.scorebar{position:sticky;top:0;z-index:5;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-weight:900;box-shadow:var(--shadow)}
+.act-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.min{font-weight:900;color:var(--accent);white-space:nowrap}
+.why{border-left:4px solid var(--accent2);padding:4px 0 4px 14px;margin:10px 0}
+.why .step{margin:6px 0}
+.sup{font-size:12.5px;font-weight:700;color:var(--gold);border:1px solid var(--gold);border-radius:6px;padding:0 6px;white-space:nowrap}
+footer{margin-top:44px;border-top:3px double var(--line);padding-top:14px;font-size:13.5px;color:var(--ink2)}
+a{color:var(--accent2)}
+.kicker{font-size:13px;font-weight:900;letter-spacing:.14em;color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">九年級歷史・康軒第五冊 L3–L4・115-1 第二次段考</div>
+  <h1>歷史高效記憶版：<br />一條因果鏈走完中世紀到近代</h1>
+  <p class="lede">考試日期：<b>2026 年 11 月 26 日（四）～27 日（五）</b>。這份複習不照課本節次抄，而是把 L3、L4 全部掛在一條六站因果鏈上，每個記憶點同時用至少兩種組織方法（組塊、位置、口訣、故事、對比表），旁邊都有小標籤標明。</p>
+  <div class="scope-note">
+    <b>範圍誠實標示：</b>南科未公開 115-1 第二次段考範圍表，本範圍是依板橋高中、鹿港國中（康軒版）、明倫、前金、三多國中等多校九年級歷史二段的共同切法（L3–L4）推論，正式範圍以老師公告為準。<b>科學革命、啟蒙運動、工業革命是 L5，第三次段考才考，這次絕對不要準備。</b>部分學校會加考 L1–L2 約 10%，最後有組塊 G 快速掃描保底。
+  </div>
+</header>
+
+<section id="chain">
+  <div class="sec-head"><span class="sec-no">主線</span><h2>六站因果鏈：權散了 → 教大了 → 錢動了 → 眼亮了 → 王收了、海大了 → 教裂了</h2></div>
+  <p>使用規則：<b>正著讀是因果</b>——每讀完一站，問自己「所以呢？」再往下一站；<b>倒著讀是解題線索</b>——考題出現關鍵詞，先定位它在哪一站；<b>每站只背一句壓縮句＋一張對照表</b>，不要整段背。</p>
+  <div class="chain">
+    <div class="station"><span class="n">第 ① 站・L3</span><span class="t">權散了</span><span class="d">封建社會、莊園</span></div>
+    <div class="station"><span class="n">第 ② 站・L3</span><span class="t">教大了</span><span class="d">教會、拜占庭、伊斯蘭</span></div>
+    <div class="station"><span class="n">第 ③ 站・L3</span><span class="t">錢動了</span><span class="d">十字軍、黑死病、城市興起</span></div>
+    <div class="station"><span class="n">第 ④ 站・L4</span><span class="t">眼亮了</span><span class="d">文藝復興</span></div>
+    <div class="station"><span class="n">第 ⑤ 站・L4</span><span class="t">王收了、海大了</span><span class="d">王權國家、地理大發現</span></div>
+    <div class="station"><span class="n">第 ⑥ 站・L4</span><span class="t">教裂了</span><span class="d">宗教改革</span></div>
+  </div>
+  <p class="mnemonic">總口訣：權散了 → 教大了 → 錢動了 → 眼亮了 → 王收了、海大了 → 教裂了</p>
+  <div class="arrowbox">
+    <div class="ab jump"><b>⚡ 捷徑箭頭 ③ → ⑤（最重要，別畫錯因果）：</b>王權集中的真正原因是第 ③ 站——十字軍與黑死病削弱了領主與教會、城市與市民支持國王。<span class="warn">考試絕對不要寫「因為文藝復興所以王權國家形成」。</span></div>
+    <div class="ab think"><b>💡 思想箭頭 ④ → ⑥：</b>宗教改革的思想火種來自第 ④ 站——文藝復興的人文主義教人質疑權威、印刷術讓改革思想傳遍歐洲，<b>不是</b>來自第 ⑤ 站。</div>
+  </div>
+  <div class="card">
+    <h3>🌉 橋樑事件：1453 年，一年接兩站</h3>
+    <p>1453 年鄂圖曼土耳其攻陷君士坦丁堡、<b>拜占庭帝國滅亡</b>：一方面，拜占庭學者帶著希臘古籍逃往義大利，<b>促成文藝復興（接第 ④ 站）</b>；另一方面，鄂圖曼控制東西方貿易路線，<b>成為歐洲人找新航路的原因之一（接第 ⑤ 站）</b>。看到 1453，先想「橋」，不要只想「滅亡」。</p>
+    <h3>誠實標註（寫錯這三點，因果題就全錯）</h3>
+    <ul>
+      <li>文藝復興與王權國家是<b>同期發生</b>，不是先後因果——④ 和 ⑤ 是並排的兩件事。</li>
+      <li>宗教改革的思想來源是 <b>④ → ⑥</b> 這條思想箭頭。</li>
+      <li>第 ② 站的三個信仰世界是<b>並存的地圖</b>，不是時間先後順序。</li>
+    </ul>
+  </div>
+</section>
+<section id="groupA">
+  <div class="sec-head"><span class="sec-no">組塊 A・第 ① 站</span><h2>一塊地，三個老闆：封建權力結構</h2></div>
+  <div class="squash">壓縮句：國王分地換效忠，農奴種地不能走</div>
+  <div class="tags"><span class="tag">組塊</span><span class="tag">位置記憶法（城堡三層樓）</span><span class="tag">口訣</span><span class="tag">故事串連（阿土的一天）</span><span class="tag">對比表格</span></div>
+  <p><b>位置記憶法——想像走進一座城堡：</b>頂樓是國王，把土地（采邑）分給中樓的領主；中樓領主對上效忠、服軍役，對下統治莊園；地下室是農奴，種地、繳實物、服勞役，腳被土地綁住不能走。城堡旁邊還有一座更高的塔——教宗（第 ② 站），先記住他的位置。</p>
+  <p class="mnemonic">口訣：王分地、領主忠、農奴黏</p>
+  <figure>
+    <svg viewBox="0 0 900 600" role="img" aria-label="三層金字塔城堡示意圖">
+      <rect width="900" height="600" fill="#f3e9d2"/>
+      <rect x="330" y="30" width="90" height="120" fill="#8a6d3b"/>
+      <polygon points="315,30 375,-2 435,30" fill="#5d4a26"/>
+      <text x="375" y="80" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">教宗</text>
+      <text x="375" y="104" text-anchor="middle" font-size="13" fill="#fff">更高的塔（第②站）</text>
+      <polygon points="450,110 750,110 700,230 500,230" fill="#c99327"/>
+      <text x="600" y="160" text-anchor="middle" font-size="21" font-weight="bold" fill="#fff">頂樓：國王</text>
+      <text x="600" y="190" text-anchor="middle" font-size="15" fill="#fff">分采邑（土地）換效忠</text>
+      <polygon points="380,250 820,250 760,390 440,390" fill="#b4552d"/>
+      <text x="600" y="305" text-anchor="middle" font-size="21" font-weight="bold" fill="#fff">中樓：領主／騎士（附庸）</text>
+      <text x="600" y="335" text-anchor="middle" font-size="15" fill="#fff">效忠上一級、服軍役；統治自己的莊園</text>
+      <polygon points="300,410 900,410 860,545 340,545" fill="#1f5f5b"/>
+      <text x="600" y="465" text-anchor="middle" font-size="21" font-weight="bold" fill="#fff">地下室：農奴</text>
+      <text x="600" y="495" text-anchor="middle" font-size="15" fill="#fff">種地、繳實物、服勞役</text>
+      <line x1="480" y1="520" x2="480" y2="560" stroke="#23201a" stroke-width="3"/>
+      <line x1="720" y1="520" x2="720" y2="560" stroke="#23201a" stroke-width="3"/>
+      <text x="600" y="580" text-anchor="middle" font-size="14" fill="#23201a">🔗 農奴的鍊子連在「土地」上，不是領主手上——他依附的是土地</text>
+      <rect x="30" y="430" width="200" height="115" fill="#fffdf7" stroke="#8a6d3b" stroke-width="2"/>
+      <text x="130" y="462" text-anchor="middle" font-size="15" font-weight="bold" fill="#23201a">❄ 卡諾莎 1077</text>
+      <text x="130" y="488" text-anchor="middle" font-size="13" fill="#23201a">亨利四世雪地站三天</text>
+      <text x="130" y="510" text-anchor="middle" font-size="13" fill="#23201a">向教宗求饒（第②站）</text>
+      <rect x="30" y="250" width="200" height="90" fill="#fffdf7" stroke="#8a6d3b" stroke-width="2"/>
+      <text x="130" y="282" text-anchor="middle" font-size="15" font-weight="bold" fill="#23201a">📜 修道院</text>
+      <text x="130" y="306" text-anchor="middle" font-size="13" fill="#23201a">修士抄書、辦學、救濟</text>
+    </svg>
+    <figcaption>圖 1 三層金字塔城堡（示意圖）。標籤：教宗高塔、國王分采邑、領主效忠服軍役、農奴種地、鍊子連土地、卡諾莎 1077、修道院抄書、莊園自給自足。箭頭方向：土地往下分、效忠往上給，不能畫反。</figcaption>
+  </figure>
+  <div class="story"><b>故事串連——小農奴阿土的一天：</b>阿土天亮下田（種地），收成先扛一袋去領主的磨坊（繳實物、服勞役），想去隔壁莊園看看？不行，他的腳黏在這塊土地上（不能走）。抬頭看城堡：中樓的領主正穿盔甲準備替頂樓的國王打仗（服軍役），因為國王把這塊地分給了他（采邑換效忠）。阿土一輩子幾乎不出莊園——莊園有農田、磨坊、教堂，是一個自給自足的小世界。</div>
+  <div class="grid2">
+    <div>
+      <h3>采邑 vs 莊園 vs 行會</h3>
+      <div class="tags"><span class="tag">對比表格</span><span class="tag">組塊</span></div>
+      <table>
+        <tr><th>詞</th><th>是什麼</th><th>一句話</th></tr>
+        <tr><td><b>采邑</b></td><td>領主分封給附庸的土地</td><td>土地換效忠與軍役</td></tr>
+        <tr><td><b>莊園</b></td><td>領主統治、農奴耕作的自給自足單位</td><td>農民生活的小世界</td></tr>
+        <tr><td><b>行會</b></td><td>城市裡同業商人／工匠的公會</td><td>城市興起才出現（第③站）</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>農奴 vs 奴隸 vs 自由農</h3>
+      <div class="tags"><span class="tag">對比表格</span><span class="tag">一秒判別</span></div>
+      <table>
+        <tr><th></th><th>農奴</th><th>奴隸</th><th>自由農</th></tr>
+        <tr><td>能自由買賣嗎？</td><td><b>不能</b></td><td>能（是財產）</td><td>不是買賣對象</td></tr>
+        <tr><td>能離開土地嗎？</td><td>不能</td><td>不能</td><td>能</td></tr>
+        <tr><td>身分</td><td>依附土地的人</td><td>領主的財產</td><td>有自由身分</td></tr>
+      </table>
+      <p><b>一秒判別法：</b>問「可以自由買賣嗎？」——答<b>不能</b>的是農奴。農奴有人身依附，但<b>不是</b>領主的財產，這是考題最愛挖的坑。</p>
+    </div>
+  </div>
+</section>
+
+<section id="groupB">
+  <div class="sec-head"><span class="sec-no">組塊 B・第 ② 站</span><h2>三個信仰世界：教會、拜占庭、伊斯蘭</h2></div>
+  <div class="squash">壓縮句：教宗最大、東正分家、穆罕默德南起</div>
+  <div class="tags"><span class="tag">組塊（三教合併）</span><span class="tag">位置記憶法（三教地圖）</span><span class="tag">口訣</span><span class="tag">故事串連（卡諾莎）</span><span class="tag">對比表格</span></div>
+  <p><b>位置記憶法——攤開地圖，由西往東再往南看：</b>左邊西歐是天主教（教宗在羅馬）、中右是拜占庭與東正教（君士坦丁堡）、下方南邊是伊斯蘭世界（阿拉伯半島、巴格達）。三個世界<b>同時並存</b>，不是先後出現。</p>
+  <p class="mnemonic">口訣：西天主、東正教、南伊斯蘭</p>
+  <figure>
+    <svg viewBox="0 0 900 560" role="img" aria-label="三個信仰世界地圖示意圖">
+      <rect width="900" height="560" fill="#eef2e6"/>
+      <rect x="30" y="40" width="330" height="300" fill="#f6d9a8" stroke="#b4552d" stroke-width="2"/>
+      <text x="195" y="80" text-anchor="middle" font-size="20" font-weight="bold" fill="#7a3418">西：天主教（西歐）</text>
+      <text x="195" y="112" text-anchor="middle" font-size="14" fill="#23201a">教宗在羅馬，權力高於國王</text>
+      <text x="195" y="140" text-anchor="middle" font-size="14" fill="#23201a">封建社會＋教會</text>
+      <text x="195" y="200" text-anchor="middle" font-size="30">✝</text>
+      <path d="M370 120 L420 190 L395 260 L440 330" stroke="#b3372e" stroke-width="5" fill="none" stroke-dasharray="10 6"/>
+      <text x="408" y="105" text-anchor="middle" font-size="15" font-weight="bold" fill="#b3372e">1054 裂縫</text>
+      <rect x="450" y="40" width="420" height="300" fill="#cfdff0" stroke="#2c5d8a" stroke-width="2"/>
+      <text x="660" y="80" text-anchor="middle" font-size="20" font-weight="bold" fill="#234a6e">東：拜占庭＋東正教</text>
+      <text x="660" y="112" text-anchor="middle" font-size="14" fill="#23201a">首都君士坦丁堡（今伊斯坦堡）</text>
+      <text x="660" y="140" text-anchor="middle" font-size="14" fill="#23201a">查士丁尼法典：羅馬法的整理</text>
+      <text x="660" y="200" text-anchor="middle" font-size="30">🏛</text>
+      <text x="660" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#b3372e">1453 城牆倒塌 → 學者抱書卷往義大利逃</text>
+      <rect x="180" y="380" width="560" height="140" fill="#d8ecd2" stroke="#2e7d4f" stroke-width="2"/>
+      <text x="460" y="420" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e5631">南：伊斯蘭世界 ☾</text>
+      <text x="460" y="450" text-anchor="middle" font-size="14" fill="#23201a">穆罕默德 7 世紀初創立・經典《可蘭經》・信徒稱穆斯林</text>
+      <text x="460" y="478" text-anchor="middle" font-size="14" fill="#23201a">巴格達：學術中心，橫跨亞、非、歐三洲</text>
+    </svg>
+    <figcaption>圖 2 三國鼎立地圖（示意圖，非精確地圖；左西右東、上北下南）。標籤：西歐天主教、教宗高於國王、1054 裂縫、拜占庭君士坦丁堡、查士丁尼法典、1453 學者西逃、伊斯蘭新月與《可蘭經》、巴格達學術中心。</figcaption>
+  </figure>
+  <div class="story"><b>故事串連——卡諾莎的雪地（1077）：</b>神聖羅馬帝國皇帝亨利四世和教宗爭奪任命主教的權力（敘任權之爭），被教宗開除教籍。他只好在寒冬裡站在卡諾莎城堡外的雪地<b>三天</b>，求教宗原諒。記住畫面：<b>皇帝在雪地罰站，教宗在屋裡</b>——中世紀誰最大，一張圖說完。</div>
+  <h3>三教對比表</h3>
+  <div class="tags"><span class="tag">對比表格</span><span class="tag">位置記憶法</span></div>
+  <div class="tbl-wrap"><table>
+    <tr><th></th><th>天主教</th><th>東正教</th><th>伊斯蘭教</th></tr>
+    <tr><td><b>中心／領袖</b></td><td>羅馬，教宗</td><td>君士坦丁堡，牧首</td><td>麥加，穆罕默德創立</td></tr>
+    <tr><td><b>代表事物</b></td><td>贖罪券（後期腐化）、修道院</td><td>希臘語禮儀、東羅馬傳統</td><td>《可蘭經》、五功、清真寺</td></tr>
+    <tr><td><b>關鍵事件</b></td><td colspan="2">1054 年東西教會大分裂，兩教正式分家</td><td>7 世紀起迅速擴張，三洲貿易與學術</td></tr>
+  </table></div>
+  <p class="small">拜占庭三件套另外記：<b>君士坦丁堡</b>（扼黑海—地中海要衝、商業繁盛）、<b>查士丁尼法典</b>（整理羅馬法，影響後世歐洲法律）、<b>1054 分裂、1453 滅亡</b>。口訣：<span class="mnemonic">堡、法、分、滅</span>（君士坦丁「堡」、查士丁尼「法」典、1054「分」裂、1453「滅」亡）。注意：查士丁尼法典是拜占庭的，不要和西亞的漢摩拉比法典搞混（見組塊 G）。</p>
+  <p><b>伊斯蘭五功</b>——<span class="mnemonic">口訣：念、禮、齋、課、朝，五功跑不掉</span>（誦念清真言、每日五次禮拜、齋月齋戒、天課濟貧、到麥加朝聖）。<span class="warn">五功沒有「祭」！</span>考題放「祭」就是錯的選項。伊斯蘭世界還把阿拉伯數字、代數、醫學、天文，以及造紙術、指南針、火藥等交流成果傳進歐洲。</p>
+</section>
+
+<section id="groupC">
+  <div class="sec-head"><span class="sec-no">組塊 C・第 ③ 站</span><h2>錢與人開始流動：十字軍、黑死病、城市興起</h2></div>
+  <div class="squash">壓縮句：十字軍帶錢來，黑死病帶人走</div>
+  <div class="tags"><span class="tag">組塊（錢的流動線）</span><span class="tag">位置記憶法（城市廣場）</span><span class="tag">口訣</span><span class="tag">故事串連</span><span class="tag">對比表格（一正一反）</span></div>
+  <p>這一站是整條鏈的轉折點：十字軍把東方的商品和貿易帶回來，黑死病把人口帶走，兩個事件<b>一正一反，卻一起打倒了封建與教會</b>，還讓城市長出來——並且直接通往第 ⑤ 站的王權集中（捷徑箭頭 ③→⑤）。</p>
+  <figure>
+    <svg viewBox="0 0 900 420" role="img" aria-label="中世紀後期時間河示意圖">
+      <rect width="900" height="420" fill="#e8f0f4"/>
+      <path d="M20 250 C 200 200, 320 300, 480 250 S 760 200, 880 250" stroke="#2c5d8a" stroke-width="26" fill="none" opacity="0.35"/>
+      <circle cx="140" cy="238" r="10" fill="#b4552d"/>
+      <text x="140" y="195" text-anchor="middle" font-size="16" font-weight="bold" fill="#23201a">十字軍東征</text>
+      <text x="140" y="218" text-anchor="middle" font-size="13" fill="#23201a">1096–1291</text>
+      <text x="140" y="300" text-anchor="middle" font-size="13" fill="#23201a">貿易復興、王權提升</text>
+      <circle cx="380" cy="262" r="10" fill="#1f5f5b"/>
+      <text x="380" y="195" text-anchor="middle" font-size="16" font-weight="bold" fill="#23201a">城市興起</text>
+      <text x="380" y="218" text-anchor="middle" font-size="13" fill="#23201a">11 世紀後</text>
+      <text x="380" y="322" text-anchor="middle" font-size="13" fill="#23201a">行會、大學、市民階級</text>
+      <circle cx="590" cy="240" r="10" fill="#23201a"/>
+      <text x="590" y="195" text-anchor="middle" font-size="16" font-weight="bold" fill="#23201a">黑死病</text>
+      <text x="590" y="218" text-anchor="middle" font-size="13" fill="#23201a">14 世紀中葉</text>
+      <text x="590" y="300" text-anchor="middle" font-size="13" fill="#23201a">人口銳減約三分之一</text>
+      <circle cx="790" cy="252" r="10" fill="#c99327"/>
+      <text x="790" y="195" text-anchor="middle" font-size="16" font-weight="bold" fill="#23201a">百年戰爭</text>
+      <text x="790" y="218" text-anchor="middle" font-size="13" fill="#23201a">1337–1453</text>
+      <text x="790" y="300" text-anchor="middle" font-size="13" fill="#23201a">英法民族意識、王權集中</text>
+      <rect x="600" y="345" width="290" height="52" fill="#fff3d6" stroke="#c99327" stroke-width="2"/>
+      <text x="745" y="377" text-anchor="middle" font-size="14" font-weight="bold" fill="#23201a">🌉 百年戰爭是通往第 ⑤ 站王權國家的橋</text>
+      <text x="60" y="60" font-size="15" fill="#23201a">時間河：左早右晚</text>
+    </svg>
+    <figcaption>圖 3 中世紀後期時間河（示意圖）。標籤：十字軍 1096–1291、貿易復興、城市興起、行會與大學、黑死病 14 世紀中葉、人口銳減三分之一、百年戰爭 1337–1453、通往王權國家的橋。</figcaption>
+  </figure>
+  <h3>十字軍 vs 黑死病：一正一反對比表</h3>
+  <div class="tags"><span class="tag">對比表格</span><span class="tag">口訣</span></div>
+  <div class="tbl-wrap"><table>
+    <tr><th></th><th>十字軍東征（1096–1291）</th><th>黑死病（14 世紀中葉）</th></tr>
+    <tr><td><b>是什麼</b></td><td>教宗號召基督徒收復聖地耶路撒冷</td><td>鼠疫由東方傳入歐洲</td></tr>
+    <tr><td><b>帶來的變化</b></td><td>東西貿易復興，香料、絲綢流入歐洲；地理知識與航海興趣增加</td><td>人口銳減約三分之一；勞力短缺、工資上漲</td></tr>
+    <tr><td><b>共同結果</b></td><td colspan="2">王權提升、教會威信下降、封建與農奴制鬆動瓦解</td></tr>
+  </table></div>
+  <p class="mnemonic">口訣：一個帶回貿易，一個帶走人口；兩個都打倒封建與教會</p>
+  <p><b>位置記憶法——城市廣場散步：</b>站在中世紀城市的市集廣場中央，左手邊是<b>行會</b>（同業公會，管品質也管價格），右手邊是<b>大學</b>（巴黎、牛津，學術中心），廣場上來來往往的是新興的<b>市民階級</b>——他們用貨幣交易，不再以物易物。貿易復興、商人聚集，城市就這樣從廣場長出來，莊園經濟開始鬆動。</p>
+</section>
+<section id="groupD">
+  <div class="sec-head"><span class="sec-no">組塊 D・第 ④ 站</span><h2>眼睛看向人：文藝復興</h2></div>
+  <div class="squash">壓縮句：佛羅倫斯看人，印刷術傳全歐</div>
+  <div class="tags"><span class="tag">組塊</span><span class="tag">位置記憶法（佛羅倫斯工坊）</span><span class="tag">口訣（達米拉）</span><span class="tag">故事串連（1453 逃難箭頭）</span><span class="tag">對比表格</span></div>
+  <p><b>故事串連——1453 逃難箭頭：</b>君士坦丁堡城牆倒下那天，拜占庭學者抱著希臘古籍往西逃到義大利。這些古籍讓義大利人重新看見古希臘羅馬的「人」的價值——再加上佛羅倫斯商業繁榮、梅迪奇家族出錢贊助藝術，文藝復興就從 <b>14 世紀的佛羅倫斯</b>開始，15–16 世紀擴及全歐。</p>
+  <figure>
+    <svg viewBox="0 0 900 520" role="img" aria-label="畫家工坊與印刷術示意圖">
+      <rect width="900" height="520" fill="#fdf3e0"/>
+      <rect x="40" y="60" width="250" height="200" fill="#f6d9a8" stroke="#b4552d" stroke-width="2"/>
+      <text x="165" y="95" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201a">🖼 達文西</text>
+      <text x="165" y="125" text-anchor="middle" font-size="14" fill="#23201a">《蒙娜麗莎》的微笑</text>
+      <text x="165" y="152" text-anchor="middle" font-size="13" fill="#23201a">畫家＋科學家＋發明家</text>
+      <text x="165" y="215" text-anchor="middle" font-size="34">◡</text>
+      <rect x="325" y="60" width="250" height="200" fill="#e8e2f2" stroke="#5b4a8a" stroke-width="2"/>
+      <text x="450" y="95" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201a">🗿 米開朗基羅</text>
+      <text x="450" y="125" text-anchor="middle" font-size="14" fill="#23201a">《大衛像》站著</text>
+      <text x="450" y="152" text-anchor="middle" font-size="13" fill="#23201a">西斯汀天頂畫《創世紀》</text>
+      <text x="450" y="220" text-anchor="middle" font-size="36">♟</text>
+      <rect x="610" y="60" width="250" height="200" fill="#d8ecd2" stroke="#2e7d4f" stroke-width="2"/>
+      <text x="735" y="95" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201a">🏛 拉斐爾</text>
+      <text x="735" y="125" text-anchor="middle" font-size="14" fill="#23201a">《雅典學院》開會</text>
+      <text x="735" y="152" text-anchor="middle" font-size="13" fill="#23201a">古希臘哲學家齊聚一堂</text>
+      <text x="735" y="215" text-anchor="middle" font-size="32">👥</text>
+      <rect x="40" y="300" width="380" height="160" fill="#fffdf7" stroke="#23201a" stroke-width="2"/>
+      <text x="230" y="338" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201a">🖨 古騰堡印刷舖（約 1450）</text>
+      <text x="230" y="368" text-anchor="middle" font-size="14" fill="#23201a">活字印刷：書變多、變便宜</text>
+      <text x="230" y="394" text-anchor="middle" font-size="14" fill="#23201a">知識不再是教會與貴族的專利</text>
+      <text x="230" y="420" text-anchor="middle" font-size="14" fill="#23201a">→ 改革思想傳全歐（思想箭頭 ④→⑥）</text>
+      <rect x="460" y="300" width="400" height="160" fill="#fbe9e4" stroke="#b4552d" stroke-width="2"/>
+      <text x="660" y="338" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201a">🏙 佛羅倫斯・14 世紀</text>
+      <text x="660" y="368" text-anchor="middle" font-size="14" fill="#23201a">梅迪奇家族出錢贊助藝術</text>
+      <text x="660" y="394" text-anchor="middle" font-size="14" fill="#23201a">人文主義：以人為本</text>
+      <text x="660" y="420" text-anchor="middle" font-size="14" fill="#23201a">方言文學：但丁《神曲》、莎士比亞</text>
+    </svg>
+    <figcaption>圖 4 會印書的畫家工坊（示意圖）。標籤：佛羅倫斯 14 世紀、梅迪奇贊助、人文主義以人為本、達文西《蒙娜麗莎》、米開朗基羅《大衛像》、拉斐爾《雅典學院》、古騰堡印刷術約 1450、方言文學但丁與莎士比亞。</figcaption>
+  </figure>
+  <p class="mnemonic">三傑口訣：達文西「笑」、米開朗基羅「站」、拉斐爾「開會」——諧音「達、米、拉」</p>
+  <div class="grid2">
+    <div>
+      <h3>人文主義對比表</h3>
+      <div class="tags"><span class="tag">對比表格</span><span class="tag">組塊</span></div>
+      <table>
+        <tr><th>中世紀</th><th>文藝復興</th></tr>
+        <tr><td>以<b>神</b>為本</td><td>以<b>人</b>為本</td></tr>
+        <tr><td>重視來世</td><td>重視現世生活</td></tr>
+        <tr><td>教會壟斷知識</td><td>重視人的尊嚴、理性，敢質疑權威</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>抄寫 vs 印刷對比表</h3>
+      <div class="tags"><span class="tag">對比表格</span><span class="tag">故事串連</span></div>
+      <table>
+        <tr><th>修士手抄（中世紀）</th><th>古騰堡印刷（約 1450）</th></tr>
+        <tr><td>慢、貴、數量少</td><td>快、便宜、大量生產</td></tr>
+        <tr><td>知識在教會與貴族手裡</td><td>知識普及，方言文學興起</td></tr>
+      </table>
+      <p>影響：打破教會對知識的壟斷，培養質疑權威的精神——是宗教改革（與日後科學革命）的思想先聲。<span class="small">（科學革命本身是 L5，這次不考。）</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="groupE">
+  <div class="sec-head"><span class="sec-no">組塊 E・第 ⑤ 站</span><h2>國王收權、世界變大：王權國家與地理大發現</h2></div>
+  <div class="squash">壓縮句：百年戰爭收王權，四船接力開世界</div>
+  <div class="tags"><span class="tag">組塊</span><span class="tag">位置記憶法（四船賽道）</span><span class="tag">口訣</span><span class="tag">故事串連（接力賽）</span><span class="tag">對比表格</span></div>
+  <p><b>先收權，才有錢出海：</b>第 ③ 站削弱了領主與教會，城市與市民支持國王維持秩序、統一市場；<b>百年戰爭（1337–1453，英法爭王位與領土，共 116 年）</b>再推一把，兩國民族意識興起、王權集中。英國、法國、西班牙、葡萄牙等王權國家形成，國王掌握軍隊、稅收與司法——西班牙、葡萄牙有王室出錢資助航海，才有能力率先出海。<span class="small">注意：這是「王權集中」，還不是 L5 的君主專制，不要混。</span></p>
+  <h3>百年戰爭前後對比表</h3>
+  <div class="tags"><span class="tag">對比表格</span><span class="tag">組塊</span></div>
+  <table>
+    <tr><th>戰前（封建）</th><th>戰後（王權國家）</th></tr>
+    <tr><td>領主各據一方，國王權力有限</td><td>國王掌握軍隊、稅收、司法</td></tr>
+    <tr><td>只認自己的領主</td><td>民族意識興起，認國家、認國王</td></tr>
+    <tr><td>法國土地被英軍占據</td><td>法國收復失土；英國轉向海外</td></tr>
+  </table>
+  <figure>
+    <svg viewBox="0 0 1000 620" role="img" aria-label="四艘船大賽跑示意圖">
+      <rect width="1000" height="620" fill="#dcebf5"/>
+      <rect x="30" y="30" width="200" height="110" fill="#f6d9a8" stroke="#b4552d" stroke-width="2"/>
+      <text x="130" y="72" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201a">歐洲（左上）</text>
+      <text x="130" y="100" text-anchor="middle" font-size="13" fill="#23201a">葡、西王室出錢資助</text>
+      <ellipse cx="430" cy="430" rx="190" ry="120" fill="#f2d492"/>
+      <text x="430" y="420" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201a">非洲（中下）</text>
+      <text x="430" y="448" text-anchor="middle" font-size="13" fill="#23201a">南端：好望角</text>
+      <rect x="740" y="40" width="220" height="110" fill="#d8ecd2" stroke="#2e7d4f" stroke-width="2"/>
+      <text x="850" y="82" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201a">印度（右上）</text>
+      <text x="850" y="110" text-anchor="middle" font-size="13" fill="#23201a">香料的故鄉</text>
+      <rect x="30" y="330" width="190" height="120" fill="#fbe9e4" stroke="#b3372e" stroke-width="2"/>
+      <text x="125" y="372" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201a">美洲（左側）</text>
+      <text x="125" y="400" text-anchor="middle" font-size="13" fill="#23201a">新大陸</text>
+      <path d="M200 150 C 300 260, 340 330, 400 390" stroke="#2c5d8a" stroke-width="4" fill="none" marker-end="url(#arr)"/>
+      <text x="255" y="255" font-size="14" font-weight="bold" fill="#2c5d8a">⛵狄亞士 1488 好望角（葡萄牙）</text>
+      <path d="M230 160 C 420 300, 640 220, 800 160" stroke="#2e7d4f" stroke-width="4" fill="none" marker-end="url(#arr)"/>
+      <text x="470" y="215" font-size="14" font-weight="bold" fill="#2e7d4f">⛵達伽馬 1498 到印度（葡萄牙）</text>
+      <path d="M180 170 C 130 230, 120 280, 122 325" stroke="#b3372e" stroke-width="4" fill="none" marker-end="url(#arr)"/>
+      <text x="30" y="255" font-size="14" font-weight="bold" fill="#b3372e">⛵哥倫布 1492 美洲（西班牙）</text>
+      <rect x="52" y="268" width="86" height="26" fill="#fff" stroke="#b3372e"/>
+      <text x="95" y="287" text-anchor="middle" font-size="13" font-weight="bold" fill="#b3372e">印度？</text>
+      <path d="M150 480 C 400 560, 700 560, 950 480" stroke="#7a4a9e" stroke-width="4" fill="none" stroke-dasharray="12 7" marker-end="url(#arr)"/>
+      <text x="500" y="540" text-anchor="middle" font-size="14" font-weight="bold" fill="#5b3578">⛵麥哲倫船隊 1519–1522 環球（西班牙）→ 向西航行，本人死於菲律賓</text>
+      <defs><marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6 Z" fill="#23201a"/></marker></defs>
+      <text x="500" y="600" text-anchor="middle" font-size="13" fill="#23201a">亞美利哥舉牌：「這是新大陸！」→ 美洲以他命名｜地中海時代 → 大西洋時代</text>
+    </svg>
+    <figcaption>圖 5 四艘船大賽跑（示意圖，非精確地圖；太平洋在右緣接續左緣）。標籤：狄亞士 1488 好望角、達伽馬 1498 印度、哥倫布 1492 美洲誤認印度、麥哲倫 1519–1522 環球航行、亞美利哥命名美洲、地中海→大西洋、資助國（葡／西）、麥哲倫向西航行。資助國不能畫反：狄亞士、達伽馬是葡萄牙；哥倫布、麥哲倫船隊是西班牙。</figcaption>
+  </figure>
+  <div class="story"><b>故事串連——四船接力賽：</b>第一棒<b>狄亞士（1488）</b>跑到非洲南端的好望角，證明可以繞過非洲；第二棒<b>達伽馬（1498）</b>接棒繞過好望角、真的抵達印度；另一條賽道上，<b>哥倫布（1492）</b>往西跑錯方向，到了美洲卻到死都以為是印度（還把原住民叫「印第安人」）；最後<b>麥哲倫船隊（1519 出發）</b>向西繞過南美洲南端、橫渡太平洋，麥哲倫本人死在菲律賓，船隊在 <b>1522</b> 年完成人類首次環球航行。</div>
+  <p class="mnemonic">航海家口訣：88 角、92 洲、98 印、19 球</p>
+  <p><b>找新航路三原因</b>——<span class="mnemonic">口訣：要香料、被卡路、有技術</span>：① 十字軍後歐洲人愛上東方香料、絲綢、瓷器，需求大增；② 東西貿易路線被義大利商人與鄂圖曼土耳其控制，想繞開中間商；③ 造船、指南針、星盤等航海技術進步。</p>
+  <p><b>影響四件套</b>——<span class="mnemonic">口訣：文明沒、作物來、黑奴賣、海變大</span>：① 美洲古文明（馬雅、印加、阿茲提克）在征服與疾病下衰落；② 哥倫布大交換——美洲玉米、番薯、馬鈴薯、花生傳到歐亞，歐洲小麥、馬、牛傳入美洲；③ 為開發美洲殖民地，黑奴貿易盛行、三角貿易形成；④ 貿易重心從地中海轉向大西洋，西班牙、葡萄牙稱霸一時，荷蘭（東印度公司 <b>1602</b>）、英國（東印度公司 <b>1600</b>）隨後加入。</p>
+  <h3>地中海時代 vs 大西洋時代</h3>
+  <div class="tags"><span class="tag">對比表格</span><span class="tag">位置記憶法</span></div>
+  <table>
+    <tr><th>地中海時代（發現前）</th><th>大西洋時代（發現後）</th></tr>
+    <tr><td>貿易重心在地中海，義大利商人最吃香</td><td>貿易重心移到大西洋沿岸</td></tr>
+    <tr><td>只知道歐、亞、非舊大陸</td><td>知道美洲，世界連成全球</td></tr>
+    <tr><td>鄂圖曼與義大利商人卡住東方貿易</td><td>西、葡稱霸，荷、英隨後加入拓殖</td></tr>
+  </table>
+</section>
+
+<section id="groupF">
+  <div class="sec-head"><span class="sec-no">組塊 F・第 ⑥ 站</span><h2>教會裂成兩半：兩次分裂與宗教改革</h2></div>
+  <div class="squash">壓縮句：一零五四東西分，一五一七路德問</div>
+  <div class="tags"><span class="tag">組塊（兩次分裂合併）</span><span class="tag">位置記憶法（教堂左右兩半）</span><span class="tag">口訣</span><span class="tag">故事串連（剪刀剪券）</span><span class="tag">對比表格</span></div>
+  <p><b>先把兩次分裂放在一起記：</b>基督教裂開過兩次——<b>1054 年</b>東西教會大分裂（天主教 vs 東正教），<b>1517 年</b>馬丁路德引發宗教改革（天主教 vs 新教）。背景是教會腐化：販售<b>贖罪券</b>（聲稱花錢買券就能赦罪上天堂）、教士奢靡；再加上人文主義教人質疑權威（思想箭頭 ④→⑥）、印刷術讓《九十五條論綱》傳遍歐洲。</p>
+  <figure>
+    <svg viewBox="0 0 900 540" role="img" aria-label="教堂一分為二示意圖">
+      <rect width="900" height="540" fill="#f4efe4"/>
+      <polygon points="450,20 520,90 380,90" fill="#8a6d3b"/>
+      <path d="M450 90 L440 200 L460 320 L448 430" stroke="#b3372e" stroke-width="6" fill="none"/>
+      <text x="450" y="60" text-anchor="middle" font-size="26">✂</text>
+      <text x="450" y="115" text-anchor="middle" font-size="15" font-weight="bold" fill="#b3372e">贖罪券大剪刀</text>
+      <rect x="40" y="140" width="380" height="270" fill="#f6d9a8" stroke="#b4552d" stroke-width="2"/>
+      <text x="230" y="175" text-anchor="middle" font-size="19" font-weight="bold" fill="#23201a">左：天主教（反改革）</text>
+      <text x="230" y="210" text-anchor="middle" font-size="14" fill="#23201a">耶穌會：羅耀拉創立，傳教、辦學</text>
+      <text x="230" y="240" text-anchor="middle" font-size="14" fill="#23201a">特倫托會議：整頓教會紀律</text>
+      <text x="230" y="285" text-anchor="middle" font-size="14" fill="#23201a">首領仍是教宗</text>
+      <text x="230" y="330" text-anchor="middle" font-size="30">⛪</text>
+      <rect x="480" y="140" width="380" height="85" fill="#d8ecd2" stroke="#2e7d4f" stroke-width="2"/>
+      <text x="670" y="172" text-anchor="middle" font-size="16" font-weight="bold" fill="#23201a">路德教派（最大格）1517</text>
+      <text x="670" y="198" text-anchor="middle" font-size="13" fill="#23201a">九十五條論綱・因信稱義</text>
+      <rect x="480" y="235" width="185" height="80" fill="#cfdff0" stroke="#2c5d8a" stroke-width="2"/>
+      <text x="572" y="268" text-anchor="middle" font-size="15" font-weight="bold" fill="#23201a">喀爾文教派</text>
+      <text x="572" y="292" text-anchor="middle" font-size="13" fill="#23201a">預定論・日內瓦</text>
+      <rect x="675" y="235" width="185" height="80" fill="#fbe9e4" stroke="#b3372e" stroke-width="2"/>
+      <text x="767" y="268" text-anchor="middle" font-size="15" font-weight="bold" fill="#23201a">英國國教會 👑</text>
+      <text x="767" y="292" text-anchor="middle" font-size="13" fill="#23201a">亨利八世・王冠比十字架大</text>
+      <rect x="480" y="325" width="380" height="85" fill="#fffdf7" stroke="#23201a" stroke-width="1.5"/>
+      <text x="670" y="358" text-anchor="middle" font-size="15" font-weight="bold" fill="#23201a">右：新教三派</text>
+      <text x="670" y="384" text-anchor="middle" font-size="13" fill="#23201a">共同點：不再聽羅馬教宗的</text>
+      <text x="450" y="462" text-anchor="middle" font-size="16" font-weight="bold" fill="#23201a">三大影響 → 宗教戰爭頻發 ｜ 王權提升 ｜ 教育普及</text>
+      <text x="450" y="500" text-anchor="middle" font-size="13" fill="#23201a">各派重視讀經 → 方言聖經與學校增加</text>
+    </svg>
+    <figcaption>圖 6 教堂一分為二（示意圖）。標籤：贖罪券大剪刀、天主教耶穌會、特倫托會議、路德 1517 因信稱義、喀爾文預定論、亨利八世國王當首領、三大影響、教宗 vs 國王首領之別。</figcaption>
+  </figure>
+  <h3>兩次分裂對比表</h3>
+  <div class="tags"><span class="tag">對比表格</span><span class="tag">組塊</span></div>
+  <table>
+    <tr><th></th><th>1054 東西大分裂</th><th>1517 宗教改革</th></tr>
+    <tr><td><b>裂成</b></td><td>天主教 vs 東正教</td><td>天主教 vs 新教</td></tr>
+    <tr><td><b>原因</b></td><td>教義、權力與文化差異累積</td><td>贖罪券與教會腐化＋人文主義＋印刷術</td></tr>
+    <tr><td><b>關鍵人物</b></td><td>教宗 vs 君士坦丁堡牧首</td><td>馬丁路德</td></tr>
+  </table>
+  <h3>新教三派對比表</h3>
+  <div class="tags"><span class="tag">對比表格</span><span class="tag">口訣</span></div>
+  <table>
+    <tr><th>派別</th><th>人物</th><th>核心主張</th></tr>
+    <tr><td>路德教派</td><td>馬丁路德（德國）</td><td><b>因信稱義</b>：憑信仰得救，不必靠贖罪券與教會中介</td></tr>
+    <tr><td>喀爾文教派</td><td>喀爾文（法國，日內瓦傳教）</td><td><b>預定論</b>：得救與否早由上帝決定，教規嚴格</td></tr>
+    <tr><td>英國國教會</td><td>亨利八世</td><td>因離婚問題與教宗決裂，<b>國王當教會首領</b>，教義接近天主教</td></tr>
+  </table>
+  <p class="mnemonic">三派口訣：路德「信」、喀爾文「定」、亨利「王」</p>
+  <p><b>天主教反改革</b>——<span class="mnemonic">口訣：耶穌會出去傳，特倫托在家整</span>：耶穌會往外傳教、辦學；特倫托會議在家整頓紀律。<b>改革三大影響：</b>宗教戰爭頻發（法國宗教戰爭、三十年戰爭）、王權提升（國王沒收教產、擺脫教宗）、教育普及。</p>
+  <figure>
+    <svg viewBox="0 0 900 430" role="img" aria-label="1054與1453雙胞胎陷阱圖">
+      <rect width="900" height="430" fill="#fdf6e3"/>
+      <text x="450" y="52" text-anchor="middle" font-size="34" font-weight="bold" fill="#b3372e">1054 分、1453 亡</text>
+      <rect x="40" y="80" width="390" height="250" fill="#eef4fb" stroke="#2c5d8a" stroke-width="2"/>
+      <text x="235" y="118" text-anchor="middle" font-size="20" font-weight="bold" fill="#23201a">1054 雙胞胎哥哥 ✂</text>
+      <text x="235" y="152" text-anchor="middle" font-size="14" fill="#23201a">拿剪刀剪開十字架項鍊</text>
+      <text x="235" y="180" text-anchor="middle" font-size="14" fill="#23201a">天主教 ｜ 東正教 正式分家</text>
+      <text x="235" y="216" text-anchor="middle" font-size="15" font-weight="bold" fill="#2e7d4f">帝國還活著——又活了 399 年！</text>
+      <text x="235" y="248" text-anchor="middle" font-size="14" fill="#23201a">這年只有「分裂」，沒有「滅亡」</text>
+      <rect x="470" y="80" width="390" height="250" fill="#fbe9e4" stroke="#b3372e" stroke-width="2"/>
+      <text x="665" y="118" text-anchor="middle" font-size="20" font-weight="bold" fill="#23201a">1453 雙胞胎弟弟 💥</text>
+      <text x="665" y="152" text-anchor="middle" font-size="14" fill="#23201a">城牆被鄂圖曼攻破、旗插城頭</text>
+      <text x="665" y="180" text-anchor="middle" font-size="14" fill="#23201a">拜占庭帝國滅亡</text>
+      <text x="665" y="216" text-anchor="middle" font-size="14" fill="#23201a">學者抱著古籍往西逃 → 文藝復興</text>
+      <text x="665" y="248" text-anchor="middle" font-size="14" fill="#23201a">同年：百年戰爭結束</text>
+      <rect x="140" y="352" width="620" height="56" fill="#b3372e"/>
+      <text x="450" y="388" text-anchor="middle" font-size="19" font-weight="bold" fill="#fff">⚠ 選「1054 拜占庭滅亡」＝直接扣分！</text>
+    </svg>
+    <figcaption>陷阱圖：1054 vs 1453 雙胞胎（示意圖）。標籤：1054 剪刀分裂、帝國又活 399 年、1453 城牆倒塌、鄂圖曼旗、學者抱書西逃、紅色警告框。兩年相隔 399 年，先分家、後滅亡。</figcaption>
+  </figure>
+</section>
+
+<section id="groupG">
+  <div class="sec-head"><span class="sec-no">組塊 G・備用</span><h2>更早的文明：L1–L2 快速掃描（防累計考法，15 分鐘）</h2></div>
+  <div class="squash">壓縮句：西亞文字法，埃及金字塔，希臘民主羅馬法</div>
+  <div class="tags"><span class="tag">組塊</span><span class="tag">對比表格</span><span class="tag">口訣</span></div>
+  <div class="grid2">
+    <div>
+      <h3>L1 古文明</h3>
+      <ul>
+        <li><b>西亞（兩河流域）：</b>蘇美人楔形文字、六十進位；巴比倫<b>漢摩拉比法典</b>（以眼還眼）；腓尼基字母文字；希伯來人猶太教（一神教）。</li>
+        <li><b>埃及：</b>尼羅河定期氾濫，法老政教合一，<b>金字塔</b>是法老陵墓，象形文字。</li>
+        <li><b>印度：</b>種姓制度（婆羅門、剎帝利、吠舍、首陀羅）；佛教（釋迦牟尼，眾生平等）與印度教。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>L2 歐洲古典文明</h3>
+      <ul>
+        <li><b>希臘：</b>城邦林立，雅典<b>民主政治</b>、斯巴達尚武；亞歷山大東征形成希臘化文化。</li>
+        <li><b>羅馬：</b>共和轉帝國，<b>羅馬法</b>影響後世；基督教在帝國境內創立，後成為國教。</li>
+        <li><b>接回主線：</b>羅馬帝國分裂為東西兩部，西羅馬 476 年滅亡 → 進入第 ① 站的中世紀；東羅馬就是第 ② 站的拜占庭。</li>
+      </ul>
+    </div>
+  </div>
+  <p class="warn">易混淆：漢摩拉比法典（西亞巴比倫）vs 查士丁尼法典（拜占庭整理羅馬法）——看到「以眼還眼」選漢摩拉比，看到「君士坦丁堡」選查士丁尼。</p>
+</section>
+<section id="tables">
+  <div class="sec-head"><span class="sec-no">總表</span><h2>三張表：因果鏈對照、易混淆判別、提取線索</h2></div>
+
+  <h3>表 (i) 因果鏈對照表：L3 vs L4（全部用因果句寫）</h3>
+  <div class="tags"><span class="tag">對比表格</span><span class="tag">故事串連（因果鏈）</span></div>
+  <div class="tbl-wrap"><table>
+    <tr><th>主題</th><th>L3 中世紀</th><th>因為……所以 L4 變成</th></tr>
+    <tr><td><b>權力</b></td><td>因為西羅馬滅亡後沒有強大中央，所以權力散在領主手裡、教宗高於國王</td><td>因為十字軍與黑死病削弱領主與教會、百年戰爭凝聚民族意識，所以國王把權力收回來</td></tr>
+    <tr><td><b>思想</b></td><td>因為教會壟斷知識，所以人人以神為本、重視來世</td><td>因為古籍回到義大利、印刷術普及，所以人文主義以人為本、敢質疑權威，並點燃宗教改革</td></tr>
+    <tr><td><b>世界</b></td><td>因為航海能力有限，所以歐洲人只知道歐、亞、非舊大陸</td><td>因為王室有錢資助、航海技術進步，所以地理大發現後世界連成全球</td></tr>
+    <tr><td><b>宗教</b></td><td>因為 1054 年東西分裂，所以歐洲有天主教與東正教並存</td><td>因為贖罪券引爆不滿，所以 1517 年後再裂出新教</td></tr>
+    <tr><td><b>經濟</b></td><td>因為莊園自給自足，所以農奴依附土地、城市很少</td><td>因為貿易復興與海外拓殖，所以商業、殖民與黑奴貿易擴張</td></tr>
+    <tr><td><b>關鍵年份</b></td><td>1054 分裂、1077 卡諾莎、1096 十字軍、1453 拜占庭滅亡</td><td>1492 哥倫布、1517 路德、1519 麥哲倫出發</td></tr>
+  </table></div>
+
+  <h3>表 (ii) 易混淆對照表：每對一個一秒判別法</h3>
+  <div class="tags"><span class="tag">對比表格</span><span class="tag">提取練習</span></div>
+  <div class="tbl-wrap"><table>
+    <tr><th>易混淆的一對</th><th>差別</th><th>一秒判別法</th></tr>
+    <tr><td>拜占庭 vs 羅馬帝國</td><td>拜占庭是羅馬帝國的東半延續，首都君士坦丁堡，1453 才滅亡</td><td>看到「君士坦丁堡／東正教」→ 拜占庭；「西羅馬 476 滅亡」→ 羅馬</td></tr>
+    <tr><td>路德 vs 喀爾文 vs 英國國教會</td><td>因信稱義／預定論／國王當首領</td><td>信、定、王——關鍵字對人</td></tr>
+    <tr><td>哥倫布 vs 麥哲倫 vs 達伽馬 vs 狄亞士</td><td>美洲誤認印度／環球／到印度／好望角</td><td>88 角、92 洲、98 印、19 球</td></tr>
+    <tr><td>哥倫布 vs 亞美利哥</td><td>哥倫布先到卻誤認印度；亞美利哥證實是新大陸，美洲以他命名</td><td>「命名」→ 亞美利哥；「1492 抵達」→ 哥倫布</td></tr>
+    <tr><td>十字軍 vs 黑死病</td><td>一個帶回貿易，一個帶走人口；都削弱封建與教會</td><td>「收復聖地」→ 十字軍；「鼠疫、人口減三分之一」→ 黑死病</td></tr>
+    <tr><td>文藝復興 vs 宗教改革</td><td>前者是文化思想運動（藝術、以人為本）；後者是教會分裂事件（贖罪券、新教）</td><td>「畫家、佛羅倫斯」→ 文藝復興；「1517、論綱」→ 宗教改革</td></tr>
+    <tr><td>農奴 vs 奴隸</td><td>農奴依附土地、不是財產；奴隸是財產、可買賣</td><td>「可以自由買賣嗎？」不能 → 農奴</td></tr>
+    <tr><td>王權國家形成 vs 專制王權</td><td>本次考前者（L4 王權集中）；專制王權是 L5，<b>本次不考</b></td><td>看到「君主專制」先警覺：不在這次範圍</td></tr>
+    <tr><td>天主教 vs 東正教</td><td>羅馬教宗、拉丁傳統／君士坦丁堡牧首、希臘傳統；1054 分裂</td><td>「教宗」→ 天主教；「牧首、君士坦丁堡」→ 東正教</td></tr>
+    <tr><td>地中海時代 vs 大西洋時代</td><td>貿易重心：地中海（義大利商人）→ 大西洋（西、葡、荷、英）</td><td>「地理大發現後重心西移」→ 大西洋時代</td></tr>
+    <tr><td>采邑 vs 莊園</td><td>采邑是分封的土地（關係）；莊園是耕作生活的單位（地方）</td><td>「分封、效忠」→ 采邑；「自給自足、磨坊」→ 莊園</td></tr>
+    <tr><td>耶穌會 vs 路德教派</td><td>耶穌會是天主教的反改革（傳教辦學）；路德教派是新教第一派</td><td>「羅耀拉、特倫托」→ 天主教反改革；「因信稱義」→ 路德</td></tr>
+  </table></div>
+
+  <h3>表 (iii) 提取線索表：看到關鍵詞 → 回哪個組塊 → 答案是什麼</h3>
+  <div class="tags"><span class="tag">提取練習</span><span class="tag">組塊</span></div>
+  <div class="tbl-wrap"><table>
+    <tr><th>考試關鍵詞</th><th>組塊</th><th>要寫出的答案</th></tr>
+    <tr><td>采邑、附庸、服軍役</td><td>A</td><td>封建：分土地換效忠與軍役</td></tr>
+    <tr><td>不能隨意離開、繳實物、服勞役</td><td>A</td><td>農奴（不是奴隸，不能買賣）</td></tr>
+    <tr><td>雪地三天、亨利四世、敘任權</td><td>B</td><td>卡諾莎事件 1077：教宗權力高於國王</td></tr>
+    <tr><td>君士坦丁堡、法典</td><td>B</td><td>拜占庭、查士丁尼法典</td></tr>
+    <tr><td>念禮齋課朝、麥加、《可蘭經》</td><td>B</td><td>伊斯蘭教五功（沒有「祭」）</td></tr>
+    <tr><td>收復聖地、香料流入</td><td>C</td><td>十字軍：貿易復興、王權提升</td></tr>
+    <tr><td>鼠疫、人口減三分之一、工資上漲</td><td>C</td><td>黑死病：農奴制瓦解</td></tr>
+    <tr><td>行會、大學、市民階級</td><td>C</td><td>城市興起：貿易復興、商人聚集</td></tr>
+    <tr><td>佛羅倫斯、梅迪奇、以人為本</td><td>D</td><td>文藝復興、人文主義</td></tr>
+    <tr><td>蒙娜麗莎／大衛像／雅典學院</td><td>D</td><td>達文西／米開朗基羅／拉斐爾（達米拉）</td></tr>
+    <tr><td>古騰堡、活字、書變便宜</td><td>D</td><td>印刷術約 1450：知識普及</td></tr>
+    <tr><td>英法爭王位、116 年、民族意識</td><td>E</td><td>百年戰爭 1337–1453：王權集中</td></tr>
+    <tr><td>好望角／印度航路／印第安人／環球</td><td>E</td><td>狄亞士／達伽馬／哥倫布／麥哲倫（88 角、92 洲、98 印、19 球）</td></tr>
+    <tr><td>玉米馬鈴薯傳歐洲、三角貿易</td><td>E</td><td>哥倫布大交換、黑奴貿易</td></tr>
+    <tr><td>贖罪券、九十五條論綱、因信稱義</td><td>F</td><td>1517 馬丁路德、宗教改革</td></tr>
+    <tr><td>預定論、日內瓦</td><td>F</td><td>喀爾文教派</td></tr>
+    <tr><td>離婚、國王當教會首領</td><td>F</td><td>亨利八世、英國國教會</td></tr>
+    <tr><td>耶穌會、特倫托會議</td><td>F</td><td>天主教反改革</td></tr>
+    <tr><td>楔形文字、以眼還眼、金字塔、雅典民主、羅馬法</td><td>G</td><td>L1–L2：西亞、漢摩拉比、埃及、希臘、羅馬</td></tr>
+  </table></div>
+</section>
+<section id="activities">
+  <div class="sec-head"><span class="sec-no">編碼活動</span><h2>6 個動手活動：6 選 3（全做約 87 分鐘）</h2></div>
+  <p>編碼類方法的重點是<b>自己產出</b>：畫出來、講出來、寫出來，比再看一遍有效。時間夠的話先做 <b>1、3、5、6（共 57 分鐘）</b>，這四個覆蓋 A、C、E、F 四個組塊；時間緊就任選 3 個，但每個都要真的動手，不能只用看的。</p>
+
+  <div class="card">
+    <div class="act-head"><h3>活動 1：封建金字塔自己搭</h3><span class="min">⏱ 12 分鐘</span></div>
+    <div class="tags"><span class="tag">組塊 A</span><span class="tag">位置記憶法</span><span class="tag">自己講一遍（提取）</span></div>
+    <ol>
+      <li>在紙上畫三層金字塔：頂國王、中領主、底農奴，旁邊畫一個更高的教宗圈，再補一間莊園小屋。</li>
+      <li>用 60 秒講給家人聽，開頭必須說：<b>「采邑是土地，效忠換軍役；農奴種地不能走」</b>。</li>
+      <li>最後加一步：把百年戰爭後的圖改一改——<b>國王層變大、領主層縮小</b>，說一句為什麼（領主在戰爭與瘟疫中削弱，權力被國王收走）。</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <div class="act-head"><h3>活動 2：三張宗教身分證</h3><span class="min">⏱ 15 分鐘</span></div>
+    <div class="tags"><span class="tag">組塊 B</span><span class="tag">對比表格</span><span class="tag">抽卡提取</span></div>
+    <ol>
+      <li>做三張四欄卡（天主教、東正教、伊斯蘭教）：中心／領袖、經典或代表事物、關鍵事件、一個關鍵詞。</li>
+      <li>伊斯蘭教卡背面畫五功圖示：念、禮、齋、課、朝（提醒自己：沒有「祭」）。</li>
+      <li>東正教卡下方用紅字寫：<b>「1054 年東西教會大分裂——不是拜占庭滅亡，滅亡是 1453 年」</b>。</li>
+      <li>三張卡洗牌，隨機抽一張，30 秒內說出四欄內容，說不出來的欄位就是要回去補的洞。</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <div class="act-head"><h3>活動 3：一正一反事件簿——十字軍 vs 黑死病</h3><span class="min">⏱ 15 分鐘</span></div>
+    <div class="tags"><span class="tag">組塊 C</span><span class="tag">對比表格</span><span class="tag">辯論（精緻化編碼）</span></div>
+    <ol>
+      <li>畫一條時間軸，標上 1096（十字軍開始）、1291（結束）、14 世紀中葉（黑死病）。</li>
+      <li>寫兩張事件履歷表：各寫一欄「帶來的好處」與一欄「造成的壞處」。</li>
+      <li>寫 50 字辯論詞：<b>「十字軍和黑死病，哪一個對封建瓦解的貢獻比較大？」</b>例子：「農奴離開莊園到城市做工」<span class="sup">背景推論</span>——這是幫助理解的推論，課本的標準答案是勞力短缺、工資上漲、農奴制瓦解。</li>
+      <li>最後補上城市興起一句，並動手提取一次：遮住答案，說出<b>行會、大學、市民階級</b>各是什麼。</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <div class="act-head"><h3>活動 4：佛羅倫斯街頭導覽</h3><span class="min">⏱ 15 分鐘</span></div>
+    <div class="tags"><span class="tag">組塊 D</span><span class="tag">位置記憶法</span><span class="tag">自己講一遍（提取）</span></div>
+    <ol>
+      <li>想像一條佛羅倫斯街道，沿街擺四個攤位：達文西畫攤、米開朗基羅雕刻攤、拉斐爾畫攤、古騰堡印刷舖。</li>
+      <li>街口立牌子：<b>「14 世紀・佛羅倫斯・梅迪奇家族贊助」</b>；街尾立牌子：<b>「人文主義：以人為本」</b>。</li>
+      <li>寫 60 秒導覽詞，第一句必須是：<b>「以前大家看天，現在開始看人」</b>，沿街介紹四個攤位。</li>
+      <li>最後在街尾補一個書攤：方言文學——但丁《神曲》（義大利方言）、莎士比亞（英語）。</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <div class="act-head"><h3>活動 5：航海家行程表</h3><span class="min">⏱ 15 分鐘</span></div>
+    <div class="tags"><span class="tag">組塊 E</span><span class="tag">位置記憶法</span><span class="tag">自我測驗</span></div>
+    <ol>
+      <li>蓋住課本，憑記憶畫一張簡易世界地圖（歐、非、印度、美洲四塊就好）。</li>
+      <li>畫四條路線，各寫年份與一句話：狄亞士 1488 好望角、達伽馬 1498 印度、哥倫布 1492 美洲、麥哲倫 1519–1522 環球（向西）。</li>
+      <li>打開課本，用紅筆訂正畫錯、寫錯的地方——紅筆處就是考前要再看的。</li>
+      <li>做「猜猜我是誰」三張線索卡（例：「我到了新大陸，卻以為是印度」→ 哥倫布），自己抽自己答。</li>
+      <li>最後補寫兩行：美洲以亞美利哥命名；貿易重心從地中海時代轉向大西洋時代。</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <div class="act-head"><h3>活動 6：宗教改革三派辯論會</h3><span class="min">⏱ 15 分鐘</span></div>
+    <div class="tags"><span class="tag">組塊 F</span><span class="tag">對比表格</span><span class="tag">辯論（精緻化編碼）</span></div>
+    <ol>
+      <li>抽籤扮演路德、喀爾文、亨利八世其中一人，寫一張自我介紹卡（我是誰、我反對什麼、我的主張）。</li>
+      <li>寫 50 字辯論詞說明自己的主張，再各寫一句反駁另外兩派的話。</li>
+      <li>把三人的卡排在一起，做成三派對照卡（信、定、王）。</li>
+      <li>對照卡最下面補一行天主教反改革：耶穌會出去傳、特倫托在家整。</li>
+      <li>收尾寫一句改革影響（三選一展開：宗教戰爭／王權提升／教育普及）。</li>
+    </ol>
+  </div>
+</section>
+
+<section id="why">
+  <div class="sec-head"><span class="sec-no">追問鏈</span><h2>3 條「為什麼」追問鏈：把因果想通，就不用死背</h2></div>
+
+  <div class="card">
+    <h3>鏈 1：為什麼歐洲人要找新航路？</h3>
+    <div class="why">
+      <p class="step"><b>為什麼 1：</b>為什麼想去東方？→ 十字軍之後，歐洲人愛上香料、絲綢、瓷器，需求大增。</p>
+      <p class="step"><b>為什麼 2：</b>為什麼不走原來的路？→ 東西貿易路線被義大利商人與鄂圖曼土耳其控制，中間商層層加價。</p>
+      <p class="step"><b>為什麼 3：</b>為什麼當時能繞路？→ 鄂圖曼在 1453 年之前已逐步控制東西方陸上貿易要道，攻陷君士坦丁堡後控制更徹底；同時航海技術進步（造船、指南針、星盤），讓繞路變得可行。<span class="sup">補充推理</span>（不要寫成「因為 1453 年滅亡所以鄂圖曼才能控制路線」——控制是漸進的，1453 是更徹底，不是起點。）</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>鏈 2：為什麼黑死病會讓農奴制瓦解？</h3>
+    <div class="why">
+      <p class="step"><b>為什麼 1：</b>黑死病造成什麼？→ 14 世紀中葉鼠疫傳入，人口銳減約三分之一。</p>
+      <p class="step"><b>為什麼 2：</b>人口變少又怎樣？→ 勞力短缺，領主只好提高工資搶人，農奴的地位跟著上升。</p>
+      <p class="step"><b>為什麼 3：</b>地位上升之後呢？→ <span class="sup">補充（課外，考試不考）</span>「農奴逃到城市就有機會成為自由民」這整句是課外補充，考試不考；<b>考試只考：勞力短缺 → 工資上漲 → 農奴制瓦解</b>，寫這條就夠了。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>鏈 3：為什麼馬丁路德的改革會成功？</h3>
+    <div class="why">
+      <p class="step"><b>為什麼 1：</b>為什麼有人敢挑戰教會？→ 教會販售贖罪券、教士奢靡，不滿早就累積；人文主義又教人質疑權威。</p>
+      <p class="step"><b>為什麼 2：</b>為什麼這次傳得特別快？→ 印刷術讓《九十五條論綱》和方言聖經大量印行，不再被教會壟斷。</p>
+      <p class="step"><b>為什麼 3：</b>為什麼教宗壓不下來？→ 德意志等地的<b>國王</b>與諸侯願意支持改革。<span class="sup">補充推理</span>國王支持的動機，課本未明說，一般推論是藉機擺脫教宗控制、沒收教產——這是推理，不是課本原文。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>✍ 自己出題任務（第二天最後做，隔天再重做一次）</h3>
+    <p>自己當出題老師，是最強的編碼：你要先想清楚「考什麼、坑在哪」，才出得了題。出完隔天遮住答案重做一次。</p>
+    <ul>
+      <li><b>配對題：</b>四位航海家（狄亞士、達伽馬、哥倫布、麥哲倫）配年份與成就，錯誤選項要對應真實常見錯誤（例：把好望角配給達伽馬、把環球配給哥倫布）。</li>
+      <li><b>史料判讀題：</b>用卡諾莎事件當史料（「皇帝在雪地站了三天……」），問它反映哪種權力關係，附答案與解析。</li>
+      <li><b>陷阱題：</b>主角是拜占庭帝國，正確答案 1453 滅亡，錯誤選項放 1054——並在解析寫明 1054 是東西教會分裂。</li>
+    </ul>
+    <p>每題都要附：<b>答案、解析、出題意圖</b>（這題想考哪個組塊、想抓哪種錯誤）。</p>
+  </div>
+</section>
+
+<section id="sprint">
+  <div class="sec-head"><span class="sec-no">衝刺計畫</span><h2>兩天衝刺：必做／選做分級（全做約 3.5–4 小時，太長，所以要分級）</h2></div>
+  <div class="tbl-wrap"><table>
+    <tr><th>時間</th><th>必做</th><th>選做（有餘力再做）</th></tr>
+    <tr><td><b>11/24 晚</b><br />（今天）</td><td>讀六站因果鏈＋組塊 A–C，每站背壓縮句、看圖 1–3（約 40 分鐘）</td><td>活動 1（12 分）、活動 3（15 分）</td></tr>
+    <tr><td><b>11/25</b><br />（明天）</td><td>組塊 D–F＋圖 4–6 與陷阱圖；用表 (iii) 提取線索表自測一輪；做下方 20 題測驗並訂正（約 50 分鐘）</td><td>活動 5（15 分）、活動 6（15 分）、自己出題任務、組塊 G 掃描 15 分鐘</td></tr>
+    <tr><td><b>11/26 考前</b></td><td colspan="2">只看七句壓縮句＋表 (ii) 的一秒判別法，不再看新內容</td></tr>
+  </table></div>
+  <p>七句壓縮句總複習：A 國王分地換效忠，農奴種地不能走｜B 教宗最大、東正分家、穆罕默德南起｜C 十字軍帶錢來，黑死病帶人走｜D 佛羅倫斯看人，印刷術傳全歐｜E 百年戰爭收王權，四船接力開世界｜F 一零五四東西分，一五一七路德問｜G 西亞文字法，埃及金字塔，希臘民主羅馬法。</p>
+</section>
+<section id="flips">
+  <div class="sec-head"><span class="sec-no">提取練習</span><h2>翻牌卡：先想答案，再點開對照</h2></div>
+  <p class="small">點卡片翻面。想不出來的卡，就是今晚要回去補的洞。</p>
+  <div class="flipgrid" id="flipgrid"></div>
+</section>
+
+<section id="quiz">
+  <div class="sec-head"><span class="sec-no">模擬試題</span><h2>20 題模擬試題：點選項立刻看對錯與解析</h2></div>
+  <div class="scorebar">目前得分：<span id="score">0</span> / 20（已答 <span id="answered">0</span> 題）</div>
+  <div id="quizbox"></div>
+</section>
+
+<footer>
+  <p><b>範圍與來源：</b>本頁以康軒歷史第五冊 L3–L4 為範圍，內容依據複習來源檔整理；範圍是依多校 115-1 第二次段考共同切法推論，南科未公開範圍表，正式範圍以老師公告為準。所有地圖與圖表均為幫助記憶的<b>示意圖，非精確地圖</b>。標「補充」「補充推理」「課外」的內容是幫助理解用，段考不考，不要花時間背。科學革命、啟蒙運動、工業革命是 L5（第三次段考），不在本頁範圍。</p>
+  <p>使用建議：先走一次因果鏈 → 逐組塊讀圖與口訣 → 做編碼活動 → 用翻牌卡與測驗提取 → 考前只看壓縮句與判別法。</p>
+</footer>
+
+</div>
+<script>
+var FLIPS = [
+  ["采邑是什麼？","領主分封給附庸的土地，換取效忠與軍役（組塊 A）"],
+  ["農奴和奴隸最大的差別？","農奴依附土地、不是財產，不能自由買賣；奴隸是財產（組塊 A）"],
+  ["卡諾莎事件（1077）說明什麼？","教宗權力高於國王：亨利四世雪地站三天求饒（組塊 B）"],
+  ["拜占庭四件套？","君士坦丁堡、查士丁尼法典、1054 分裂、1453 滅亡——堡法分滅（組塊 B）"],
+  ["五功是哪五功？","念、禮、齋、課、朝——沒有「祭」（組塊 B）"],
+  ["1054 和 1453 差在哪？","1054 東西教會分裂；1453 拜占庭滅亡，相隔 399 年（組塊 F）"],
+  ["十字軍 vs 黑死病共同結果？","王權提升、教會威信下降、封建瓦解（組塊 C）"],
+  ["人文主義是什麼？","以人為本，重視人的尊嚴、理性與現世生活（組塊 D）"],
+  ["三傑配作品？","達文西《蒙娜麗莎》、米開朗基羅《大衛像》、拉斐爾《雅典學院》（組塊 D）"],
+  ["四位航海家配成就？","狄亞士好望角、達伽馬印度、哥倫布美洲、麥哲倫環球（組塊 E）"],
+  ["美洲為什麼叫亞美利加？","亞美利哥證實那是新大陸，以他命名（組塊 E）"],
+  ["路德、喀爾文、亨利八世？","因信稱義、預定論、國王當教會首領——信、定、王（組塊 F）"]
+];
+var flipgrid = document.getElementById('flipgrid');
+FLIPS.forEach(function(f){
+  var b = document.createElement('button');
+  b.className = 'flip'; b.type = 'button';
+  b.setAttribute('aria-label','翻牌卡：'+f[0]);
+  b.innerHTML = '<span class="flip-inner"><span class="flip-face flip-front">'+f[0]+'<span class="hint">點我翻面看答案</span></span><span class="flip-face flip-back">'+f[1]+'</span></span>';
+  b.addEventListener('click', function(){ b.classList.toggle('flipped'); });
+  flipgrid.appendChild(b);
+});
+
+var QUIZ = [
+  {q:"中世紀西歐封建社會中，領主把土地分封給附庸，這種土地稱為：",o:["采邑","莊園","行會","采地稅"],a:0,e:"采邑是領主分封給附庸的土地，換取效忠與軍役。（組塊 A）"},
+  {q:"下列關於農奴的敘述，何者正確？",o:["農奴是領主的財產，可以自由買賣","農奴依附在莊園土地上耕作，不能隨意離開","農奴不用向領主繳納任何東西","農奴可以自由遷移到城市"],a:1,e:"農奴依附土地、不能隨意離開，要繳納實物與服勞役；農奴不是領主的財產。（組塊 A）"},
+  {q:"卡諾莎事件最能說明中世紀歐洲的哪一種權力關係？",o:["國王權力高於教宗","教宗權力高於國王","領主權力高於教宗","市民權力高於領主"],a:1,e:"亨利四世在卡諾莎向教宗求饒，說明教宗權力高於國王。（組塊 B）"},
+  {q:"拜占庭帝國的首都君士坦丁堡位於今日的哪一個國家？",o:["義大利","希臘","土耳其","埃及"],a:2,e:"君士坦丁堡在今日土耳其境內，今名伊斯坦堡。（組塊 B）"},
+  {q:"1054 年發生的大事是：",o:["拜占庭帝國滅亡","東西教會大分裂","十字軍東征開始","黑死病傳入歐洲"],a:1,e:"1054 年東西教會大分裂；拜占庭滅亡是 1453 年，十字軍開始是 1096 年。（組塊 B／F）"},
+  {q:"伊斯蘭教的「五功」不包括下列哪一項？",o:["念","禮","祭","朝"],a:2,e:"五功是念、禮、齋、課、朝，沒有「祭」。（組塊 B）"},
+  {q:"穆罕默德創立伊斯蘭教，其經典是：",o:["聖經","可蘭經","佛經","摩西五經"],a:1,e:"伊斯蘭教經典是《可蘭經》。（組塊 B）"},
+  {q:"十字軍東征對歐洲最主要的長遠影響是：",o:["教會權力更加鞏固","東西貿易復興，王權提升","封建制度更加穩固","歐洲與伊斯蘭世界完全隔絕"],a:1,e:"十字軍帶來東西貿易復興、王權提升、教會威信下降，封建反而鬆動。（組塊 C）"},
+  {q:"黑死病對中世紀歐洲社會的影響，不包括下列哪一項？",o:["人口銳減約三分之一","勞力短缺、工資上漲","農奴制瓦解","教會威信大幅提升"],a:3,e:"黑死病讓人質疑教會（祈禱擋不住瘟疫），教會威信是下降。（組塊 C）"},
+  {q:"中世紀後期城市興起的原因，最主要是：",o:["教宗下令建城","貿易復興，商人聚集","國王把首都遷到城市","黑死病逼人進城躲避"],a:1,e:"貿易復興、商人聚集是城市興起的主因，行會與大學隨之出現。（組塊 C）"},
+  {q:"文藝復興最早興起於下列哪一個地方？",o:["英國倫敦","法國巴黎","義大利佛羅倫斯","德國柏林"],a:2,e:"文藝復興 14 世紀起於義大利佛羅倫斯，梅迪奇家族贊助是關鍵。（組塊 D）"},
+  {q:"下列關於文藝復興「人文主義」的敘述，何者正確？",o:["以神為本，重視來世","以人為本，重視人的尊嚴與理性","主張回到中世紀的生活方式","反對一切藝術創作"],a:1,e:"人文主義以人為本，重視人的尊嚴、理性與現世生活。（組塊 D）"},
+  {q:"《蒙娜麗莎》的作者是：",o:["米開朗基羅","拉斐爾","達文西","但丁"],a:2,e:"《蒙娜麗莎》是達文西；米開朗基羅是《大衛像》，拉斐爾是《雅典學院》。（組塊 D）"},
+  {q:"百年戰爭對英、法兩國最主要的影響是：",o:["兩國都被外族征服","民族意識興起，王權集中","封建領主權力大增","教宗權力達到頂峰"],a:1,e:"百年戰爭促使英法民族意識興起、王權集中，封建領主權力衰落。（組塊 E）"},
+  {q:"歐洲人積極尋找新航路的原因，不包括下列哪一項？",o:["對東方商品需求日增","貿易路線被義大利商人與鄂圖曼土耳其控制","航海技術進步","歐洲人想去美洲傳播基督教是唯一原因"],a:3,e:"傳教是海外拓殖的動機之一，但不是尋找新航路的唯一原因。（組塊 E）"},
+  {q:"1488 年發現非洲南端好望角的航海家是：",o:["達伽馬","狄亞士","哥倫布","麥哲倫"],a:1,e:"狄亞士 1488 年發現好望角；達伽馬 1498 年到印度。（組塊 E）"},
+  {q:"哥倫布於 1492 年抵達美洲後，稱當地原住民為「印第安人」，最主要的原因是：",o:["他以為自己到了印度","當地原住民自稱印第安人","西班牙國王下令這樣稱呼","亞美利哥告訴他這樣稱呼"],a:0,e:"哥倫布終生以為自己到了印度，所以稱原住民為印第安人。（組塊 E）"},
+  {q:"美洲以「亞美利加洲」命名，是為了紀念：",o:["哥倫布","麥哲倫","亞美利哥","達伽馬"],a:2,e:"亞美利哥證實那是一塊新大陸，後世以他的名字命名。（組塊 E）"},
+  {q:"1517 年，馬丁路德張貼《九十五條論綱》，最主要是反對教會的哪一項做法？",o:["販售贖罪券","創辦大學","翻譯聖經","派遣傳教士"],a:0,e:"路德最主要是反對販售贖罪券，主張因信稱義。（組塊 F）"},
+  {q:"下列關於宗教改革的敘述，何者正確？",o:["路德主張「因信稱義」，喀爾文主張預定論，英國國教會由亨利八世建立","三派都是由馬丁路德一人創立","宗教改革後歐洲宗教更加統一","天主教完全沒有進行任何改革"],a:0,e:"三派各有創立者與主張；改革後基督教分裂，天主教也進行了改革（耶穌會、特倫托會議）。（組塊 F）"}
+];
+var quizbox = document.getElementById('quizbox');
+var score = 0, answered = 0;
+QUIZ.forEach(function(item, qi){
+  var div = document.createElement('div');
+  div.className = 'quiz-q';
+  var head = document.createElement('p');
+  head.innerHTML = '<span class="qn">第 ' + (qi+1) + ' 題</span>　' + item.q;
+  div.appendChild(head);
+  var opts = document.createElement('div');
+  opts.className = 'opts';
+  var expl = document.createElement('div');
+  expl.className = 'expl';
+  expl.textContent = '解析：' + item.e;
+  var done = false;
+  item.o.forEach(function(text, oi){
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'opt';
+    btn.textContent = '（' + 'ABCD'[oi] + '）' + text;
+    btn.addEventListener('click', function(){
+      if (done) return;
+      done = true; answered++;
+      if (oi === item.a) { btn.classList.add('right'); score++; }
+      else {
+        btn.classList.add('wrong');
+        opts.children[item.a].classList.add('right');
+      }
+      document.getElementById('score').textContent = score;
+      document.getElementById('answered').textContent = answered;
+      expl.classList.add('show');
+    });
+    opts.appendChild(btn);
+  });
+  div.appendChild(opts);
+  div.appendChild(expl);
+  quizbox.appendChild(div);
+});
+</script>
+</body>
+</html>
